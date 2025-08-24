@@ -1,0 +1,421 @@
+massey_name	ncaa_name	provisional_membership
+Adrian	Adrian College	
+Agnes Scott	Agnes Scott College	
+Albertus Magnus	Albertus Magnus College	
+Albion	Albion College	
+Albright	Albright College	
+Alfred St	Alfred State College	
+Alfred	Alfred University	
+Allegheny	Allegheny College	
+Alma	Alma College	
+Alvernia	Alvernia University	
+Amherst	Amherst College	
+Anderson IN	Anderson University (Indiana)	
+Anna Maria	Anna Maria College	
+Arcadia	Arcadia University	
+Asbury	Asbury University	
+Augsburg	Augsburg University	
+Augustana IL	Augustana College (Illinois)	
+Aurora	Aurora University	
+Austin Col	Austin College	
+Averett	Averett University	
+Babson	Babson College	
+Baldwin-Wallace	Baldwin Wallace University	
+Bard	Bard College	
+Bates	Bates College	
+Belhaven MS	Belhaven University	
+Beloit	Beloit College	
+Benedictine IL	Benedictine University (Illinois)	
+Berea	Berea College	
+Berry	Berry College	
+Bethany WV	Bethany College (West Virginia)	
+Bethany Luth	Bethany Lutheran College	
+Bethel MN	Bethel University (Minnesota)	
+Blackburn	Blackburn College	
+Bluffton	Bluffton University	
+Bowdoin	Bowdoin College	
+Brandeis	Brandeis University	
+Brevard	Brevard College	
+Bridgewater VA	Bridgewater College (Virginia)	
+Bridgewater MA	Bridgewater State University	
+Brooklyn Col	Brooklyn College	
+Bryn Athyn	Bryn Athyn College	
+Bryn Mawr	Bryn Mawr College	
+Buena Vista	Buena Vista University	
+Buffalo St	"Buffalo State, State University of New York"	
+Cairn	Cairn University	
+Caltech	California Institute of Technology	
+Cal Lutheran	California Lutheran University	
+Calvin	Calvin University	
+Capital	Capital University	
+Carleton MN	Carleton College	
+Carlow	Carlow University	p
+Carnegie Mellon	Carnegie Mellon University	
+Carroll WI	Carroll University (Wisconsin)	
+Carthage	Carthage College	
+Case Western	Case Western Reserve University	
+Catholic	Catholic University	
+Cedar Crest	Cedar Crest College	
+Centenary	Centenary College (Louisiana)	
+Centenary NJ	Centenary University (New Jersey)	
+Central IA	Central College (Iowa)	
+Centre	Centre College	
+Chapman	Chapman University	
+Chatham	Chatham University	
+Chris Newport	Christopher Newport University	
+Claremont M.S.	Claremont McKenna-Harvey Mudd-Scripps Colleges	
+Clark MA	Clark University (Massachusetts)	
+Clarkson	Clarkson University	
+Coe	Coe College	
+Colby	Colby College	
+Colby-Sawyer	Colby-Sawyer College	
+St Benedict	College of Saint Benedict	
+Concordia Mhd	"Concordia College, Moorhead"	
+Concordia IL	Concordia University Chicago	
+Concordia TX	Concordia University Texas	
+Concordia WI	Concordia University Wisconsin	
+CT College	Connecticut College	
+Cornell IA	Cornell College	
+Covenant	Covenant College	
+Crown MN	Crown College (Minnesota)	
+Curry	Curry College	
+Dean	Dean College	
+Delaware Val	Delaware Valley University	
+Denison	Denison University	
+DePauw	DePauw University	
+DeSales	DeSales University	
+Dickinson	Dickinson College	
+Dominican IL	Dominican University (Illinois)	
+Drew	Drew University	
+Earlham	Earlham College	
+E Texas Bap	East Texas Baptist University	
+E Connecticut	Eastern Connecticut State University	
+E Mennonite	Eastern Mennonite University	
+Eastern Univ	Eastern University	
+Edgewood	Edgewood University	
+Elizabethtown	Elizabethtown College	
+Elmhurst	Elmhurst University	
+Elmira	Elmira College	
+Elms	Elms College	
+Emerson	Emerson College	
+Emmanuel MA	Emmanuel College (Massachusetts)	
+Emory	Emory University	
+Endicott	Endicott College	
+Eureka	Eureka College	
+FDU Madison	"Fairleigh Dickinson University, Florham"	
+Farmingdale	Farmingdale State College	
+Ferrum	Ferrum College	
+Fitchburg St	Fitchburg State University	
+Framingham St	Framingham State University	
+Franciscan OH	Franciscan University of Steubenville	
+Frank & Marsh	Franklin & Marshall College	
+Franklin	Franklin College	
+Geneva	Geneva College	
+George Fox	George Fox University	
+Gettysburg	Gettysburg College	
+Gordon	Gordon College	
+Goucher	Goucher College	
+Greensboro	Greensboro College	
+Greenville	Greenville University	
+Grinnell	Grinnell College	
+Grove City	Grove City College	
+Guilford	Guilford College	
+Gust Adolphus	Gustavus Adolphus College	
+Gwynedd-Mercy	Gwynedd Mercy University	
+Hamilton	Hamilton College	
+Hamline	Hamline University	
+Hanover	Hanover College	
+Hardin-Simmons	Hardin-Simmons University	
+Hartwick	Hartwick College	
+Haverford	Haverford College	
+Heidelberg	Heidelberg University	
+Hendrix	Hendrix College	
+Hilbert	Hilbert College	
+Hiram	Hiram College	
+Hobart & Smith	Hobart and William Smith Colleges	
+Hollins	Hollins University	
+Hood	Hood College	
+Hope	Hope College	
+Houghton	Houghton University	
+Howard Payne	Howard Payne University	
+Huntingdon	Huntingdon College	
+Husson	Husson University	
+Illinois Col	Illinois College	
+IL Tech	Illinois Institute of Technology	
+IL Wesleyan	Illinois Wesleyan University	
+Immaculata	Immaculata University	
+Ithaca	Ithaca College	
+John Carroll	John Carroll University	
+John Jay	John Jay College of Criminal Justice	
+Johns Hopkins	Johns Hopkins University	
+J&W RI	Johnson & Wales University (Providence)	
+J&W NC	Johnson & Wales University Charlotte	p
+Juniata	Juniata College	
+Kalamazoo	Kalamazoo College	
+Kean	Kean University	
+Keene St	Keene State College	
+Kenyon	Kenyon College	
+Keuka	Keuka College	
+Keystone	Keystone College	
+King's PA	King's College (Pennsylvania)	
+Knox	Knox College	
+La Roche	La Roche University	
+LaGrange	LaGrange College	
+Lake Forest	Lake Forest College	
+Lakeland	Lakeland University	
+Lancaster Bib	Lancaster Bible College	
+Lasell	Lasell University	
+Lawrence	Lawrence University	
+Lebanon Val	Lebanon Valley College	
+Lehman	Lehman College	
+Lesley	Lesley University	
+Le Tourneau	LeTourneau University	
+Lewis & Clark	Lewis & Clark College	
+Linfield	Linfield University	
+Loras	Loras College	
+Luther IA	Luther College	
+Lycoming	Lycoming College	
+Lyon	Lyon College	
+Macalester	Macalester College	
+ME Maritime	Maine Maritime Academy	
+Manchester	Manchester University	
+Manhattanville	Manhattanville University	
+Maranatha Bap	Maranatha Baptist University	
+Marian WI	Marian University (Wisconsin)	
+Marietta	Marietta College	
+Martin Luther	Martin Luther College	
+Mary Baldwin	Mary Baldwin University	
+Marymount VA	Marymount University (Virginia)	
+Maryville TN	Maryville College (Tennessee)	
+Marywood	Marywood University	
+MA Col Lib Arts	Massachusetts College of Liberal Arts	
+MIT	Massachusetts Institute of Technology	
+MA Maritime	Massachusetts Maritime Academy	
+McDaniel	McDaniel College	
+McMurry	McMurry University	
+Medgar Evers	Medgar Evers College	
+Meredith	Meredith College	
+Messiah	Messiah University	
+Methodist	Methodist University	
+Middlebury	Middlebury College	
+Millikin	Millikin University	
+Millsaps	Millsaps College	
+Milwaukee Eng	Milwaukee School of Engineering	
+Misericordia	Misericordia University	
+MS Women	Mississippi University for Women	
+Mitchell	Mitchell College	
+Monmouth IL	Monmouth College (Illinois)	
+Montclair St	Montclair State University	
+Moravian	Moravian University	
+Mt Aloysius	Mount Aloysius College	
+Mt Holyoke	Mount Holyoke College	
+Mt Mary	Mount Mary	
+Mt St Mary NY	Mount Saint Mary College (New York)	
+Mt St Joseph	Mount St. Joseph University	
+Muhlenberg	Muhlenberg College	
+Muskingum	Muskingum University	
+Nazareth	Nazareth University	
+NE Wesleyan	Nebraska Wesleyan University	
+Neumann	Neumann University	
+N England Col	New England College	
+NJ City	New Jersey City University	
+NYU	New York University	
+Nichols	Nichols College	
+NC Wesleyan	North Carolina Wesleyan University	
+N Central IL	North Central College	
+N Central MN	North Central University	
+North Park	North Park University	
+Norwich	Norwich University	
+Notre Dame MD	Notre Dame of Maryland University	
+Oberlin	Oberlin College	
+Occidental	Occidental College	
+Oglethorpe	Oglethorpe University	
+Ohio Northern	Ohio Northern University	
+Ohio Wesleyan	Ohio Wesleyan University	
+Otterbein	Otterbein University	
+Pac Lutheran	Pacific Lutheran University	
+Pacific OR	Pacific University (Oregon)	
+PSU-Berks	Penn State Berks College	
+PSU-Brandywine	Penn State Brandywine	p
+PSU-Harrisburg	Penn State Harrisburg	
+PSU-Abington	"Penn State University, Abington"	
+PSU-Altoona	"Penn State University, Altoona"	
+Penn Col Tech	Pennsylvania College of Technology	
+PSU-Behrend	"Pennsylvania State Univ. Erie, the Behrend College"	
+Pfeiffer	Pfeiffer University	
+Piedmont	Piedmont University	
+Plattsburgh St	Plattsburgh State University of New York	
+Plymouth St	Plymouth State University	
+Pomona-Pitzer	Pomona-Pitzer Colleges	
+Pratt Inst	Pratt Institute	
+Principia	Principia College	
+Purchase	"Purchase College, State University of New York"	
+Ramapo	Ramapo College	
+Randolph Col	Randolph College	
+Randolph-Macon	Randolph-Macon College	
+Regent	Regent University	p
+Regis MA	Regis College (Massachusetts)	
+Rensselaer	Rensselaer Polytechnic Institute	
+RI College	Rhode Island College	
+Rhodes	Rhodes College	
+Ripon	Ripon College	
+Rivier	Rivier University	
+Roanoke	Roanoke College	
+Rochester Tech	Rochester Institute of Technology	
+Rockford	Rockford University	
+Roger Williams	Roger Williams University	
+Rose-Hulman	Rose-Hulman Institute of Technology	
+Rosemont	Rosemont College	
+Rowan	Rowan University	
+Russell Sage	Russell Sage College	
+Rutgers-Camden	"Rutgers, The State Univ. of New Jersey, Camden"	
+Rutgers-Newark	"Rutgers, The State Univ. of New Jersey, Newark"	
+St Elizabeth	Saint Elizabeth University	
+St Joseph's ME	Saint Joseph's College (Maine)	
+St Mary's IN	Saint Mary's College (Indiana)	
+St Mary's MN	Saint Mary's University of Minnesota	
+St Vincent	Saint Vincent College	
+Salem NC	Salem College (North Carolina)	
+Salem MA	Salem State University	
+Salisbury	Salisbury University	
+Salve Regina	Salve Regina University	
+Sarah Lawrence	Sarah Lawrence College	
+Schreiner	Schreiner University	
+Sewanee	Sewanee	
+Shenandoah	Shenandoah University	
+Simmons	Simmons University	
+Simpson IA	Simpson College	
+Skidmore	Skidmore College	
+Smith	Smith College	
+S Virginia	Southern Virginia University	
+SW Univ TX	Southwestern University (Texas)	
+Spalding	Spalding University	
+Springfield	Springfield College	
+St Catherine	St. Catherine University	
+St John Fisher	St. John Fisher University	
+St Joseph's NY	St. Joseph's University NY (Brooklyn)	
+St Joseph's LI	"St. Joseph's University, New York L.I."	
+St Lawrence	St. Lawrence University	
+St Mary's MD	St. Mary's College of Maryland	
+St Norbert	St. Norbert College	
+St Olaf	St. Olaf College	
+Brockport St	State University of New York at Brockport	
+SUNY Canton	State University of New York at Canton	
+SUNY Cobleskill	State University of New York at Cobleskill	
+Cortland St	State University of New York at Cortland	
+SUNY Delhi	State University of New York at Delhi	
+Geneseo St	State University of New York at Geneseo	
+Morrisville St	State University of New York at Morrisville	
+SUNY New Paltz	State University of New York at New Paltz	
+Old Westbury	State University of New York at Old Westbury	
+SUNY Oneonta	State University of New York at Oneonta	
+Oswego St	State University of New York at Oswego	
+SUNY Potsdam	State University of New York at Potsdam	
+SUNY Maritime	State University of New York Maritime College	
+SUNY Poly	State University of New York Polytechnic Institute	
+Stevens	Stevens Institute of Technology	
+Stevenson	Stevenson University	
+R Stockton	Stockton University	
+Suffolk	Suffolk University	
+Susquehanna	Susquehanna University	
+Swarthmore	Swarthmore College	
+Sweet Briar	Sweet Briar College	
+TX Lutheran	Texas Lutheran University	
+City Col NY	The City College of New York	
+College of NJ	The College of New Jersey	
+St Scholastica	The College of St. Scholastica	
+Wooster	The College of Wooster	
+SUNY Fredonia	The State University of New York at Fredonia	
+Olivet MI	The University of Olivet	
+Thiel	Thiel College	
+Thomas ME	Thomas College	
+Transylvania	Transylvania University	
+Trine	Trine University	
+Trinity CT	Trinity College (Connecticut)	
+Trinity TX	Trinity University (Texas)	
+Trinity DC	Trinity Washington University	
+Tufts	Tufts University	
+Coast Guard	U.S. Coast Guard Academy	
+Merchant Marine	U.S. Merchant Marine Academy	
+Union NY	Union College (New York)	
+UC Santa Cruz	"University of California, Santa Cruz"	
+Chicago	University of Chicago	
+Dallas Univ	University of Dallas	
+Dubuque	University of Dubuque	
+Hartford	University of Hartford	
+La Verne	University of La Verne	
+Lynchburg	University of Lynchburg	
+ME Presque Isle	University of Maine at Presque Isle	
+ME Farmington	"University of Maine, Farmington"	
+M Hardin-Baylor	University of Mary Hardin-Baylor	
+Mary Washington	University of Mary Washington	
+MA Boston	University of Massachusetts Boston	
+MA Dartmouth	"University of Massachusetts, Dartmouth"	
+MN Morris	"University of Minnesota, Morris"	
+Mt St Vincent	University of Mount Saint Vincent	
+Mt Union	University of Mount Union	
+U New England	University of New England	
+Northwestern MN	University of Northwestern-St. Paul	
+Pitt-Bradford	"University of Pittsburgh, Bradford"	
+Pitt-Greensburg	"University of Pittsburgh, Greensburg"	
+Puget Sound	University of Puget Sound	
+Redlands	University of Redlands	
+Rochester NY	University of Rochester	
+St Joseph CT	University of Saint Joseph (Connecticut)	
+Scranton	University of Scranton	
+S Maine	University of Southern Maine	
+St Thomas TX	University of St. Thomas (Texas)	
+Univ Ozarks	University of the Ozarks (Arkansas)	
+Valley Forge	University of Valley Forge	
+WI Eau Claire	University of Wisconsin-Eau Claire	
+WI LaCrosse	University of Wisconsin-La Crosse	
+WI Oshkosh	University of Wisconsin-Oshkosh	
+WI Platteville	University of Wisconsin-Platteville	
+WI River Falls	University of Wisconsin-River Falls	
+WI Stevens Pt	University of Wisconsin-Stevens Point	
+WI Stout	University of Wisconsin-Stout	
+WI Superior	University of Wisconsin-Superior	
+WI Whitewater	University of Wisconsin-Whitewater	
+Ursinus	Ursinus College	
+Utica	Utica University	
+Vassar	Vassar College	
+Castleton	Vermont State University Castleton	
+VA Wesleyan	Virginia Wesleyan University	
+NVU-Johnson	VTSU-Johnson	
+Warren Wilson	Warren Wilson College	
+Wartburg	Wartburg College	
+Wash & Jeff	Washington and Jefferson College	
+Washington & Lee	Washington and Lee University	
+Washington MD	Washington College (Maryland)	
+Washington StL	Washington University in St. Louis	
+Waynesburg	Waynesburg University	
+Webster	Webster University	
+Wellesley	Wellesley College	
+Wentworth Tech	Wentworth Institute of Technology	
+Wesleyan GA	Wesleyan College (Georgia)	
+Wesleyan CT	Wesleyan University (Connecticut)	
+W Connecticut	Western Connecticut State University	
+W New England	Western New England University	
+Westfield St	Westfield State University	
+Westminster MO	Westminster College (Missouri)	
+Westminster PA	Westminster College (Pennsylvania)	
+Wheaton IL	Wheaton College (Illinois)	
+Wheaton MA	Wheaton College (Massachusetts)	
+Whitman	Whitman College	
+Whittier	Whittier College	
+Whitworth	Whitworth University	
+Widener	Widener University	
+Wilkes	Wilkes University	
+Willamette	Willamette University	
+Wm Paterson	William Paterson University of New Jersey	
+Peace	William Peace University	
+Williams	Williams College	
+Wilmington OH	Wilmington College (Ohio)	
+Wilson	Wilson College	
+WI Lutheran	Wisconsin Lutheran College	
+Wittenberg	Wittenberg University	
+Worcester Tech	Worcester Polytechnic Institute	
+Worcester St	Worcester State University	
+Yeshiva	Yeshiva University	
+York NY	York College (New York)	
+York PA	York College (Pennsylvania)	
