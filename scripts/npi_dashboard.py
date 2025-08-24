@@ -17,16 +17,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom CSS for all st.info elements
-st.markdown("""
-<style>
-/* Target all st.info elements */
-div[data-testid="stInfo"] {
-    background-color: #830019 !important;
-    color: white !important;
-}
-</style>
-""", unsafe_allow_html=True)
+
 
 def load_npi_data(year):
     """Load NPI results data for specified year"""
@@ -418,7 +409,11 @@ def main():
     # Show warning if no NPI data available
     if npi_df is None:
         st.warning(f"⚠️ No NPI ratings available for {selected_year} (this is normal for seasons with only scheduled games)")
-        st.info("📊 You can still view team schedules and individual game data.")
+        st.markdown("""
+        <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
+            <strong>📊 You can still view team schedules and individual game data.</strong>
+        </div>
+        """, unsafe_allow_html=True)
     
     # Create tabs
     tab1, tab2, tab3 = st.tabs(["🏆 NPI Ratings", "📅 Team Schedules", "🎯 NPI Simulator"])
@@ -427,31 +422,8 @@ def main():
     with tab1:
         st.subheader("NPI Ratings")
         
-        # Check for simulation NPI data
-        if sim_npi_df is not None and not sim_npi_df.empty:
-            st.success("🎯 **Simulation NPI Ratings Available!**")            
-            # Sort by NPI rating (highest first)
-            df_sorted = sim_npi_df.sort_values('npi_rating', ascending=False).reset_index(drop=True)
-            
-            # Add ranking
-            df_sorted.insert(0, 'Rank', range(1, len(df_sorted) + 1))
-            
-            # Select only the columns we want to display
-            columns_to_show = ['Rank', 'team', 'npi_rating', 'wins', 'losses', 'ties']
-            df_display = df_sorted[columns_to_show].copy()
-            
-            # Round NPI rating to 2 decimal places
-            df_display['npi_rating'] = df_display['npi_rating'].round(2)
-            
-            # Display simulation NPI data
-            st.dataframe(df_display, use_container_width=True, hide_index=True)
-            
-            st.markdown("---")
-            st.subheader("Original NPI Ratings")
-        
+        # Show NPI data from the CSV file (regardless of content)
         if npi_df is not None and not npi_df.empty:
-            st.markdown("*Note: These estimated NPI ratings have a margin of error of ±0.3*")
-            
             # Sort by NPI rating (highest first)
             df_sorted = npi_df.sort_values('npi_rating', ascending=False).reset_index(drop=True)
             
@@ -468,15 +440,16 @@ def main():
             # Display all teams
             st.dataframe(df_display, use_container_width=True, hide_index=True)
         else:
-            st.info("📅 **No NPI ratings available for this season.**")
             st.markdown("""
-            This typically happens when:
-            - All games are scheduled (like 2025 season)
-            - No completed games exist yet
-            - NPI calculations haven't been run
-            
-            **You can still view team schedules in the Team Schedules tab!**
-            """)
+            <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                <strong>📅 **No NPI ratings available for this season.**</strong><br><br>
+                This typically happens when:<br>
+                - All games are scheduled (like 2025 season)<br>
+                - No completed games exist yet<br>
+                - NPI calculations haven't been run<br><br>
+                <strong>You can still view team schedules in the Team Schedules tab!</strong>
+            </div>
+            """, unsafe_allow_html=True)
     
     # Tab 2: Team Schedules
     with tab2:
@@ -581,7 +554,11 @@ def main():
             st.warning("⚠️ NPI simulator requires games data. Please ensure the filtered games file exists.")
         elif npi_df is None or npi_df.empty:
             st.warning("⚠️ NPI simulator requires NPI ratings data. Please run NPI calculations first.")
-            st.info("💡 **For 2025 season:** Run NPI calculator with `--simulation` flag to create simulation NPI data.")
+            st.markdown("""
+            <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                <strong>💡 **For 2025 season:** Run NPI calculator with `--simulation` flag to create simulation NPI data.</strong>
+            </div>
+            """, unsafe_allow_html=True)
         else:
             # Team selection for simulation
             st.write("**Step 1: Select a team to edit**")
@@ -724,7 +701,11 @@ def main():
                     st.write("**Step 4: Save and Run Simulation**")
                     
                     # Helpful reminder for users
-                    st.info("💡 **Important:** Make sure to save your simulation data before running the NPI calculator!")
+                    st.markdown("""
+            <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                <strong>💡 **Important:** Make sure to save your simulation data before running the NPI calculator!</strong>
+            </div>
+            """, unsafe_allow_html=True)
                     
                     col1, col2, col3, col4, col5 = st.columns([1, 1, 1, 1, 1])
                     
@@ -743,8 +724,16 @@ def main():
                             
                             if reset_success:
                                 st.success(f"✅ {reset_message}")
-                                st.info("🔄 Simulation data has been reset to original filtered data")
-                                st.info("🔄 All sliders have been reset to original values")
+                                st.markdown("""
+                                <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                                    <strong>🔄 Simulation data has been reset to original filtered data</strong>
+                                </div>
+                                """, unsafe_allow_html=True)
+                                st.markdown("""
+                                <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                                    <strong>🔄 All sliders have been reset to original values</strong>
+                                </div>
+                                """, unsafe_allow_html=True)
                                 st.rerun()
                             else:
                                 st.error(f"❌ Failed to reset simulation data: {reset_message}")
@@ -772,7 +761,11 @@ def main():
                                 else:
                                     st.error(f"❌ Failed to save simulation data: {apply_message}")
                             else:
-                                st.info("No changes to save.")
+                                st.markdown("""
+                                <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                                    <strong>No changes to save.</strong>
+                                </div>
+                                """, unsafe_allow_html=True)
                     
                     with col4:
                         if st.button("📊 Run Simulation", type="secondary"):
@@ -786,7 +779,11 @@ def main():
                             else:
                                 st.error("❌ NPI calculation failed!")
                                 st.error(f"Error: {error}")
-                                st.info("💡 **Manual Steps:**")
+                                st.markdown("""
+                                <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                                    <strong>💡 **Manual Steps:**</strong>
+                                </div>
+                                """, unsafe_allow_html=True)
                                 st.write(f"1. Run NPI calculator manually: `python npi_calculator.py --year {selected_year} --season-only --simulation`")
                                 st.write("2. Check for any error messages")
                                 st.write("3. Verify the simulation data file is correct")
@@ -796,7 +793,11 @@ def main():
                 
                 else:
                     st.warning(f"No games found for {selected_sim_team}")
-                    st.info("💡 **Tip:** Select a different team or check if the team has any games in the current season.")
+                    st.markdown("""
+                    <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                        <strong>💡 **Tip:** Select a different team or check if the team has any games in the current season.</strong>
+                    </div>
+                    """, unsafe_allow_html=True)
                 
                 # Step 5: View Current Simulation NPI Ratings
                 st.write("---")
@@ -868,7 +869,11 @@ def main():
                         st.error(f"❌ Error loading simulation NPI data: {e}")
                         
                 else:
-                    st.info(f"📊 **No simulated NPI ratings available yet**")
+                    st.markdown(f"""
+                    <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                        <strong>📊 **No simulated NPI ratings available yet**</strong><br>
+                    </div>
+                    """, unsafe_allow_html=True)
                 
 
     
