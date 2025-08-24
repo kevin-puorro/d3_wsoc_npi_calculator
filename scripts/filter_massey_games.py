@@ -332,6 +332,48 @@ def save_provisional_games(provisional_df: pd.DataFrame, output_dir: str, year: 
     return output_path
 
 
+def save_simulation_games(filtered_df: pd.DataFrame, output_dir: str, year: int) -> str:
+    """
+    Save simulation games to CSV (identical to filtered games for simulation purposes)
+    
+    Args:
+        filtered_df: DataFrame with filtered games data
+        output_dir: Directory to save the file
+        year: Year for the filename
+        
+    Returns:
+        Path to saved file
+    """
+    # Create output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Generate filename
+    filename = f"massey_games_{year}_simulation.csv"
+    output_path = os.path.join(output_dir, filename)
+    
+    if filtered_df.empty:
+        # Create empty DataFrame with correct columns
+        empty_df = pd.DataFrame(columns=['date', 'away_team', 'away_score', 'home_team', 'home_score', 'game_note'])
+        empty_df.to_csv(output_path, index=False)
+        print(f"Created empty simulation games file: {output_path} (0 games)")
+        return output_path
+    
+    # Ensure all expected columns are present
+    expected_columns = ['date', 'away_team', 'away_score', 'home_team', 'home_score', 'game_note']
+    for col in expected_columns:
+        if col not in filtered_df.columns:
+            filtered_df[col] = ""
+    
+    # Reorder columns to match expected format
+    filtered_df = filtered_df[expected_columns]
+    
+    # Save to CSV
+    filtered_df.to_csv(output_path, index=False)
+    print(f"Saved {len(filtered_df)} simulation games to: {output_path}")
+    
+    return output_path
+
+
 def save_npi_games(npi_df: pd.DataFrame, output_dir: str, year: int) -> str:
     """
     Save NPI games to CSV (excludes scheduled games but includes overtime games)
@@ -379,8 +421,8 @@ def main():
     
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Filter Massey games data')
-    parser.add_argument('--year', '-y', type=int, default=2024, 
-                       help='Season year to process (default: 2024)')
+    parser.add_argument('--year', '-y', type=int, default=2025, 
+                       help='Season year to process (default: 2025)')
     
     args = parser.parse_args()
     
@@ -443,8 +485,12 @@ def main():
     print("\n7️⃣ Saving NPI games...")
     npi_output_file = save_npi_games(converted_npi_df, output_dir, year)
     
-    # Step 8: Save excluded games
-    print("\n8️⃣ Saving excluded games...")
+    # Step 8: Save simulation games
+    print("\n8️⃣ Saving simulation games...")
+    simulation_output_file = save_simulation_games(converted_df, output_dir, year)
+    
+    # Step 9: Save excluded games
+    print("\n9️⃣ Saving excluded games...")
     excluded_output_file = save_excluded_games(excluded_games, output_dir, year)
     
     # Summary
@@ -459,6 +505,7 @@ def main():
     print(f"💾 Filtered games file: {output_file}")
     print(f"💾 Provisional games file: {provisional_output_file}")
     print(f"💾 NPI games file: {npi_output_file}")
+    print(f"💾 Simulation games file: {simulation_output_file}")
     print(f"💾 Excluded games file: {excluded_output_file}")
     
     # Show some excluded games for reference
@@ -477,6 +524,7 @@ def main():
         print(f"🏆 NPI games (no scheduled games) available at: {npi_output_file}")
     else:
         print(f"🏆 NPI games file created at: {npi_output_file} (0 games - all games are scheduled)")
+    print(f"🎯 Simulation games available at: {simulation_output_file}")
 
 
 if __name__ == "__main__":

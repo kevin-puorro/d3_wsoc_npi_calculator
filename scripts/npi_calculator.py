@@ -18,6 +18,74 @@ from typing import Dict, List, Tuple
 from collections import defaultdict
 
 
+def load_simulation_games(data_dir: str, year: int, start_date: str = "2024-08-30", end_date: str = "2024-11-10") -> pd.DataFrame:
+    """
+    Load the simulation games data for NPI calculation, filtered by date range and excluding scheduled games
+    
+    Args:
+        data_dir: Directory containing the data
+        year: Year to load data for
+        start_date: Start date in YYYY-MM-DD format (inclusive)
+        end_date: End date in YYYY-MM-DD format (inclusive)
+        
+    Returns:
+        DataFrame with simulation games data (excluding scheduled games)
+    """
+    try:
+        # Look for the simulation games file
+        sim_file = os.path.join(data_dir, f"massey_games_{year}_simulation.csv")
+        
+        if not os.path.exists(sim_file):
+            raise FileNotFoundError(f"Simulation games file not found: {sim_file}")
+        
+        print(f"Loading simulation games from: {sim_file}")
+        games_df = pd.read_csv(sim_file)
+        print(f"Loaded {len(games_df)} simulation games")
+        
+        # Handle empty dataset
+        if games_df.empty:
+            print(f"⚠️  No simulation games found for {year} - this may be normal for seasons with only scheduled games")
+            return games_df
+        
+        # Check if game_note column exists, if not add it as empty
+        if 'game_note' not in games_df.columns:
+            # Check if overtime column exists and rename it
+            if 'overtime' in games_df.columns:
+                print("🔄 Renaming 'overtime' column to 'game_note'")
+                games_df = games_df.rename(columns={'overtime': 'game_note'})
+            else:
+                print("⚠️  No game_note column found, adding empty column")
+                games_df['game_note'] = ""
+        
+        # Filter out scheduled games (SCH) - only include completed games
+        completed_games = games_df[games_df['game_note'] != 'Sch'].copy()
+        scheduled_games = games_df[games_df['game_note'] == 'Sch']
+        
+        print(f"📅 Found {len(completed_games)} completed games and {len(scheduled_games)} scheduled games")
+        print(f"🎯 Using {len(completed_games)} completed games for NPI calculation (excluding scheduled games)")
+        
+        if len(completed_games) == 0:
+            print(f"⚠️  No completed games found in simulation data for {year}")
+            print("💡 All games in simulation data are scheduled (Sch)")
+            return completed_games
+        
+        # Convert date column to datetime for filtering
+        completed_games['date'] = pd.to_datetime(completed_games['date'])
+        start_datetime = pd.to_datetime(start_date)
+        end_datetime = pd.to_datetime(end_date)
+        
+        # Filter games between start and end dates (inclusive)
+        filtered_games = completed_games[(completed_games['date'] >= start_datetime) & (completed_games['date'] <= end_datetime)].copy()
+        
+        print(f"Filtered to {len(filtered_games)} completed games between {start_date} and {end_date}")
+        
+        return filtered_games
+        
+    except Exception as e:
+        print(f"Error loading simulation games: {e}")
+        return pd.DataFrame()
+
+
 def load_filtered_games(data_dir: str, year: int, start_date: str = "2024-08-30", end_date: str = "2024-11-10") -> pd.DataFrame:
     """
     Load the NPI games data for NPI calculation, filtered by date range
@@ -589,6 +657,54 @@ def create_npi_summary(games_df: pd.DataFrame, team_npi_ratings: Dict[str, float
     return summary_df
 
 
+def save_simulation_npi_results(summary_df: pd.DataFrame, output_dir: str, year: int) -> str:
+    """
+    Save simulation NPI results to CSV
+    
+    Args:
+        summary_df: DataFrame with NPI summary
+        output_dir: Directory to save the file
+        year: Year for the filename
+        
+    Returns:
+        Path to saved file
+    """
+    if summary_df.empty:
+        print("No simulation NPI results to save")
+        return ""
+    
+    # SAFETY CHECK: Ensure we never overwrite the original NPI file
+    original_npi_file = os.path.join(output_dir, f"npi_ratings_{year}.csv")
+    if os.path.exists(original_npi_file):
+        original_size = os.path.getsize(original_npi_file)
+        print(f"[SAFETY] Original NPI file size: {original_size} bytes - will NOT be modified")
+    
+    # Create output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Generate filename - MUST be different from original
+    filename = f"npi_ratings_{year}_simulation.csv"
+    output_path = os.path.join(output_dir, filename)
+    
+    # Double-check we're not overwriting the original file
+    if output_path == original_npi_file:
+        raise RuntimeError(f"SAFETY VIOLATION: Attempting to overwrite original NPI file: {output_path}")
+    
+    # Save to CSV
+    summary_df.to_csv(output_path, index=False)
+    print(f"Saved simulation NPI ratings for {len(summary_df)} teams to: {output_path}")
+    
+    # Verify original file wasn't modified
+    if os.path.exists(original_npi_file):
+        new_original_size = os.path.getsize(original_npi_file)
+        if new_original_size != original_size:
+            raise RuntimeError(f"SAFETY VIOLATION: Original NPI file size changed from {original_size} to {new_original_size} bytes!")
+        else:
+            print(f"[SAFETY] ✅ Original NPI file size unchanged: {new_original_size} bytes")
+    
+    return output_path
+
+
 def save_npi_results(summary_df: pd.DataFrame, output_dir: str, year: int) -> str:
     """
     Save NPI results to CSV
@@ -673,6 +789,8 @@ def main(use_season_results=False):
                        help='Start date for filtering games (YYYY-MM-DD format)')
     parser.add_argument('--end-date', type=str, default=None,
                        help='End date for filtering games (YYYY-MM-DD format)')
+    parser.add_argument('--simulation', action='store_true',
+                       help='Use simulation data instead of NPI games data')
     
     args = parser.parse_args()
     
@@ -702,24 +820,42 @@ def main(use_season_results=False):
     data_dir = os.path.join(project_root, "data", str(year))
     output_dir = data_dir  # Save results in same directory
     
-    print(f"🏆 NPI Calculator for {year}")
-    print(f"📁 Data directory: {data_dir}")
-    print(f"💾 Output directory: {output_dir}")
-    print(f"📅 Date range: {start_date} to {end_date}")
-    print(f"🔄 Iterations: {NUM_ITERATIONS}")
-    print(f"🎯 Mode: {'Season Results' if use_season_results else 'Full Calculation'}")
+    # SAFETY CHECK: Verify we're not overwriting original files in simulation mode
+    original_size = None
+    if args.simulation:
+        original_npi_file = os.path.join(data_dir, f"npi_ratings_{year}.csv")
+        if os.path.exists(original_npi_file):
+            original_size = os.path.getsize(original_npi_file)
+            print(f"[SAFETY] Original NPI file size: {original_size} bytes")
+            print(f"[SAFETY] Simulation mode: Will create npi_ratings_{year}_simulation.csv")
+            print(f"[SAFETY] Original file will NOT be modified")
+        else:
+            print(f"[SAFETY] No original NPI file found: {original_npi_file}")
+    
+    print(f"[TROPHY] NPI Calculator for {year}")
+    print(f"[FOLDER] Data directory: {data_dir}")
+    print(f"[SAVE] Output directory: {output_dir}")
+    print(f"[CALENDAR] Date range: {start_date} to {end_date}")
+    print(f"[REFRESH] Iterations: {NUM_ITERATIONS}")
+    print(f"[TARGET] Mode: {'Season Results' if use_season_results else 'Full Calculation'}")
+    if args.simulation:
+        print(f"[SIMULATION] SIMULATION MODE: Original data protected")
     print("-" * 50)
     
     try:
-        # Step 1: Load NPI games data
-        print("1️⃣ Loading NPI games data...")
-        games_df = load_filtered_games(data_dir, year, start_date, end_date)
+        # Step 1: Load games data (NPI or simulation)
+        if args.simulation:
+            print("1. Loading simulation games data...")
+            games_df = load_simulation_games(data_dir, year, start_date, end_date)
+        else:
+            print("1. Loading NPI games data...")
+            games_df = load_filtered_games(data_dir, year, start_date, end_date)
         
         if games_df.empty:
-            print(f"⚠️  No NPI games found for {year} season.")
-            print("💡 This is normal for seasons with only scheduled games (like 2025).")
-            print("📋 Cannot calculate NPI ratings without completed games.")
-            print("🏆 Creating placeholder NPI output with default ratings...")
+            print(f"[WARNING] No {'simulation' if args.simulation else 'NPI'} games found for {year} season.")
+            print("[INFO] This is normal for seasons with only scheduled games (like 2025).")
+            print("[INFO] Cannot calculate NPI ratings without completed games.")
+            print("[TROPHY] Creating placeholder NPI output with default ratings...")
             
             # Try to load the filtered games to get team list
             try:
@@ -732,7 +868,7 @@ def main(use_season_results=False):
                         all_teams.add(game['away_team'])
                     
                     teams_list = sorted(list(all_teams))
-                    print(f"\n📊 Found {len(teams_list)} teams in the filtered data")
+                    print(f"\n[CHART] Found {len(teams_list)} teams in the filtered data")
                     
                     # Create placeholder data for NPI calculation
                     valid_teams = teams_list
@@ -745,76 +881,79 @@ def main(use_season_results=False):
                     final_iteration = 1
                     converged = True
                     
-                    print(f"🏆 Created placeholder data for {len(valid_teams)} teams")
+                    print(f"[TROPHY] Created placeholder data for {len(valid_teams)} teams")
                     
                     # Skip to creating summary with placeholder data
-                    print("\n3️⃣ Creating placeholder NPI summary...")
+                    print("\n3. Creating placeholder NPI summary...")
                     team_owp = {team: 50.0 for team in valid_teams}
                     team_oowp = {team: 50.0 for team in valid_teams}
-                    print(f"✅ Created placeholder OWP and OOWP for {len(team_owp)} teams")
+                    print(f"[CHECK] Created placeholder OWP and OOWP for {len(team_owp)} teams")
                     
                     # Create placeholder summary
-                    print("\n4️⃣ Creating NPI summary...")
+                    print("\n4. Creating NPI summary...")
                     summary_df = create_placeholder_summary(valid_teams)
-                    print(f"✅ Created placeholder summary for {len(summary_df)} teams")
+                    print(f"[CHECK] Created placeholder summary for {len(summary_df)} teams")
                     
                     # Save results
-                    print("\n5️⃣ Saving placeholder NPI results...")
-                    output_file = save_npi_results(summary_df, output_dir, year)
+                    print("\n5. Saving placeholder NPI results...")
+                    if args.simulation:
+                        output_file = save_simulation_npi_results(summary_df, output_dir, year)
+                    else:
+                        output_file = save_npi_results(summary_df, output_dir, year)
                     
                     total_time = time.time() - start_total_time
                     
                     # Summary
                     print("\n" + "=" * 50)
-                    print("📋 PLACEHOLDER NPI CALCULATION SUMMARY")
+                    print("[CLIPBOARD] PLACEHOLDER NPI CALCULATION SUMMARY")
                     print("=" * 50)
-                    print(f"📊 Total games processed: 0 (placeholder)")
-                    print(f"🏆 Total teams: {len(summary_df)}")
-                    print(f"💾 Output file: {output_file}")
-                    print(f"⏱️  Total processing time: {total_time:.3f} seconds")
-                    print(f"🔄 Total iterations completed: 1 (placeholder)")
-                    print(f"🎯 Convergence status: ✅ Placeholder (no games to process)")
-                    print(f"🎮 Total games processed: 0 (placeholder)")
+                    print(f"[CHART] Total games processed: 0 (placeholder)")
+                    print(f"[TROPHY] Total teams: {len(summary_df)}")
+                    print(f"[SAVE] Output file: {output_file}")
+                    print(f"[CLOCK] Total processing time: {total_time:.3f} seconds")
+                    print(f"[REFRESH] Total iterations completed: 1 (placeholder)")
+                    print(f"[TARGET] Convergence status: [CHECK] Placeholder (no games to process)")
+                    print(f"[GAME] Total games processed: 0 (placeholder)")
                     
-                    print(f"\n🏅 Top 25 Teams by Default NPI Rating:")
+                    print(f"\n[MEDAL] Top 25 Teams by Default NPI Rating:")
                     for i, (_, team) in enumerate(summary_df.head(25).iterrows()):
                         print(f"   {i+1:2d}. {team['team']:<35} NPI: {team['npi_rating']:.4f}")
                         print(f"       Record: {team['wins']:2d}W-{team['losses']:2d}L-{team['ties']:2d}T | Qualifying: {team['qualifying_wins']:2d}W-{team['qualifying_losses']:2d}L-{team['qualifying_ties']:2d}T")
-                        print(f"       ✅ PLACEHOLDER DATA (no completed games)")
+                        print(f"       [CHECK] PLACEHOLDER DATA (no completed games)")
                         print(f"       OWP: {team['owp']:.1f}% | OOWP: {team['oowp']:.1f}%")
                     
-                    print(f"\n📊 PLACEHOLDER DATA ANALYSIS:")
-                    print(f"   ⚠️  All teams have default NPI rating of 50.00")
-                    print(f"   ⚠️  All teams have default OWP and OOWP of 50.0%")
-                    print(f"   ⚠️  No actual games were processed")
-                    print(f"   💡 This is normal for seasons with only scheduled games")
+                    print(f"\n[CHART] PLACEHOLDER DATA ANALYSIS:")
+                    print(f"   [WARNING] All teams have default NPI rating of 50.00")
+                    print(f"   [WARNING] All teams have default OWP and OOWP of 50.0%")
+                    print(f"   [WARNING] No actual games were processed")
+                    print(f"   [INFO] This is normal for seasons with only scheduled games")
                     
-                    print(f"\n🎯 Placeholder NPI calculation complete!")
-                    print(f"📁 Results saved to: {output_file}")
-                    print(f"💡 Run again when games are completed for actual NPI calculations")
+                    print(f"\n[TARGET] Placeholder NPI calculation complete!")
+                    print(f"[FOLDER] Results saved to: {output_file}")
+                    print(f"[INFO] Run again when games are completed for actual NPI calculations")
                     
                     return final_teams
                     
                 else:
-                    print("❌ No filtered games file found to extract team list.")
-                    print("❌ Exiting without NPI calculations.")
+                    print("[ERROR] No filtered games file found to extract team list.")
+                    print("[ERROR] Exiting without NPI calculations.")
                     return
             except Exception as e:
-                print(f"❌ Error loading team list: {e}")
-                print("❌ Exiting without NPI calculations.")
+                print(f"[ERROR] Error loading team list: {e}")
+                print("[ERROR] Exiting without NPI calculations.")
                 return
         
-        print(f"📊 Loaded {len(games_df)} NPI games")
+        print(f"[CHART] Loaded {len(games_df)} NPI games")
         
         # Check if we have any completed games (not scheduled)
         completed_games = games_df[games_df['game_note'] != 'Sch']
         scheduled_games = games_df[games_df['game_note'] == 'Sch']
         
-        print(f"📅 Found {len(completed_games)} completed games and {len(scheduled_games)} scheduled games")
+        print(f"[CALENDAR] Found {len(completed_games)} completed games and {len(scheduled_games)} scheduled games")
         
         if len(completed_games) == 0:
-            print("⚠️  Warning: All games are scheduled (Sch). NPI calculations will be based on scheduled games only.")
-            print("💡 This is normal for future seasons that haven't started yet.")
+            print("[WARNING] Warning: All games are scheduled (Sch). NPI calculations will be based on scheduled games only.")
+            print("[INFO] This is normal for future seasons that haven't started yet.")
         
         # Get all unique teams
         all_teams = set()
@@ -823,7 +962,7 @@ def main(use_season_results=False):
             all_teams.add(game['away_team'])
         
         valid_teams = all_teams
-        print(f"🏆 Found {len(valid_teams)} teams")
+        print(f"[TROPHY] Found {len(valid_teams)} teams")
         
         start_total_time = time.time()
         
@@ -834,10 +973,10 @@ def main(use_season_results=False):
         total_games = 0
         
         # Step 2: Calculate team NPI ratings through iterations
-        print("\n2️⃣ Calculating NPI ratings...")
-        print("   🔍 First 3 iterations: Using OWP values, NO quality bonus")
-        print("   🔍 Iterations 4+: Using NPI values, WITH quality bonus")
-        print("   🎯 Convergence threshold: 0.01 NPI points")
+        print("\n2. Calculating NPI ratings...")
+        print("   [SEARCH] First 3 iterations: Using OWP values, NO quality bonus")
+        print("   [SEARCH] Iterations 4+: Using NPI values, WITH quality bonus")
+        print("   [TARGET] Convergence threshold: 0.01 NPI points")
         
         converged = False
         final_iteration = NUM_ITERATIONS
@@ -854,7 +993,7 @@ def main(use_season_results=False):
             if i > 0:
                 converged, max_change, avg_change = check_convergence(opponent_npis, teams)
                 if converged:
-                    print(f"   ✅ CONVERGED after {iteration_number} iterations!")
+                    print(f"   [CHECK] CONVERGED after {iteration_number} iterations!")
                     print(f"      Max change: {max_change:.4f} | Avg change: {avg_change:.4f}")
                     final_iteration = iteration_number
                     final_teams = teams
@@ -862,7 +1001,7 @@ def main(use_season_results=False):
             
             if iteration_number == NUM_ITERATIONS:
                 final_teams = teams
-                print(f"   ⚠️  Reached maximum iterations ({NUM_ITERATIONS}) without convergence")
+                print(f"   [WARNING] Reached maximum iterations ({NUM_ITERATIONS}) without convergence")
             
             # Calculate total games in final iteration
             for team_id, team_data in teams.items():
@@ -879,37 +1018,43 @@ def main(use_season_results=False):
             )
         
         # Step 3: Calculate OWP and OOWP
-        print("\n3️⃣ Calculating OWP and OOWP...")
+        print("\n3. Calculating OWP and OOWP...")
         team_owp = calculate_owp(games_df)
         team_oowp = calculate_opponents_owp(games_df)
-        print(f"✅ Calculated OWP and OOWP for {len(team_owp)} teams")
+        print(f"[CHECK] Calculated OWP and OOWP for {len(team_owp)} teams")
         
         # Step 4: Create summary
-        print("\n4️⃣ Creating NPI summary...")
+        print("\n4. Creating NPI summary...")
         summary_df = create_npi_summary(games_df, opponent_npis)
-        print(f"✅ Created summary for {len(summary_df)} teams")
+        print(f"[CHECK] Created summary for {len(summary_df)} teams")
         
         # Step 5: Save results
-        print("\n5️⃣ Saving NPI results...")
-        output_file = save_npi_results(summary_df, output_dir, year)
+        print("\n5. Saving NPI results...")
+        if args.simulation:
+            output_file = save_simulation_npi_results(summary_df, output_dir, year)
+        else:
+            output_file = save_npi_results(summary_df, output_dir, year)
         
         total_time = time.time() - start_total_time
         
         # Summary
         print("\n" + "=" * 50)
-        print("📋 NPI CALCULATION SUMMARY")
+        if args.simulation:
+            print("[CLIPBOARD] SIMULATION NPI CALCULATION SUMMARY")
+        else:
+            print("[CLIPBOARD] NPI CALCULATION SUMMARY")
         print("=" * 50)
-        print(f"📊 Total games processed: {len(games_df)}")
-        print(f"🏆 Total teams: {len(summary_df)}")
-        print(f"💾 Output file: {output_file}")
-        print(f"⏱️  Total processing time: {total_time:.3f} seconds")
-        print(f"⏱️  Average time per iteration: {total_time/final_iteration:.3f} seconds")
-        print(f"🔄 Total iterations completed: {final_iteration}")
-        print(f"🎯 Convergence status: {'✅ Converged' if converged else '⚠️  Max iterations reached'}")
-        print(f"🎮 Total games processed in final iteration: {total_games}")
+        print(f"[CHART] Total games processed: {len(games_df)}")
+        print(f"[TROPHY] Total teams: {len(summary_df)}")
+        print(f"[SAVE] Output file: {output_file}")
+        print(f"[CLOCK] Total processing time: {total_time:.3f} seconds")
+        print(f"[CLOCK] Average time per iteration: {total_time/final_iteration:.3f} seconds")
+        print(f"[REFRESH] Total iterations completed: {final_iteration}")
+        print(f"[TARGET] Convergence status: {'[CHECK] Converged' if converged else '[WARNING] Max iterations reached'}")
+        print(f"[GAME] Total games processed in final iteration: {total_games}")
         
         # Show top 25 teams
-        print(f"\n🏅 Top 25 Teams by NPI Rating:")
+        print(f"\n[MEDAL] Top 25 Teams by NPI Rating:")
         for i, (_, team) in enumerate(summary_df.head(100).iterrows()):
             print(f"   {i+1:2d}. {team['team']:<35} NPI: {team['npi_rating']:.4f}")
             print(f"       Record: {team['wins']:2d}W-{team['losses']:2d}L-{team['ties']:2d}T | Qualifying: {team['qualifying_wins']:2d}W-{team['qualifying_losses']:2d}L-{team['qualifying_ties']:2d}T")
@@ -917,9 +1062,9 @@ def main(use_season_results=False):
             # Show partial wins information
             partial_wins = team.get('partial_wins', 0)
             if partial_wins > 0:
-                print(f"       🟡 PARTIAL WINS: {partial_wins} (using 0.5 win credits)")
+                print(f"       [YELLOW] PARTIAL WINS: {partial_wins} (using 0.5 win credits)")
             else:
-                print(f"       ✅ FULL WINS ONLY (no partial wins needed)")
+                print(f"       [CHECK] FULL WINS ONLY (no partial wins needed)")
                 
             print(f"       OWP: {team['owp']:.1f}% | OOWP: {team['oowp']:.1f}%")
         
@@ -927,17 +1072,32 @@ def main(use_season_results=False):
         teams_with_partial_wins = summary_df[summary_df['partial_wins'] > 0]
         teams_full_wins_only = summary_df[summary_df['partial_wins'] == 0]
         
-        print(f"\n📊 PARTIAL WINS ANALYSIS:")
-        print(f"   🟡 Teams using partial wins: {len(teams_with_partial_wins)}")
-        print(f"   ✅ Teams using full wins only: {len(teams_full_wins_only)}")
+        print(f"\n[CHART] PARTIAL WINS ANALYSIS:")
+        print(f"   [YELLOW] Teams using partial wins: {len(teams_with_partial_wins)}")
+        print(f"   [CHECK] Teams using full wins only: {len(teams_full_wins_only)}")
         
         if len(teams_with_partial_wins) > 0:
-            print(f"\n🟡 Teams using partial wins (top 5):")
+            print(f"\n[YELLOW] Teams using partial wins (top 5):")
             for i, (_, team) in enumerate(teams_with_partial_wins.head(5).iterrows()):
                 print(f"   {i+1:2d}. {team['team']:<35} Partial wins: {team['partial_wins']}")
         
-        print(f"\n🎯 NPI calculation complete!")
-        print(f"📁 Results saved to: {output_file}")
+        print(f"\n[TARGET] {'Simulation NPI' if args.simulation else 'NPI'} calculation complete!")
+        print(f"[FOLDER] Results saved to: {output_file}")
+        
+        # FINAL SAFETY CHECK: Verify original file wasn't modified in simulation mode
+        if args.simulation:
+            original_npi_file = os.path.join(data_dir, f"npi_ratings_{year}.csv")
+            if os.path.exists(original_npi_file):
+                final_original_size = os.path.getsize(original_npi_file)
+                if final_original_size == original_size:
+                    print(f"[SAFETY] ✅ Original NPI file size unchanged: {final_original_size} bytes")
+                    print(f"[SAFETY] ✅ Original data completely protected")
+                else:
+                    print(f"[SAFETY] ❌ WARNING: Original NPI file size changed from {original_size} to {final_original_size} bytes!")
+                    print(f"[SAFETY] ❌ This should NEVER happen in simulation mode!")
+                    raise RuntimeError("SAFETY VIOLATION: Original NPI file was modified in simulation mode!")
+            else:
+                print(f"[SAFETY] ⚠️ Original NPI file not found (may have been deleted)")
         
         return final_teams
         
