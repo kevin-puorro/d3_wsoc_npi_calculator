@@ -729,7 +729,7 @@ def main():
                                 st.error(f"❌ Failed to reset simulation data: {reset_message}")
                     
                     with col3:
-                        if st.button("💾 Save Sim Data", type="secondary"):
+                        if st.button("💾 Save Data", type="secondary"):
                             # Apply changes to simulation data without running NPI calculation
                             changes_made = [game for game in sim_data if game['changed']]
                             
@@ -758,7 +758,7 @@ def main():
                                 """, unsafe_allow_html=True)
                     
                     with col4:
-                        if st.button("📊 Run Simulation", type="secondary"):
+                        if st.button("📊 Run NPI Calculations", type="secondary"):
                             # Run NPI calculator directly
                             
                             with st.spinner("Calculating NPI ratings..."):
