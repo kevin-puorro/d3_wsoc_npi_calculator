@@ -36,8 +36,16 @@ jobs:
         echo "Season start: $SEASON_START"
         echo "Season end: $SEASON_END"
         
-        # Convert dates to comparable format (MM-DD)
-        if [[ "$CURRENT_DATE" >= "$SEASON_START" && "$CURRENT_DATE" <= "$SEASON_END" ]]; then
+        # Convert dates to comparable format by removing dashes for numeric comparison
+        CURRENT_NUM=$(echo $CURRENT_DATE | tr -d '-')
+        START_NUM=$(echo $SEASON_START | tr -d '-')
+        END_NUM=$(echo $SEASON_END | tr -d '-')
+        
+        echo "Current date (numeric): $CURRENT_NUM"
+        echo "Start date (numeric): $START_NUM"
+        echo "End date (numeric): $END_NUM"
+        
+        if [ $CURRENT_NUM -ge $START_NUM ] && [ $CURRENT_NUM -le $END_NUM ]; then
           echo "in_season=true" >> $GITHUB_OUTPUT
           echo "✅ Current date $CURRENT_DATE is within season ($SEASON_START to $SEASON_END)"
         else
