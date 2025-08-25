@@ -589,10 +589,16 @@ def main():
                 st.error("No teams found in the data. Please ensure the games file exists.")
                 st.stop()
             
+            # Try to find University of Wisconsin-La Crosse as default, otherwise use first team
+            default_index = 0
+            target_team = "University of Wisconsin-La Crosse"
+            if target_team in all_teams:
+                default_index = all_teams.index(target_team)
+            
             selected_team = st.selectbox(
                 "Select a team to view their schedule:",
                 options=all_teams,
-                index=0
+                index=default_index
             )
         
         with col2:
@@ -681,10 +687,17 @@ def main():
             # Get list of teams that have NPI ratings
             if npi_df is not None and not npi_df.empty:
                 sim_teams = sorted(npi_df['team'].tolist())
+                
+                # Try to find University of Wisconsin-La Crosse as default, otherwise use first team
+                default_sim_index = 0
+                target_team = "University of Wisconsin-La Crosse"
+                if target_team in sim_teams:
+                    default_sim_index = sim_teams.index(target_team)
+                
                 selected_sim_team = st.selectbox(
                     f"Choose a team ({selected_year} season):",
                     options=sim_teams,
-                    index=0,
+                    index=default_sim_index,
                     key="sim_team_select"
                 )
             else:
