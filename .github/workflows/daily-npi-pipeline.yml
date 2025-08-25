@@ -79,7 +79,7 @@ jobs:
         
     - name: Upload data artifacts
       if: steps.check-season.outputs.in_season == 'true'
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: npi-data-2025-$(date +'%Y-%d')
         path: data/2025/
