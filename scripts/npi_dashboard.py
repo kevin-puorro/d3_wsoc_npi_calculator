@@ -416,14 +416,16 @@ def main():
         """, unsafe_allow_html=True)
     
     # Create tabs
-    tab1, tab2, tab3 = st.tabs(["🏆 NPI Ratings", "📅 Team Schedules", "🎯 NPI Simulator"])
+    tab1, tab2, tab3 = st.tabs(["🏆 NPI Rankings", "📅 Team Schedules", "🎯 NPI Simulator"])
     
     # Tab 1: NPI Ratings
     with tab1:
-        st.subheader("NPI Ratings")
+        st.subheader("NPI Rankings")
         
         # Show NPI data from the CSV file (regardless of content)
         if npi_df is not None and not npi_df.empty:
+            st.markdown("*Note: These NPI ratings have a margin of error of ±0.3*")
+            
             # Sort by NPI rating (highest first)
             df_sorted = npi_df.sort_values('npi_rating', ascending=False).reset_index(drop=True)
             
@@ -436,6 +438,15 @@ def main():
             
             # Round NPI rating to 2 decimal places
             df_display['npi_rating'] = df_display['npi_rating'].round(2)
+            
+            # Rename columns for cleaner display
+            df_display = df_display.rename(columns={
+                'team': 'Team',
+                'npi_rating': 'NPI Rating',
+                'wins': 'Win',
+                'losses': 'Loss', 
+                'ties': 'Tie'
+            })
             
             # Display all teams
             st.dataframe(df_display, use_container_width=True, hide_index=True)
@@ -548,6 +559,8 @@ def main():
     with tab3:
         st.subheader(f"NPI Simulator")
         st.markdown(f"Simulate different game outcomes for the **{selected_year} season** to see how they affect NPI rankings.")
+        
+
         
         # Check if we have the required data
         if games_df is None:
@@ -791,7 +804,7 @@ def main():
                 
                 # Step 5: View Current Simulation NPI Ratings
                 st.write("---")
-                st.write("**Step 5: View Simulated NPI Ratings**")
+                st.write("**Step 5: View Simulated NPI Rankings**")
                 
                 # Check if simulation NPI data exists
                 sim_npi_file = data_dir / f"npi_ratings_{selected_year}_simulation.csv"
@@ -817,8 +830,23 @@ def main():
                             # Round NPI rating to 2 decimal places
                             df_display['npi_rating'] = df_display['npi_rating'].round(2)
                             
+                            # Rename columns for cleaner display
+                            df_display = df_display.rename(columns={
+                                'team': 'Team',
+                                'npi_rating': 'NPI Rating',
+                                'wins': 'Win',
+                                'losses': 'Loss', 
+                                'ties': 'Tie'
+                            })
+                            
+                            # Add margin of error note
+                            st.markdown("*Note: These simulated NPI ratings have a margin of error of ±0.3*")
+                            
                             # Display simulation NPI data
                             st.dataframe(df_display, use_container_width=True, hide_index=True)
+                            
+                            # Add important note about NPI rating dependencies
+                            st.error("**Important Note:** NPI ratings are largely dependent on other teams and their results. Simulated results may not accurately reflect final rankings.")
                             
                             # Show comparison with original data if available (moved below the table)
                             if npi_df is not None and not npi_df.empty:
