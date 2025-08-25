@@ -241,7 +241,7 @@ def apply_simulation_changes(year, selected_team, sim_data):
                 print(f"SAFETY CHECK: WARNING! Original NPI file size changed from {original_size} to {new_original_size} bytes!")
                 return False, f"SAFETY VIOLATION: Original NPI file was modified! This should never happen."
         
-        return True, f"Applied {changes_applied} changes to simulation data"
+        return True, f"Applied {changes_applied} changes to data"
         
     except Exception as e:
         return False, f"Error applying simulation changes: {e}"
@@ -698,7 +698,7 @@ def main():
                     
                     # Simulation controls
                     st.write("---")
-                    st.write("**Step 4: Save and Run Simulation**")
+                    st.write("**Step 4: Save Data and Run NPI Calculations**")
                     
                     # Helpful reminder for users
                     st.markdown("""
@@ -719,14 +719,14 @@ def main():
                                 del st.session_state[session_key]
                             
                             # Reset simulation data by copying filtered data back
-                            with st.spinner("Resetting simulation data..."):
+                            with st.spinner("Resetting data..."):
                                 reset_success, reset_message = reset_simulation_data(selected_year)
                             
                             if reset_success:
                                 st.success(f"✅ {reset_message}")
                                 st.rerun()
                             else:
-                                st.error(f"❌ Failed to reset simulation data: {reset_message}")
+                                st.error(f"❌ Failed to reset data: {reset_message}")
                     
                     with col3:
                         if st.button("💾 Save Data", type="secondary"):
@@ -735,7 +735,7 @@ def main():
                             
                             if changes_made:
                                 
-                                with st.spinner("Saving simulation data..."):
+                                with st.spinner("Saving data..."):
                                     apply_success, apply_message = apply_simulation_changes(selected_year, selected_sim_team, sim_data)
                                 
                                 if apply_success:
@@ -749,7 +749,7 @@ def main():
                                         else:
                                             st.write(f"• **{change['opponent']}** ({change['date']}): {change['original_result']} → {change['simulated_result']}")
                                 else:
-                                    st.error(f"❌ Failed to save simulation data: {apply_message}")
+                                    st.error(f"❌ Failed to save data: {apply_message}")
                             else:
                                 st.markdown("""
                                 <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
