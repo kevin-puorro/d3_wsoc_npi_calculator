@@ -1,0 +1,92 @@
+name: Daily NPI Pipeline - 2025 Season
+
+on:
+  schedule:
+    # Run daily at 6:00 AM EST (11:00 AM UTC)
+    - cron: '0 11 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  run-npi-pipeline:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install requests  # Add requests if not in requirements.txt
+        
+    - name: Check if within season dates
+      id: check-season
+      run: |
+        CURRENT_DATE=$(date +%m-%d)
+        SEASON_START="08-15"
+        SEASON_END="12-15"
+        
+        if [[ "$CURRENT_DATE" >= "$SEASON_START" && "$CURRENT_DATE" <= "$SEASON_END" ]]; then
+          echo "in_season=true" >> $GITHUB_OUTPUT
+          echo "✅ Current date $CURRENT_DATE is within season ($SEASON_START to $SEASON_END)"
+        else
+          echo "in_season=false" >> $GITHUB_OUTPUT
+          echo "⏸️ Current date $CURRENT_DATE is outside season ($SEASON_START to $SEASON_END)"
+        fi
+        
+    - name: Create data directories
+      if: steps.check-season.outputs.in_season == 'true'
+      run: |
+        mkdir -p data/2025
+        
+    - name: Run Massey Games Scraper for 2025
+      if: steps.check-season.outputs.in_season == 'true'
+      run: |
+        cd scripts
+        python massey_games_scraper.py --year 2025
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+        
+    - name: Run Filter Massey Games for 2025
+      if: steps.check-season.outputs.in_season == 'true'
+      run: |
+        cd scripts
+        python filter_massey_games.py --year 2025
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+        
+    - name: Run NPI Calculator for 2025
+      if: steps.check-season.outputs.in_season == 'true'
+      run: |
+        cd scripts
+        python npi_calculator.py --year 2025
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+        
+    - name: Commit and push updated data
+      if: steps.check-season.outputs.in_season == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/2025/
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update NPI data for 2025 season - $(date +'%Y-%m-%d')" && git push)
+        
+    - name: Upload data artifacts
+      if: steps.check-season.outputs.in_season == 'true'
+      uses: actions/upload-artifact@v3
+      with:
+        name: npi-data-2025-$(date +'%Y-%d')
+        path: data/2025/
+        retention-days: 30
+        
+    - name: Skip pipeline (outside season)
+      if: steps.check-season.outputs.in_season == 'false'
+      run: |
+        echo "⏸️ Pipeline skipped - outside soccer season (August 15 - December 15)"
+        echo "Next run will be on August 15, 2025"
