@@ -104,7 +104,7 @@ def run_npi_simulation(year):
         # Set up arguments for simulation mode by monkey-patching sys.argv
         import sys
         original_argv = sys.argv.copy()
-        sys.argv = ['npi_calculator.py', '--year', str(year), '--season-only', '--simulation']
+        sys.argv = ['npi_calculator.py', '--year', str(year), '--simulation']
         
         try:
             # Capture stdout to get the output
