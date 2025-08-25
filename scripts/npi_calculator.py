@@ -18,7 +18,7 @@ from typing import Dict, List, Tuple
 from collections import defaultdict
 
 
-def load_simulation_games(data_dir: str, year: int, start_date: str = "2024-08-30", end_date: str = "2024-11-10") -> pd.DataFrame:
+def load_simulation_games(data_dir: str, year: int, start_date: str = "2024-08-30", end_date: str = "2024-11-10", user_id: str = None) -> pd.DataFrame:
     """
     Load the simulation games data for NPI calculation, filtered by date range and excluding scheduled games
     
@@ -27,13 +27,19 @@ def load_simulation_games(data_dir: str, year: int, start_date: str = "2024-08-3
         year: Year to load data for
         start_date: Start date in YYYY-MM-DD format (inclusive)
         end_date: End date in YYYY-MM-DD format (inclusive)
+        user_id: User ID for user-specific simulation files
         
     Returns:
         DataFrame with simulation games data (excluding scheduled games)
     """
     try:
-        # Look for the simulation games file
-        sim_file = os.path.join(data_dir, f"massey_games_{year}_simulation.csv")
+        # Look for the user-specific simulation games file
+        if user_id:
+            sim_file = os.path.join(data_dir, f"massey_games_{year}_simulation_{user_id}.csv")
+            print(f"Looking for user-specific simulation file: {sim_file}")
+        else:
+            sim_file = os.path.join(data_dir, f"massey_games_{year}_simulation.csv")
+            print(f"Looking for global simulation file: {sim_file}")
         
         if not os.path.exists(sim_file):
             raise FileNotFoundError(f"Simulation games file not found: {sim_file}")
@@ -657,7 +663,7 @@ def create_npi_summary(games_df: pd.DataFrame, team_npi_ratings: Dict[str, float
     return summary_df
 
 
-def save_simulation_npi_results(summary_df: pd.DataFrame, output_dir: str, year: int) -> str:
+def save_simulation_npi_results(summary_df: pd.DataFrame, output_dir: str, year: int, user_id: str = None) -> str:
     """
     Save simulation NPI results to CSV
     
@@ -665,6 +671,7 @@ def save_simulation_npi_results(summary_df: pd.DataFrame, output_dir: str, year:
         summary_df: DataFrame with NPI summary
         output_dir: Directory to save the file
         year: Year for the filename
+        user_id: User ID for user-specific simulation files
         
     Returns:
         Path to saved file
@@ -683,7 +690,13 @@ def save_simulation_npi_results(summary_df: pd.DataFrame, output_dir: str, year:
     os.makedirs(output_dir, exist_ok=True)
     
     # Generate filename - MUST be different from original
-    filename = f"npi_ratings_{year}_simulation.csv"
+    if user_id:
+        filename = f"npi_ratings_{year}_simulation_{user_id}.csv"
+        print(f"[USER] Creating user-specific simulation file: {filename}")
+    else:
+        filename = f"npi_ratings_{year}_simulation.csv"
+        print(f"[GLOBAL] Creating global simulation file: {filename}")
+    
     output_path = os.path.join(output_dir, filename)
     
     # Double-check we're not overwriting the original file
@@ -791,6 +804,8 @@ def main(use_season_results=False):
                        help='End date for filtering games (YYYY-MM-DD format)')
     parser.add_argument('--simulation', action='store_true',
                        help='Use simulation data instead of NPI games data')
+    parser.add_argument('--user-id', type=str, default=None,
+                       help='User ID for user-specific simulation files')
     
     args = parser.parse_args()
     
@@ -827,7 +842,11 @@ def main(use_season_results=False):
         if os.path.exists(original_npi_file):
             original_size = os.path.getsize(original_npi_file)
             print(f"[SAFETY] Original NPI file size: {original_size} bytes")
-            print(f"[SAFETY] Simulation mode: Will create npi_ratings_{year}_simulation.csv")
+            if args.user_id:
+                print(f"[SAFETY] Simulation mode: Will create user-specific npi_ratings_{year}_simulation_{args.user_id}.csv")
+                print(f"[USER] User ID: {args.user_id}")
+            else:
+                print(f"[SAFETY] Simulation mode: Will create global npi_ratings_{year}_simulation.csv")
             print(f"[SAFETY] Original file will NOT be modified")
         else:
             print(f"[SAFETY] No original NPI file found: {original_npi_file}")
@@ -846,7 +865,7 @@ def main(use_season_results=False):
         # Step 1: Load games data (NPI or simulation)
         if args.simulation:
             print("1. Loading simulation games data...")
-            games_df = load_simulation_games(data_dir, year, start_date, end_date)
+            games_df = load_simulation_games(data_dir, year, start_date, end_date, args.user_id)
         else:
             print("1. Loading NPI games data...")
             games_df = load_filtered_games(data_dir, year, start_date, end_date)
@@ -897,7 +916,7 @@ def main(use_season_results=False):
                     # Save results
                     print("\n5. Saving placeholder NPI results...")
                     if args.simulation:
-                        output_file = save_simulation_npi_results(summary_df, output_dir, year)
+                        output_file = save_simulation_npi_results(summary_df, output_dir, year, args.user_id)
                     else:
                         output_file = save_npi_results(summary_df, output_dir, year)
                     
@@ -1031,7 +1050,7 @@ def main(use_season_results=False):
         # Step 5: Save results
         print("\n5. Saving NPI results...")
         if args.simulation:
-            output_file = save_simulation_npi_results(summary_df, output_dir, year)
+            output_file = save_simulation_npi_results(summary_df, output_dir, year, args.user_id)
         else:
             output_file = save_npi_results(summary_df, output_dir, year)
         
@@ -1092,6 +1111,8 @@ def main(use_season_results=False):
                 if final_original_size == original_size:
                     print(f"[SAFETY] ✅ Original NPI file size unchanged: {final_original_size} bytes")
                     print(f"[SAFETY] ✅ Original data completely protected")
+                    if args.user_id:
+                        print(f"[USER] ✅ User-specific simulation data created successfully")
                 else:
                     print(f"[SAFETY] ❌ WARNING: Original NPI file size changed from {original_size} to {final_original_size} bytes!")
                     print(f"[SAFETY] ❌ This should NEVER happen in simulation mode!")
@@ -1113,4 +1134,5 @@ if __name__ == "__main__":
     # python npi_calculator.py --year 2024       # 2024 season, full calculation
     # python npi_calculator.py --season-only     # 2025 season, season results only
     # python npi_calculator.py -y 2024 -s        # 2024 season, season results only
+    # python npi_calculator.py --simulation --user-id user123  # User-specific simulation
     main()

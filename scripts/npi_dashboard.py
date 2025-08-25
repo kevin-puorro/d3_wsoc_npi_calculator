@@ -7,6 +7,8 @@ Simple dashboard to view NPI ratings for all teams
 import streamlit as st
 import pandas as pd
 import os
+import uuid
+import time
 from pathlib import Path
 
 # Page configuration
@@ -90,8 +92,8 @@ def get_available_years():
         return [2024]  # Fallback to 2024
 
 
-def run_npi_simulation(year):
-    """Run NPI calculator for simulation"""
+def run_npi_simulation(year, user_id):
+    """Run NPI calculator for simulation with user-specific files"""
     try:
         # Import the npi_calculator module directly instead of using subprocess
         import sys
@@ -104,7 +106,7 @@ def run_npi_simulation(year):
         # Set up arguments for simulation mode by monkey-patching sys.argv
         import sys
         original_argv = sys.argv.copy()
-        sys.argv = ['npi_calculator.py', '--year', str(year), '--simulation']
+        sys.argv = ['npi_calculator.py', '--year', str(year), '--simulation', '--user-id', str(user_id)]
         
         try:
             # Capture stdout to get the output
@@ -126,8 +128,8 @@ def run_npi_simulation(year):
         return False, None, str(e)
 
 
-def reset_simulation_data(year):
-    """Reset simulation data by copying filtered data back to simulation file"""
+def reset_simulation_data(year, user_id):
+    """Reset simulation data by copying filtered data back to user-specific simulation file"""
     try:
         # Get script directory and project root
         script_dir = Path(__file__).resolve().parent
@@ -137,11 +139,11 @@ def reset_simulation_data(year):
         # Source file (filtered data)
         filtered_file = data_dir / f"massey_games_{year}_filtered.csv"
         
-        # Destination file (simulation data)
-        sim_file = data_dir / f"massey_games_{year}_simulation.csv"
+        # Destination file (user-specific simulation data)
+        sim_file = data_dir / f"massey_games_{year}_simulation_{user_id}.csv"
         
-        # Simulation NPI results file (to be cleared)
-        sim_npi_file = data_dir / f"npi_ratings_{year}_simulation.csv"
+        # User-specific simulation NPI results file (to be cleared)
+        sim_npi_file = data_dir / f"npi_ratings_{year}_simulation_{user_id}.csv"
         
         if not filtered_file.exists():
             return False, f"Filtered data file not found: {filtered_file}"
@@ -149,30 +151,30 @@ def reset_simulation_data(year):
         # Read the filtered data
         filtered_df = pd.read_csv(filtered_file)
         
-        # Copy to simulation file
+        # Copy to user-specific simulation file
         filtered_df.to_csv(sim_file, index=False)
         
-        # Clear any existing simulation NPI results
+        # Clear any existing user-specific simulation NPI results
         if sim_npi_file.exists():
             sim_npi_file.unlink()  # Delete the file
-            print(f"Cleared existing simulation NPI results: {sim_npi_file}")
+            print(f"Cleared existing simulation NPI results for user {user_id}: {sim_npi_file}")
         
-        return True, f"Reset simulation data: copied {len(filtered_df)} games from filtered data and cleared NPI results"
+        return True, f"Reset simulation data for user {user_id}: copied {len(filtered_df)} games from filtered data and cleared NPI results"
         
     except Exception as e:
         return False, f"Error resetting simulation data: {e}"
 
 
-def apply_simulation_changes(year, selected_team, sim_data):
-    """Apply simulation changes to the simulation data file"""
+def apply_simulation_changes(year, selected_team, sim_data, user_id):
+    """Apply simulation changes to the user-specific simulation data file"""
     try:
         # Get script directory and project root
         script_dir = Path(__file__).resolve().parent
         project_root = script_dir.parent
         data_dir = project_root / "data" / str(year)
         
-        # Load the simulation data file
-        sim_file = data_dir / f"massey_games_{year}_simulation.csv"
+        # Load the user-specific simulation data file
+        sim_file = data_dir / f"massey_games_{year}_simulation_{user_id}.csv"
         
         # Safety check - verify we're working with simulation file, not original
         original_npi_file = data_dir / f"npi_ratings_{year}.csv"
@@ -181,7 +183,17 @@ def apply_simulation_changes(year, selected_team, sim_data):
             print(f"SAFETY CHECK: Original NPI file size: {original_size} bytes")
         
         if not sim_file.exists():
-            return False, f"Simulation file not found: {sim_file}"
+            # Create user-specific simulation file by copying from filtered data
+            print(f"User-specific simulation file not found, creating from filtered data...")
+            filtered_file = data_dir / f"massey_games_{year}_filtered.csv"
+            
+            if not filtered_file.exists():
+                return False, f"Filtered data file not found: {filtered_file}"
+            
+            # Copy filtered data to user-specific simulation file
+            import shutil
+            shutil.copy2(filtered_file, sim_file)
+            print(f"Created user-specific simulation file: {sim_file}")
         
         print(f"SAFETY CHECK: Working with simulation file: {sim_file}")
         print(f"SAFETY CHECK: Original NPI file: {original_npi_file}")
@@ -193,33 +205,42 @@ def apply_simulation_changes(year, selected_team, sim_data):
         changes_applied = 0
         for change in sim_data:
             if change['changed']:
+                print(f"Processing change: {change}")  # Debug info
+                
                 # Find the game in simulation data
+                # Need to match based on the actual CSV structure, not the processed view
                 if change['home_away'] == 'HOME':
-                    # Team is home, find away team as opponent
-                    mask = (sim_df['home_team'] == selected_team) & (sim_df['away_team'] == change['opponent'])
-                else:
-                    # Team is away, find home team as opponent
+                    # In the CSV, if team is "HOME" in the UI, they are actually listed as away_team
+                    # This is due to the home/away logic fix we implemented earlier
                     mask = (sim_df['away_team'] == selected_team) & (sim_df['home_team'] == change['opponent'])
+                else:
+                    # In the CSV, if team is "AWAY" in the UI, they are actually listed as home_team
+                    mask = (sim_df['home_team'] == selected_team) & (sim_df['away_team'] == change['opponent'])
                 
                 if mask.any():
                     game_idx = mask.idxmax()
+                    print(f"Found game at index {game_idx}: {sim_df.loc[game_idx]}")  # Debug info
                     
                     # Update scores based on simulated result
                     if change['simulated_result'] == 'W':
                         if change['home_away'] == 'HOME':
-                            sim_df.loc[game_idx, 'home_score'] = 2
-                            sim_df.loc[game_idx, 'away_score'] = 1
+                            # Team is HOME in UI, so they should win (higher score)
+                            sim_df.loc[game_idx, 'away_score'] = 2  # away_team in CSV
+                            sim_df.loc[game_idx, 'home_score'] = 1  # home_team in CSV
                         else:
-                            sim_df.loc[game_idx, 'away_score'] = 2
-                            sim_df.loc[game_idx, 'home_score'] = 1
+                            # Team is AWAY in UI, so they should win (higher score)
+                            sim_df.loc[game_idx, 'home_score'] = 2  # home_team in CSV
+                            sim_df.loc[game_idx, 'away_score'] = 1  # away_team in CSV
                     elif change['simulated_result'] == 'L':
                         if change['home_away'] == 'HOME':
-                            sim_df.loc[game_idx, 'home_score'] = 1
-                            sim_df.loc[game_idx, 'away_score'] = 2
+                            # Team is HOME in UI, so they should lose (lower score)
+                            sim_df.loc[game_idx, 'away_score'] = 1  # away_team in CSV
+                            sim_df.loc[game_idx, 'home_score'] = 2  # home_team in CSV
                         else:
-                            sim_df.loc[game_idx, 'away_score'] = 1
-                            sim_df.loc[game_idx, 'home_score'] = 2
-                    else:  # Tie
+                            # Team is AWAY in UI, so they should lose (lower score)
+                            sim_df.loc[game_idx, 'home_score'] = 1  # home_team in CSV
+                            sim_df.loc[game_idx, 'away_score'] = 2  # away_team in CSV
+                    else: # Tie
                         sim_df.loc[game_idx, 'home_score'] = 1
                         sim_df.loc[game_idx, 'away_score'] = 1
                     
@@ -228,6 +249,12 @@ def apply_simulation_changes(year, selected_team, sim_data):
                         sim_df.loc[game_idx, 'game_note'] = ''
                     
                     changes_applied += 1
+                    print(f"Applied change {changes_applied}: {change['opponent']} -> {change['simulated_result']}")
+                else:
+                    print(f"WARNING: Could not find game for {selected_team} vs {change['opponent']} ({change['home_away']})")
+                    print(f"Available games for {selected_team}:")
+                    team_games = sim_df[(sim_df['home_team'] == selected_team) | (sim_df['away_team'] == selected_team)]
+                    print(team_games[['home_team', 'away_team', 'home_score', 'away_score', 'game_note']].to_string())
         
         # Save modified simulation data
         sim_df.to_csv(sim_file, index=False)
@@ -245,6 +272,64 @@ def apply_simulation_changes(year, selected_team, sim_data):
         
     except Exception as e:
         return False, f"Error applying simulation changes: {e}"
+
+
+def cleanup_user_files(user_id: str):
+    """Clean up all files associated with a specific user"""
+    try:
+        script_dir = Path(__file__).resolve().parent
+        project_root = script_dir.parent
+        data_dir = project_root / "data"
+        
+        files_removed = 0
+        
+        # Clean up files for all years
+        for year_dir in data_dir.iterdir():
+            if year_dir.is_dir() and year_dir.name.isdigit():
+                year = year_dir.name
+                
+                # Remove user-specific simulation files
+                sim_games_file = year_dir / f"massey_games_{year}_simulation_{user_id}.csv"
+                sim_npi_file = year_dir / f"npi_ratings_{year}_simulation_{user_id}.csv"
+                
+                if sim_games_file.exists():
+                    sim_games_file.unlink()
+                    files_removed += 1
+                    print(f"Removed user simulation games file: {sim_games_file}")
+                
+                if sim_npi_file.exists():
+                    sim_npi_file.unlink()
+                    files_removed += 1
+                    print(f"Removed user simulation NPI file: {sim_npi_file}")
+        
+        return True, f"Cleaned up {files_removed} user files"
+        
+    except Exception as e:
+        return False, f"Error cleaning up user files: {e}"
+
+
+def cleanup_expired_sessions():
+    """Clean up files for expired sessions (older than 1 hour)"""
+    try:
+        current_time = time.time()
+        expired_users = []
+        
+        # Check for expired sessions (older than 1 hour)
+        for user_id, session_data in st.session_state.get('active_sessions', {}).items():
+            if current_time - session_data['last_activity'] > 3600:  # 1 hour = 3600 seconds
+                expired_users.append(user_id)
+        
+        # Clean up expired sessions
+        for user_id in expired_users:
+            cleanup_user_files(user_id)
+            del st.session_state['active_sessions'][user_id]
+            print(f"Cleaned up expired session for user: {user_id}")
+        
+        return len(expired_users)
+        
+    except Exception as e:
+        print(f"Error cleaning up expired sessions: {e}")
+        return 0
 
 
 def load_simulation_npi_data(year):
@@ -287,15 +372,15 @@ def get_team_schedule(team_name, games_df):
     schedule_data = []
     for _, game in team_games.iterrows():
         if game['home_team'] == team_name:
-            # Team is home
+            # Team is actually away (but listed as home in CSV)
             opponent = game['away_team']
-            home_away = "HOME"
+            home_away = "AWAY"
             team_score = game['home_score']
             opp_score = game['away_score']
         else:
-            # Team is away
+            # Team is actually home (but listed as away in CSV)
             opponent = game['home_team']
-            home_away = "AWAY"
+            home_away = "HOME"
             team_score = game['away_score']
             opp_score = game['home_score']
         
@@ -338,6 +423,27 @@ def get_team_schedule(team_name, games_df):
     return schedule_df
 
 def main():
+    # Initialize session tracking if not exists
+    if 'active_sessions' not in st.session_state:
+        st.session_state['active_sessions'] = {}
+    
+    # Generate a unique user ID for this session if not exists
+    if 'user_id' not in st.session_state:
+        st.session_state['user_id'] = str(uuid.uuid4())
+    
+    # Track user activity
+    current_time = time.time()
+    user_id = st.session_state['user_id']
+    st.session_state['active_sessions'][user_id] = {
+        'last_activity': current_time,
+        'created_at': current_time
+    }
+    
+    # Clean up expired sessions (older than 1 hour)
+    expired_count = cleanup_expired_sessions()
+    if expired_count > 0:
+        print(f"Cleaned up {expired_count} expired sessions")
+    
     # Custom CSS for title background
     st.markdown("""
     <style>
@@ -373,8 +479,6 @@ def main():
             index=0,
             help="Choose which season's data to display"
         )
-        
-        st.markdown("---")
         
         # Show available seasons info
         st.subheader("Available Seasons")
@@ -560,8 +664,6 @@ def main():
         st.subheader(f"NPI Simulator")
         st.markdown(f"Simulate different game outcomes for the **{selected_year} season** to see how they affect NPI rankings.")
         
-
-        
         # Check if we have the required data
         if games_df is None:
             st.warning("⚠️ NPI simulator requires games data. Please ensure the filtered games file exists.")
@@ -628,7 +730,7 @@ def main():
                     sim_data = []
                     
                     # Initialize session state for this team if not exists
-                    session_key = f"sim_data_{selected_year}_{selected_sim_team}"
+                    session_key = f"sim_data_{st.session_state['user_id']}_{selected_year}_{selected_sim_team}"
                     if session_key not in st.session_state:
                         st.session_state[session_key] = {}
                     
@@ -733,14 +835,14 @@ def main():
                             
                             # Reset simulation data by copying filtered data back
                             with st.spinner("Resetting data..."):
-                                reset_success, reset_message = reset_simulation_data(selected_year)
+                                reset_success, reset_message = reset_simulation_data(selected_year, st.session_state['user_id'])
                             
                             if reset_success:
                                 st.success(f"✅ {reset_message}")
                                 st.rerun()
                             else:
                                 st.error(f"❌ Failed to reset data: {reset_message}")
-                    
+                        
                     with col3:
                         if st.button("💾 Save Data", type="secondary"):
                             # Apply changes to simulation data without running NPI calculation
@@ -749,7 +851,7 @@ def main():
                             if changes_made:
                                 
                                 with st.spinner("Saving data..."):
-                                    apply_success, apply_message = apply_simulation_changes(selected_year, selected_sim_team, sim_data)
+                                    apply_success, apply_message = apply_simulation_changes(selected_year, selected_sim_team, sim_data, st.session_state['user_id'])
                                 
                                 if apply_success:
                                     st.success(f"✅ {apply_message}")
@@ -775,7 +877,7 @@ def main():
                             # Run NPI calculator directly
                             
                             with st.spinner("Calculating NPI ratings..."):
-                                success, output, error = run_npi_simulation(selected_year)
+                                success, output, error = run_npi_simulation(selected_year, st.session_state['user_id'])
                             
                             if success:
                                 pass
@@ -806,8 +908,8 @@ def main():
                 st.write("---")
                 st.write("**Step 5: View Simulated NPI Rankings**")
                 
-                # Check if simulation NPI data exists
-                sim_npi_file = data_dir / f"npi_ratings_{selected_year}_simulation.csv"
+                # Check if user-specific simulation NPI data exists
+                sim_npi_file = data_dir / f"npi_ratings_{selected_year}_simulation_{st.session_state['user_id']}.csv"
                 
                 if sim_npi_file.exists():
                     try:
