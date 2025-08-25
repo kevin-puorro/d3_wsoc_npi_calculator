@@ -6,7 +6,6 @@ Simple dashboard to view NPI ratings for all teams
 
 import streamlit as st
 import pandas as pd
-import subprocess
 import os
 from pathlib import Path
 
@@ -92,36 +91,37 @@ def get_available_years():
 
 
 def run_npi_simulation(year):
-    """Run NPI calculator with simulation flag and return results"""
+    """Run NPI calculator for simulation"""
     try:
-        # Get script directory and project root
+        # Import the npi_calculator module directly instead of using subprocess
+        import sys
         script_dir = Path(__file__).resolve().parent
-        project_root = script_dir.parent
+        sys.path.insert(0, str(script_dir))
         
-        # Use absolute paths instead of changing working directory
-        npi_calculator_path = script_dir / "npi_calculator.py"
+        # Import the main function from npi_calculator
+        from npi_calculator import main
         
-        # Set environment variables to force UTF-8 encoding
-        env = os.environ.copy()
-        env['PYTHONIOENCODING'] = 'utf-8'
-        env['PYTHONUTF8'] = '1'
+        # Set up arguments for simulation mode by monkey-patching sys.argv
+        import sys
+        original_argv = sys.argv.copy()
+        sys.argv = ['npi_calculator.py', '--year', str(year), '--season-only', '--simulation']
         
-        # Run NPI calculator with simulation flag using absolute paths and proper encoding
-        result = subprocess.run([
-            "python", str(npi_calculator_path), 
-            "--year", str(year), 
-            "--season-only", 
-            "--simulation"
-        ], capture_output=True, text=True, encoding='utf-8', timeout=300, 
-           cwd=project_root, env=env)  # Set cwd to project root and encoding
-        
-        if result.returncode == 0:
-            return True, result.stdout, None
-        else:
-            return False, None, result.stderr
+        try:
+            # Capture stdout to get the output
+            import io
+            import contextlib
             
-    except subprocess.TimeoutExpired:
-        return False, None, "NPI calculation timed out (took longer than 5 minutes)"
+            output_capture = io.StringIO()
+            with contextlib.redirect_stdout(output_capture):
+                # Run the main function
+                main()
+            
+            output = output_capture.getvalue()
+            return True, output, None
+        finally:
+            # Restore original argv
+            sys.argv = original_argv
+        
     except Exception as e:
         return False, None, str(e)
 
@@ -724,16 +724,6 @@ def main():
                             
                             if reset_success:
                                 st.success(f"✅ {reset_message}")
-                                st.markdown("""
-                                <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
-                                    <strong>🔄 Simulation data has been reset to original filtered data</strong>
-                                </div>
-                                """, unsafe_allow_html=True)
-                                st.markdown("""
-                                <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
-                                    <strong>🔄 All sliders have been reset to original values</strong>
-                                </div>
-                                """, unsafe_allow_html=True)
                                 st.rerun()
                             else:
                                 st.error(f"❌ Failed to reset simulation data: {reset_message}")
