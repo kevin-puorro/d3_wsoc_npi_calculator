@@ -1,15 +1,12 @@
 date,away_team,away_score,home_team,home_score,game_note
-2025-08-20,Millikin,0,Dominican IL,0,Sch
 2025-08-21,Puget Sound,0,Northwest WA,1,
 2025-08-21,Pacific OR,1,Evergreen St,0,
 2025-08-22,Furman,5,Bob Jones,0,
-2025-08-22,Wartburg,0,Upper Iowa,0,Sch
 2025-08-22,Ark Pine Bluff,2,Lyon,0,
-2025-08-23,North Park,0,Concordia IL,0,Sch
-2025-08-23,Asbury,0,Bellarmine,0,Sch
-2025-08-24,Millikin,0,DePauw,0,Sch
-2025-08-24,Pacific OR,0,Northwest WA,0,Sch
-2025-08-24,N Kentucky,0,Mt St Joseph,0,Sch
+2025-08-23,Corban,0,Pacific OR,3,
+2025-08-23,Asbury,0,Bellarmine,11,
+2025-08-24,Pacific OR,1,Northwest WA,0,
+2025-08-24,N Kentucky,6,Mt St Joseph,0,
 2025-08-25,Bob Jones,0,Spartanburg Meth,0,Sch
 2025-08-25,La Verne,0,Arizona Chr,0,Sch
 2025-08-25,Ouachita,0,Univ Ozarks,0,Sch
@@ -1136,7 +1133,6 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-14,Manhattanville,0,Montclair St,0,Sch
 2025-09-14,NC Wesleyan,0,J&W NC,0,Sch
 2025-09-15,Beloit,0,Carroll WI,0,Sch
-2025-09-15,Dalton St,0,Agnes Scott,0,Sch
 2025-09-15,Rutgers-Newark,0,Sarah Lawrence,0,Sch
 2025-09-15,Peace,0,Emory,0,Sch
 2025-09-15,St Joseph CT,0,W Connecticut,0,Sch
@@ -1922,6 +1918,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-29,St Norbert,0,WI Oshkosh,0,Sch
 2025-09-29,St Joseph's ME,0,Lasell,0,Sch
 2025-09-29,Sarah Lawrence,0,FDU Madison,0,Sch
+2025-09-29,NVU-Lyndon,0,SUNY Cobleskill,0,Sch
 2025-09-30,Calvin,0,Alma,0,Sch
 2025-09-30,Case Western,0,Baldwin-Wallace,0,Sch
 2025-09-30,Wittenberg,0,Centre,0,Sch
@@ -2473,6 +2470,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-10-10,Univ Ozarks,0,McMurry,0,Sch
 2025-10-10,Chatham,0,Wash & Jeff,0,Sch
 2025-10-10,Westminster PA,0,Grove City,0,Sch
+2025-10-10,Bob Jones,0,Carolina Univ,0,Sch
 2025-10-10,Dallas Univ,0,Concordia TX,0,Sch
 2025-10-10,Austin Col,0,St Thomas TX,0,Sch
 2025-10-10,Le Tourneau,0,Centenary,0,Sch
@@ -3445,6 +3443,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-10-26,SW Univ TX,0,Rhodes,0,Sch
 2025-10-26,Centenary,0,Concordia TX,0,Sch
 2025-10-26,Brandeis,0,Carnegie Mellon,0,Sch
+2025-10-26,NVU-Lyndon,0,Plymouth St,0,Sch
 2025-10-27,Wesleyan GA,0,Maryville TN,0,Sch
 2025-10-27,Lehman,0,Medgar Evers,0,Sch
 2025-10-27,J&W NC,0,Trinity Bap,0,Sch
