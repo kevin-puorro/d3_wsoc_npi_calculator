@@ -703,7 +703,7 @@ def main():
                     # Helpful reminder for users
                     st.markdown("""
             <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
-                <strong>💡 **Important:** Make sure to save your simulation data before running the NPI calculator!</strong>
+                <strong>💡 **Important:** Make sure to save the data before running the NPI calculations!</strong>
             </div>
             """, unsafe_allow_html=True)
                     
