@@ -23,7 +23,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install requests  # Add requests if not in requirements.txt
+        pip install requests pandas numpy
         
     - name: Check if within season dates
       id: check-season
@@ -32,6 +32,11 @@ jobs:
         SEASON_START="08-15"
         SEASON_END="12-15"
         
+        echo "Current date: $CURRENT_DATE"
+        echo "Season start: $SEASON_START"
+        echo "Season end: $SEASON_END"
+        
+        # Convert dates to comparable format (MM-DD)
         if [[ "$CURRENT_DATE" >= "$SEASON_START" && "$CURRENT_DATE" <= "$SEASON_END" ]]; then
           echo "in_season=true" >> $GITHUB_OUTPUT
           echo "✅ Current date $CURRENT_DATE is within season ($SEASON_START to $SEASON_END)"
@@ -45,6 +50,15 @@ jobs:
       run: |
         mkdir -p data/2025
         
+    - name: Verify scripts exist
+      if: steps.check-season.outputs.in_season == 'true'
+      run: |
+        echo "Checking if required scripts exist..."
+        ls -la scripts/
+        echo "Checking if scripts are executable..."
+        python --version
+        echo "Current working directory: $(pwd)"
+        
     - name: Run Massey Games Scraper for 2025
       if: steps.check-season.outputs.in_season == 'true'
       run: |
@@ -52,6 +66,7 @@ jobs:
         python massey_games_scraper.py --year 2025
       env:
         PYTHONPATH: ${{ github.workspace }}
+        continue-on-error: false
         
     - name: Run Filter Massey Games for 2025
       if: steps.check-season.outputs.in_season == 'true'
@@ -60,6 +75,7 @@ jobs:
         python filter_massey_games.py --year 2025
       env:
         PYTHONPATH: ${{ github.workspace }}
+        continue-on-error: false
         
     - name: Run NPI Calculator for 2025
       if: steps.check-season.outputs.in_season == 'true'
@@ -68,6 +84,7 @@ jobs:
         python npi_calculator.py --year 2025
       env:
         PYTHONPATH: ${{ github.workspace }}
+        continue-on-error: false
         
     - name: Commit and push updated data
       if: steps.check-season.outputs.in_season == 'true'
