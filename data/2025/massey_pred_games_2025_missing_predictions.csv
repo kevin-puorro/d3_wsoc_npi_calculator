@@ -1,0 +1,16 @@
+date,away_team,away_score,home_team,home_score,game_note,home_pred_score,away_pred_score,home_win_prob,away_win_prob
+8/29/2025,East Texas Baptist University,0,University of Chicago,0,Sch,2,0,0.88,0.04
+8/29/2025,Salisbury University,0,The College of New Jersey,0,Sch,2,1,0.67,0.18
+8/29/2025,King's College (Pennsylvania),0,Kean University,0,Sch,2,1,0.55,0.28
+8/29/2025,Whitworth University,0,Whittier College,0,Sch,1,1,0.41,0.39
+8/30/2025,Otterbein University,0,John Carroll University,0,Sch,1,1,0.43,0.38
+8/30/2025,University of Scranton,0,Kean University,0,Sch,1,2,0.1,0.77
+8/31/2025,Otterbein University,0,Messiah University,0,Sch,2,1,0.74,0.13
+9/5/2025,Rhodes College,0,Covenant College,0,Sch,1,2,0.13,0.75
+9/6/2025,John Carroll University,0,Covenant College,0,Sch,0,1,0.07,0.81
+9/6/2025,St. Mary's College of Maryland,0,Hobart and William Smith Colleges,0,Sch,2,0,0.9,0.03
+9/6/2025,Stockton University,0,Ithaca College,0,Sch,2,1,0.69,0.15
+9/6/2025,Kalamazoo College,0,Bethel University (Minnesota),0,Sch,1,1,0.35,0.47
+9/12/2025,Christopher Newport University,0,Case Western Reserve University,0,Sch,1,1,0.38,0.44
+9/14/2025,Ohio Northern University,0,Case Western Reserve University,0,Sch,2,1,0.56,0.26
+9/20/2025,Washington University in St. Louis,0,University of Mary Hardin-Baylor,0,Sch,1,2,0.09,0.78

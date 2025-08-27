@@ -69,17 +69,34 @@ class MasseyRatingsScraper:
         if not match:
             return None
         
-        date, home_at, home_team, home_score, away_at, away_team, away_score, game_note = match.groups()
+        date, team1_at, team1, team1_score, team2_at, team2, team2_score, game_note = match.groups()
         
         # Clean up team names
-        home_team = home_team.strip()
-        away_team = away_team.strip()
+        team1 = team1.strip()
+        team2 = team2.strip()
         
         # Determine which team is home/away based on @ symbol
-        if home_at == '@':
-            # Home team has @ symbol, so swap
-            home_team, away_team = away_team, home_team
-            home_score, away_score = away_score, home_score
+        # The team WITH @ symbol is the HOME team
+        # The team WITHOUT @ symbol is the AWAY team
+        if team1_at == '@':
+            # Team1 has @ symbol, so Team1 is HOME, Team2 is AWAY
+            home_team = team1
+            away_team = team2
+            home_score = int(team1_score)
+            away_score = int(team2_score)
+        elif team2_at == '@':
+            # Team2 has @ symbol, so Team2 is HOME, Team1 is AWAY
+            home_team = team2
+            away_team = team1
+            home_score = int(team2_score)
+            away_score = int(team1_score)
+        else:
+            # Neither team has @ symbol, this shouldn't happen in normal data
+            # But if it does, assume Team1 is HOME, Team2 is AWAY
+            home_team = team1
+            away_team = team2
+            home_score = int(team1_score)
+            away_score = int(team2_score)
         
         # Clean up game note info (overtime or scheduled)
         game_note = game_note.strip() if game_note else ""
@@ -87,9 +104,9 @@ class MasseyRatingsScraper:
         return {
             'date': date,
             'away_team': away_team,
-            'away_score': int(away_score),
+            'away_score': away_score,
             'home_team': home_team,
-            'home_score': int(home_score),
+            'home_score': home_score,
             'game_note': game_note
         }
     

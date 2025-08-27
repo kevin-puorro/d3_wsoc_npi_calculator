@@ -66,24 +66,32 @@ def load_team_mapping(mapping_file: str = "team_mapping.txt") -> Tuple[Dict[str,
         return {}
 
 
-def load_massey_games(data_dir: str, year: int) -> pd.DataFrame:
+def load_massey_games(data_dir: str, year: int, use_pred_data: bool = False) -> pd.DataFrame:
     """
     Load Massey games data for the specified year
     
     Args:
         data_dir: Directory containing the data
         year: Year to load data for
+        use_pred_data: If True, load prediction data (massey_pred_games)
         
     Returns:
         DataFrame with Massey games data
     """
     try:
         # Try different possible filenames
-        possible_files = [
-            f"massey_games_{year}.csv",
-            f"massey_games_{year}_clean.csv",
-            f"massey_games_{year}_clean_final.csv"
-        ]
+        if use_pred_data:
+            possible_files = [
+                f"massey_pred_games_{year}.csv",
+                f"massey_pred_games_{year}_clean.csv",
+                f"massey_pred_games_{year}_clean_final.csv"
+            ]
+        else:
+            possible_files = [
+                f"massey_games_{year}.csv",
+                f"massey_games_{year}_clean.csv",
+                f"massey_games_{year}_clean_final.csv"
+            ]
         
         massey_file = None
         for filename in possible_files:
@@ -221,7 +229,7 @@ def convert_team_names(games_df: pd.DataFrame, team_mapping: Dict[str, str]) -> 
     return converted_df
 
 
-def save_filtered_games(games_df: pd.DataFrame, output_dir: str, year: int, suffix: str = "filtered") -> str:
+def save_filtered_games(games_df: pd.DataFrame, output_dir: str, year: int, suffix: str = "filtered", filename_prefix: str = "massey_games_") -> str:
     """
     Save filtered games to CSV
     
@@ -230,6 +238,7 @@ def save_filtered_games(games_df: pd.DataFrame, output_dir: str, year: int, suff
         output_dir: Directory to save the file
         year: Year for the filename
         suffix: Suffix to add to filename
+        filename_prefix: Prefix for the filename (default: "massey_games_")
         
     Returns:
         Path to saved file
@@ -242,17 +251,33 @@ def save_filtered_games(games_df: pd.DataFrame, output_dir: str, year: int, suff
     os.makedirs(output_dir, exist_ok=True)
     
     # Generate filename
-    filename = f"massey_games_{year}_{suffix}.csv"
+    filename = f"{filename_prefix}{year}_{suffix}.csv"
     output_path = os.path.join(output_dir, filename)
     
-    # Ensure all expected columns are present
-    expected_columns = ['date', 'away_team', 'away_score', 'home_team', 'home_score', 'game_note']
-    for col in expected_columns:
-        if col not in games_df.columns:
-            games_df[col] = ""
+    # Check if this is prediction data (has prediction columns)
+    is_prediction_data = any(col in games_df.columns for col in ['home_pred_score', 'away_pred_score', 'home_win_prob', 'away_win_prob'])
     
-    # Reorder columns to match expected format
-    games_df = games_df[expected_columns]
+    if is_prediction_data:
+        # For prediction data, preserve all columns but ensure basic ones are present
+        expected_columns = ['date', 'away_team', 'away_score', 'home_team', 'home_score', 'game_note']
+        for col in expected_columns:
+            if col not in games_df.columns:
+                games_df[col] = ""
+        
+        # Get all columns, starting with expected ones, then any additional columns
+        all_columns = expected_columns + [col for col in games_df.columns if col not in expected_columns]
+        games_df = games_df[all_columns]
+        
+        print(f"📊 Preserving all columns for prediction data")
+    else:
+        # For regular data, use the standard column structure
+        expected_columns = ['date', 'away_team', 'away_score', 'home_team', 'home_score', 'game_note']
+        for col in expected_columns:
+            if col not in games_df.columns:
+                games_df[col] = ""
+        
+        # Reorder columns to match expected format
+        games_df = games_df[expected_columns]
     
     # Save to CSV
     games_df.to_csv(output_path, index=False)
@@ -262,7 +287,7 @@ def save_filtered_games(games_df: pd.DataFrame, output_dir: str, year: int, suff
     return output_path
 
 
-def save_excluded_games(excluded_games: List[Dict], output_dir: str, year: int) -> str:
+def save_excluded_games(excluded_games: List[Dict], output_dir: str, year: int, filename_prefix: str = "massey_games_") -> str:
     """
     Save excluded games to CSV for analysis
     
@@ -270,6 +295,7 @@ def save_excluded_games(excluded_games: List[Dict], output_dir: str, year: int) 
         excluded_games: List of dictionaries with excluded game information
         output_dir: Directory to save the file
         year: Year for the filename
+        filename_prefix: Prefix for the filename (default: "massey_games_")
         
     Returns:
         Path to saved file
@@ -282,7 +308,7 @@ def save_excluded_games(excluded_games: List[Dict], output_dir: str, year: int) 
     os.makedirs(output_dir, exist_ok=True)
     
     # Generate filename
-    filename = f"massey_games_{year}_excluded.csv"
+    filename = f"{filename_prefix}{year}_excluded.csv"
     output_path = os.path.join(output_dir, filename)
     
     # Convert to DataFrame and save to CSV
@@ -293,7 +319,7 @@ def save_excluded_games(excluded_games: List[Dict], output_dir: str, year: int) 
     return output_path
 
 
-def save_provisional_games(provisional_df: pd.DataFrame, output_dir: str, year: int) -> str:
+def save_provisional_games(provisional_df: pd.DataFrame, output_dir: str, year: int, filename_prefix: str = "massey_games_") -> str:
     """
     Save provisional games to CSV
     
@@ -301,6 +327,7 @@ def save_provisional_games(provisional_df: pd.DataFrame, output_dir: str, year: 
         provisional_df: DataFrame with provisional games data
         output_dir: Directory to save the file
         year: Year for the filename
+        filename_prefix: Prefix for the filename (default: "massey_games_")
         
     Returns:
         Path to saved file
@@ -313,7 +340,7 @@ def save_provisional_games(provisional_df: pd.DataFrame, output_dir: str, year: 
     os.makedirs(output_dir, exist_ok=True)
     
     # Generate filename
-    filename = f"massey_games_{year}_provisional.csv"
+    filename = f"{filename_prefix}{year}_provisional.csv"
     output_path = os.path.join(output_dir, filename)
     
     # Ensure all expected columns are present
@@ -332,7 +359,7 @@ def save_provisional_games(provisional_df: pd.DataFrame, output_dir: str, year: 
     return output_path
 
 
-def save_simulation_games(filtered_df: pd.DataFrame, output_dir: str, year: int) -> str:
+def save_simulation_games(filtered_df: pd.DataFrame, output_dir: str, year: int, filename_prefix: str = "massey_games_") -> str:
     """
     Save simulation games to CSV (identical to filtered games for simulation purposes)
     
@@ -340,6 +367,7 @@ def save_simulation_games(filtered_df: pd.DataFrame, output_dir: str, year: int)
         filtered_df: DataFrame with filtered games data
         output_dir: Directory to save the file
         year: Year for the filename
+        filename_prefix: Prefix for the filename (default: "massey_games_")
         
     Returns:
         Path to saved file
@@ -348,7 +376,7 @@ def save_simulation_games(filtered_df: pd.DataFrame, output_dir: str, year: int)
     os.makedirs(output_dir, exist_ok=True)
     
     # Generate filename
-    filename = f"massey_games_{year}_simulation.csv"
+    filename = f"{filename_prefix}{year}_simulation.csv"
     output_path = os.path.join(output_dir, filename)
     
     if filtered_df.empty:
@@ -374,7 +402,7 @@ def save_simulation_games(filtered_df: pd.DataFrame, output_dir: str, year: int)
     return output_path
 
 
-def save_npi_games(npi_df: pd.DataFrame, output_dir: str, year: int) -> str:
+def save_npi_games(npi_df: pd.DataFrame, output_dir: str, year: int, filename_prefix: str = "massey_games_") -> str:
     """
     Save NPI games to CSV (excludes scheduled games but includes overtime games)
     
@@ -382,6 +410,7 @@ def save_npi_games(npi_df: pd.DataFrame, output_dir: str, year: int) -> str:
         npi_df: DataFrame with NPI games data (no scheduled games)
         output_dir: Directory to save the file
         year: Year for the filename
+        filename_prefix: Prefix for the filename (default: "massey_games_")
         
     Returns:
         Path to saved file
@@ -390,7 +419,7 @@ def save_npi_games(npi_df: pd.DataFrame, output_dir: str, year: int) -> str:
     os.makedirs(output_dir, exist_ok=True)
     
     # Generate filename
-    filename = f"massey_games_{year}_npi.csv"
+    filename = f"{filename_prefix}{year}_npi.csv"
     output_path = os.path.join(output_dir, filename)
     
     if npi_df.empty:
@@ -423,11 +452,17 @@ def main():
     parser = argparse.ArgumentParser(description='Filter Massey games data')
     parser.add_argument('--year', '-y', type=int, default=2025, 
                        help='Season year to process (default: 2025)')
+    parser.add_argument('--suffix', '-s', type=str, default='filtered',
+                       help='Suffix for output filename (default: filtered)')
+    parser.add_argument('--pred', '-p', action='store_true',
+                       help='Use prediction data (massey_pred_games) instead of regular data (massey_games)')
     
     args = parser.parse_args()
     
     # Configuration
     year = args.year
+    suffix = args.suffix
+    use_pred_data = args.pred
     
     # Get script directory and project root
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -451,7 +486,7 @@ def main():
     
     # Step 2: Load Massey games
     print("\n2️⃣ Loading Massey games...")
-    massey_df = load_massey_games(data_dir, year)
+    massey_df = load_massey_games(data_dir, year, use_pred_data)
     if massey_df.empty:
         print("❌ No Massey games data found. Exiting.")
         return
@@ -473,25 +508,28 @@ def main():
     converted_provisional_df = convert_team_names(provisional_df, team_mapping)
     converted_npi_df = convert_team_names(npi_df, team_mapping)
     
+    # Determine filename prefix based on data type
+    filename_prefix = "massey_pred_games_" if use_pred_data else "massey_games_"
+    
     # Step 5: Save filtered data
     print("\n5️⃣ Saving filtered data...")
-    output_file = save_filtered_games(converted_df, output_dir, year)
+    output_file = save_filtered_games(converted_df, output_dir, year, suffix, filename_prefix)
     
     # Step 6: Save provisional games
     print("\n6️⃣ Saving provisional games...")
-    provisional_output_file = save_provisional_games(converted_provisional_df, output_dir, year)
+    provisional_output_file = save_provisional_games(converted_provisional_df, output_dir, year, filename_prefix)
     
     # Step 7: Save NPI games
     print("\n7️⃣ Saving NPI games...")
-    npi_output_file = save_npi_games(converted_npi_df, output_dir, year)
+    npi_output_file = save_npi_games(converted_npi_df, output_dir, year, filename_prefix)
     
     # Step 8: Save simulation games
     print("\n8️⃣ Saving simulation games...")
-    simulation_output_file = save_simulation_games(converted_df, output_dir, year)
+    simulation_output_file = save_simulation_games(converted_df, output_dir, year, filename_prefix)
     
     # Step 9: Save excluded games
     print("\n9️⃣ Saving excluded games...")
-    excluded_output_file = save_excluded_games(excluded_games, output_dir, year)
+    excluded_output_file = save_excluded_games(excluded_games, output_dir, year, filename_prefix)
     
     # Summary
     print("\n" + "=" * 50)
