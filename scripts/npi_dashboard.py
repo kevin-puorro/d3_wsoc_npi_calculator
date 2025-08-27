@@ -1088,7 +1088,7 @@ def main():
                 schedule_display['Date'] = schedule_display['Date'].dt.strftime('%m/%d/%Y')
                 
                 # Clean up display columns for better readability
-                display_columns = ['Date', 'Opponent', 'Home/Away', 'Team Score', 'Opponent Score', 'Result', 'Overtime', 'Status', 'Predicted', 'Predicted_Result']
+                display_columns = ['Date', 'Opponent', 'Home/Away', 'Team Score', 'Opponent Score', 'Result', 'Overtime', 'Status']
                 schedule_display = schedule_display[display_columns]
                 
                 # Display schedule
