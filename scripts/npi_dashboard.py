@@ -1469,13 +1469,7 @@ def main():
                             actual_value = st.session_state[session_key].get(game_key)
                             print(f"DEBUG: Verification - session state now contains: {game_key} = {actual_value}")
                             
-                            # Show simplified caption - just indicate if using predicted or actual results
-                            if game.get('Predicted_Result') and game.get('Predicted'):
-                                st.caption("Using Predicted Results")
-                            elif original_result != 'SCH':
-                                st.caption("Using Actual/Edited Results")
-                            else:
-                                st.caption("Scheduled Game")
+                                                    # No caption text below dropdowns
                         
                         with col4:
                             # Show change indicator - compare against the true original result (predicted if available)
