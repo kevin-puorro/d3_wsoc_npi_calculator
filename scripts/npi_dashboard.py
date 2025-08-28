@@ -951,7 +951,7 @@ def main():
         """, unsafe_allow_html=True)
     
     # Create tabs
-    tab1, tab2, tab3 = st.tabs(["🏆 NPI Rankings", "📅 Team Schedules", "🎯 NPI Predictor"])
+    tab1, tab2, tab3 = st.tabs(["🏆 NPI Rankings", "📅 Team Schedules", "🎯 NPI Projections"])
     
     # Tab 1: NPI Ratings
     with tab1:
@@ -1096,16 +1096,16 @@ def main():
             else:
                 st.warning(f"No schedule data found for {selected_team}")
     
-    # Tab 3: NPI Predictor
+    # Tab 3: NPI Projections
     with tab3:
-        st.subheader(f"NPI Predictor")
-        st.markdown(f"Simulate different game outcomes for the **{selected_year} season** to see how they affect NPI rankings.")
+        st.subheader(f"NPI Projections")
+        st.markdown(f"See how different game outcomes for the **{selected_year} season** will affect NPI rankings.")
         
         # Check if we have the required data
         if games_df is None:
-            st.warning("⚠️ NPI predictor requires games data. Please ensure the filtered games file exists.")
+            st.warning("⚠️ NPI projections require games data. Please ensure the filtered games file exists.")
         elif npi_df is None or npi_df.empty:
-            st.warning("⚠️ NPI predictor requires NPI ratings data. Please run NPI calculations first.")
+            st.warning("⚠️ NPI projections require NPI ratings data. Please run NPI calculations first.")
             st.markdown("""
             <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
                 <strong>💡 **For 2025 season:** Run NPI calculator with `--simulation` flag to create simulation NPI data.</strong>
@@ -1651,7 +1651,7 @@ def main():
                 
                 # Step 5: View Current Simulation NPI Ratings
                 st.write("---")
-                st.write("**Step 6: View Predicted NPI Rankings**")
+                st.write("**Step 6: View Projected NPI Rankings**")
                 
                 # Check if user-specific simulation NPI data exists
                 sim_npi_file = data_dir / f"npi_ratings_{selected_year}_simulation_{st.session_state['user_id']}.csv"
@@ -1687,13 +1687,13 @@ def main():
                             })
                             
                             # Add margin of error note
-                            st.markdown("*Note: These simulated NPI ratings have a margin of error of ±0.3*")
+                            st.markdown("*Note: These projected NPI ratings have a margin of error of ±0.3*")
                             
                             # Display simulation NPI data
                             st.dataframe(df_display, use_container_width=True, hide_index=True)
                             
                             # Add important note about NPI rating dependencies
-                            st.error("**Important Note:** NPI ratings are largely dependent on other teams and their results. Simulated results may not accurately reflect final rankings.")
+                            st.error("**Important Note:** NPI ratings are largely dependent on other teams and their results. Projected results may not accurately reflect final rankings.")
                             
                             # Show comparison with original data if available (moved below the table)
                             if npi_df is not None and not npi_df.empty:
