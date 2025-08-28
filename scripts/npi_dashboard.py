@@ -1736,7 +1736,7 @@ def main():
                 else:
                     st.markdown(f"""
                     <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
-                        <strong>📊 **No simulated NPI ratings available yet**</strong><br>
+                        <strong>📊 **No projected NPI ratings available yet**</strong><br>
                     </div>
                     """, unsafe_allow_html=True)
                 
