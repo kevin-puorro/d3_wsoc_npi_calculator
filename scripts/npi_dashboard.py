@@ -951,7 +951,7 @@ def main():
         """, unsafe_allow_html=True)
     
     # Create tabs
-    tab1, tab2, tab3 = st.tabs(["🏆 NPI Rankings", "📅 Team Schedules", "🎯 NPI Simulator"])
+    tab1, tab2, tab3 = st.tabs(["🏆 NPI Rankings", "📅 Team Schedules", "🎯 NPI Predictor"])
     
     # Tab 1: NPI Ratings
     with tab1:
@@ -1096,16 +1096,16 @@ def main():
             else:
                 st.warning(f"No schedule data found for {selected_team}")
     
-    # Tab 3: NPI Simulator
+    # Tab 3: NPI Predictor
     with tab3:
-        st.subheader(f"NPI Simulator")
+        st.subheader(f"NPI Predictor")
         st.markdown(f"Simulate different game outcomes for the **{selected_year} season** to see how they affect NPI rankings.")
         
         # Check if we have the required data
         if games_df is None:
-            st.warning("⚠️ NPI simulator requires games data. Please ensure the filtered games file exists.")
+            st.warning("⚠️ NPI predictor requires games data. Please ensure the filtered games file exists.")
         elif npi_df is None or npi_df.empty:
-            st.warning("⚠️ NPI simulator requires NPI ratings data. Please run NPI calculations first.")
+            st.warning("⚠️ NPI predictor requires NPI ratings data. Please run NPI calculations first.")
             st.markdown("""
             <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
                 <strong>💡 **For 2025 season:** Run NPI calculator with `--simulation` flag to create simulation NPI data.</strong>
