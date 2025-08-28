@@ -1651,7 +1651,7 @@ def main():
                 
                 # Step 5: View Current Simulation NPI Ratings
                 st.write("---")
-                st.write("**Step 6: View Simulated NPI Rankings**")
+                st.write("**Step 6: View Predicted NPI Rankings**")
                 
                 # Check if user-specific simulation NPI data exists
                 sim_npi_file = data_dir / f"npi_ratings_{selected_year}_simulation_{st.session_state['user_id']}.csv"
