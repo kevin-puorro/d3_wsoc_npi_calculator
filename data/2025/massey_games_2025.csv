@@ -14,8 +14,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-08-26,Lewis & Clark,1,Corban,2,
 2025-08-26,Marywood,0,Navy,3,
 2025-08-26,Midway,2,Berea,2,
-2025-08-28,Willamette,0,Bushnell,0,Sch
-2025-08-28,Life Pacific,0,Caltech,0,Sch
+2025-08-28,Life Pacific,3,Caltech,0,
 2025-08-29,SUNY Fredonia,0,Cal Lutheran,0,Sch
 2025-08-29,Wartburg,0,Calvin,0,Sch
 2025-08-29,Capital,0,Allegheny,0,Sch
@@ -109,7 +108,6 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-08-29,Wentworth Tech,0,Lesley,0,Sch
 2025-08-29,Whitworth,0,Whittier,0,Sch
 2025-08-29,Centenary NJ,0,Wm Paterson,0,Sch
-2025-08-29,Five Towns,0,Yeshiva,0,Sch
 2025-08-29,Washington & Lee,0,York PA,0,Sch
 2025-08-29,Columbus St,0,Emory,0,Sch
 2025-08-29,MA Boston,0,Smith,0,Sch
@@ -486,6 +484,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-05,Utica,0,SUNY Fredonia,0,Sch
 2025-09-05,Trinity TX,0,Dallas Univ,0,Sch
 2025-09-05,Mt St Joseph,0,VA Wesleyan,0,Sch
+2025-09-05,Warner Pacific,0,Linfield,0,Sch
 2025-09-05,Wash & Jeff,0,La Roche,0,Sch
 2025-09-05,Westminster PA,0,Carlow,0,Sch
 2025-09-05,WI Eau Claire,0,Wheaton IL,0,Sch
