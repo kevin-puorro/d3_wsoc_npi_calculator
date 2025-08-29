@@ -1234,7 +1234,7 @@ def main():
                 
                 # Get team's games for simulation
                 st.write("---")
-                st.write("**Step 3 (Optional): Apply Predicted Scores to Scheduled [Unplayed] Games**")
+                st.write("**Step 3 (Optional): Apply Projected Scores to Scheduled [Unplayed] Games**")
                 
                 # Check if predicted scores data exists
                 pred_games_file = data_dir / f"massey_pred_games_{selected_year}_filtered_complete.csv"
@@ -1243,7 +1243,7 @@ def main():
                 if pred_scores_available:
                     col1, col2, col3 = st.columns([1, 2, 1])
                     with col2:
-                        if st.button("🎯 Apply Predicted Scores", type="primary", use_container_width=True):
+                        if st.button("🎯 Apply Projected Scores", type="primary", use_container_width=True):
                             with st.spinner("Applying predicted scores..."):
                                 success, message = apply_predicted_scores(selected_year, selected_sim_team, st.session_state['user_id'])
                             
@@ -1256,7 +1256,7 @@ def main():
                                 st.success(f"✅ {message}")
                                 st.rerun()
                             else:
-                                st.error(f"❌ Failed to apply predicted scores: {message}")
+                                st.error(f"❌ Failed to apply projected scores: {message}")
                 else:
                     st.info("📊 No predicted scores data available for this season.")
                 
@@ -1718,7 +1718,7 @@ def main():
                                             delta_display = None
                                         else:
                                             delta_display = f"{change:+.2f}"
-                                        st.metric("Simulated NPI", f"{simulated_team['npi_rating']:.2f}", delta=delta_display)
+                                        st.metric("Projected NPI", f"{simulated_team['npi_rating']:.2f}", delta=delta_display)
                                     with col3:
                                         # More robust check for zero or near-zero changes
                                         if abs(rank_change) < 0.5:
