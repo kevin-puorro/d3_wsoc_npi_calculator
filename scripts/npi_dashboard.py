@@ -1490,7 +1490,7 @@ def main():
                                 true_original_result = original_result
                             
                             if sim_result == "PRED":
-                                st.info("🎯 Using Predicted Scores")
+                                st.info("🎯 Using Projected Scores")
                             elif true_original_result == 'SCH' or sim_result != true_original_result:
                                 if sim_result == "W":
                                     st.success("🟢 Win")
