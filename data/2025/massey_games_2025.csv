@@ -201,92 +201,94 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-08-30,SUNY Poly,3,Morrisville St,3,
 2025-08-30,Wittenberg,0,Carnegie Mellon,3,
 2025-08-30,Lancaster Bib,0,Houghton,4,
-2025-08-31,Whitworth,0,Cal Lutheran,0,Sch
-2025-08-31,Carthage,0,Carleton MN,0,Sch
-2025-08-31,Allegheny,0,Case Western,0,Sch
-2025-08-31,Col of Idaho,0,Whitman,0,Sch
-2025-08-31,KY Wesleyan,0,Centre,0,Sch
-2025-08-31,Chapman,0,Lewis & Clark,0,Sch
-2025-08-31,MI Dearborn,0,Albion,0,Sch
-2025-08-31,Chicago,0,UC Santa Cruz,0,Sch
+2025-08-31,Whitworth,1,Cal Lutheran,1,
+2025-08-31,Carthage,1,Carleton MN,5,
+2025-08-31,Allegheny,0,Case Western,6,
+2025-08-31,Col of Idaho,3,Whitman,2,
+2025-08-31,KY Wesleyan,2,Centre,4,
+2025-08-31,Chapman,3,Lewis & Clark,0,
+2025-08-31,MI Dearborn,0,Albion,5,
+2025-08-31,Chicago,1,UC Santa Cruz,0,
 2025-08-31,Smith,0,Clarkson,0,Sch
-2025-08-31,Coe,0,Hamline,0,Sch
-2025-08-31,Penn Col Tech,0,Alfred St,0,Sch
-2025-08-31,WI Stevens Pt,0,Concordia IL,0,Sch
-2025-08-31,Arcadia,0,Cortland St,0,Sch
-2025-08-31,Immaculata,0,Alvernia,0,Sch
-2025-08-31,RI College,0,Dean,0,Sch
-2025-08-31,Delaware Val,0,Ursinus,0,Sch
-2025-08-31,Denison,0,Roanoke,0,Sch
-2025-08-31,Earlham,0,Wooster,0,Sch
-2025-08-31,E Texas Bap,0,Linfield,0,Sch
-2025-08-31,Elmhurst,0,Rockford,0,Sch
-2025-08-31,Guilford,0,Carolina Univ,0,Sch
-2025-08-31,Wilmington OH,0,Hanover,0,Sch
-2025-08-31,Heidelberg,0,Ithaca,0,Sch
-2025-08-31,MS Women,0,Hendrix,0,Sch
-2025-08-31,SUNY New Paltz,0,Hobart & Smith,0,Sch
-2025-08-31,Illinois Col,0,NE Wesleyan,0,Sch
-2025-08-31,John Carroll,0,PSU-Behrend,0,Sch
-2025-08-31,Johns Hopkins,0,St Olaf,0,Sch
-2025-08-31,J&W RI,0,Montclair St,0,Sch
-2025-08-31,Kenyon,0,Baldwin-Wallace,0,Sch
-2025-08-31,Lawrence,0,Lakeland,0,Sch
-2025-08-31,Marian WI,0,Ripon,0,Sch
-2025-08-31,WI Lutheran,0,Martin Luther,0,Sch
-2025-08-31,Puget Sound,0,M Hardin-Baylor,0,Sch
-2025-08-31,Ohio Wesleyan,0,Adrian,0,Sch
-2025-08-31,Rutgers-Camden,0,McDaniel,0,Sch
-2025-08-31,Otterbein,0,Messiah,0,Sch
-2025-08-31,Misericordia,0,Washington MD,0,Sch
+2025-08-31,Coe,2,Hamline,3,
+2025-08-31,Penn Col Tech,2,Alfred St,0,
+2025-08-31,WI Stevens Pt,2,Concordia IL,0,
+2025-08-31,Arcadia,0,Cortland St,1,
+2025-08-31,Immaculata,1,Alvernia,1,
+2025-08-31,RI College,3,Dean,0,
+2025-08-31,Delaware Val,0,Ursinus,5,
+2025-08-31,Denison,2,Roanoke,0,
+2025-08-31,Earlham,0,Wooster,3,
+2025-08-31,E Texas Bap,2,Linfield,2,
+2025-08-31,Elmhurst,10,Rockford,0,
+2025-08-31,Guilford,7,Carolina Univ,0,
+2025-08-31,Wilmington OH,0,Hanover,6,
+2025-08-31,Heidelberg,0,Ithaca,1,
+2025-08-31,MS Women,0,Hendrix,3,
+2025-08-31,SUNY New Paltz,0,Hobart & Smith,3,
+2025-08-31,Illinois Col,5,NE Wesleyan,4,
+2025-08-31,John Carroll,1,PSU-Behrend,1,
+2025-08-31,Johns Hopkins,3,St Olaf,0,
+2025-08-31,J&W RI,1,Montclair St,1,
+2025-08-31,Kenyon,2,Baldwin-Wallace,0,
+2025-08-31,Lawrence,5,Lakeland,0,
+2025-08-31,Marian WI,5,Ripon,0,
+2025-08-31,WI Lutheran,4,Martin Luther,0,
+2025-08-31,Puget Sound,1,M Hardin-Baylor,1,
+2025-08-31,Ohio Wesleyan,1,Adrian,0,
+2025-08-31,Rutgers-Camden,0,McDaniel,0,
+2025-08-31,Otterbein,0,Messiah,1,
+2025-08-31,Misericordia,2,Washington MD,0,
 2025-08-31,Anna Maria,0,Mt Holyoke,0,Sch
-2025-08-31,St Vincent,0,Muskingum,0,Sch
-2025-08-31,N Central IL,0,Redlands,0,Sch
-2025-08-31,North Park,0,IL Tech,0,Sch
-2025-08-31,Pacific OR,0,Bushnell,0,Sch
-2025-08-31,SUNY Fredonia,0,Occidental,0,Sch
-2025-08-31,Agnes Scott,0,Oglethorpe,0,Sch
-2025-08-31,Pac Lutheran,0,Trinity TX,0,Sch
-2025-08-31,PSU-Berks,0,York PA,0,Sch
-2025-08-31,Plattsburgh St,0,Rensselaer,0,Sch
-2025-08-31,Rhodes,0,Lynchburg,0,Sch
-2025-08-31,Ohio Northern,0,Rose-Hulman,0,Sch
-2025-08-31,Rutgers-Newark,0,SUNY Delhi,0,Sch
-2025-08-31,Hartford,0,St Lawrence,0,Sch
-2025-08-31,Luther IA,0,St Scholastica,0,Sch
+2025-08-31,St Vincent,3,Muskingum,0,
+2025-08-31,N Central IL,2,Redlands,0,
+2025-08-31,North Park,0,IL Tech,3,
+2025-08-31,Pacific OR,2,Bushnell,0,
+2025-08-31,SUNY Fredonia,2,Occidental,3,
+2025-08-31,Agnes Scott,1,Oglethorpe,4,
+2025-08-31,Pac Lutheran,1,Trinity TX,1,
+2025-08-31,PSU-Berks,0,York PA,4,
+2025-08-31,Plattsburgh St,0,Rensselaer,1,
+2025-08-31,Rhodes,0,Lynchburg,0,
+2025-08-31,Ohio Northern,1,Rose-Hulman,0,
+2025-08-31,Rutgers-Newark,2,SUNY Delhi,1,
+2025-08-31,Hartford,1,St Lawrence,0,
+2025-08-31,Luther IA,1,St Scholastica,0,
 2025-08-31,Neumann,0,Salisbury,4,
-2025-08-31,Schreiner,0,Univ of Southwest,0,Sch
-2025-08-31,Farmingdale,0,Sewanee,0,Sch
-2025-08-31,Haverford,0,Susquehanna,0,Sch
-2025-08-31,Washington & Lee,0,Swarthmore,0,Sch
-2025-08-31,Worcester St,0,U New England,0,Sch
-2025-08-31,Vassar,0,Mt St Mary NY,0,Sch
-2025-08-31,Merchant Marine,0,VA Wesleyan,0,Sch
-2025-08-31,Albertus Magnus,0,Wentworth Tech,0,Sch
-2025-08-31,George Fox,0,Whittier,0,Sch
-2025-08-31,WI Oshkosh,0,Willamette,0,Sch
-2025-08-31,WI Eau Claire,0,Central IA,0,Sch
-2025-08-31,St Norbert,0,WI River Falls,0,Sch
-2025-08-31,Gust Adolphus,0,WI Stout,0,Sch
-2025-08-31,Yeshiva,0,Mitchell,0,Sch
-2025-08-31,Hesston,0,Buena Vista,0,Sch
+2025-08-31,Schreiner,3,Univ of Southwest,0,
+2025-08-31,Farmingdale,0,Sewanee,4,
+2025-08-31,Haverford,1,Susquehanna,0,
+2025-08-31,Washington & Lee,0,Swarthmore,1,
+2025-08-31,Worcester St,2,U New England,1,
+2025-08-31,Vassar,4,Mt St Mary NY,0,
+2025-08-31,Merchant Marine,0,VA Wesleyan,4,
+2025-08-31,Albertus Magnus,0,Wentworth Tech,0,
+2025-08-31,George Fox,0,Whittier,1,
+2025-08-31,WI Oshkosh,1,Willamette,0,
+2025-08-31,WI Eau Claire,1,Central IA,2,
+2025-08-31,St Norbert,1,WI River Falls,4,
+2025-08-31,Gust Adolphus,1,WI Stout,1,
+2025-08-31,Yeshiva,1,Mitchell,9,
 2025-08-31,Waldorf,0,Eureka,0,Sch
-2025-08-31,NJ City,0,Bard,0,Sch
+2025-08-31,NJ City,3,Bard,1,
 2025-08-31,Paul Smith's,0,NVU-Johnson,0,Sch
 2025-08-31,ME Presque Isle,0,ME Augusta,0,Sch
-2025-08-31,Westfield St,0,Emerson,0,Sch
+2025-08-31,Westfield St,1,Emerson,6,
 2025-08-31,PSU-Harrisburg,0,Mary Washington,0,Sch
-2025-08-31,Claremont M.S.,0,NYU,0,Sch
-2025-08-31,Transylvania,0,Widener,0,Sch
+2025-08-31,Claremont M.S.,2,NYU,0,
+2025-08-31,Transylvania,0,Widener,3,
 2025-08-31,Howard Payne,0,Centenary,0,Sch
-2025-08-31,Notre Dame MD,0,Bryn Mawr,0,Sch
-2025-08-31,Springfield,0,Stevens,0,Sch
-2025-08-31,Anderson IN,0,Olivet MI,0,Sch
-2025-08-31,Piedmont,0,Meredith,0,Sch
-2025-08-31,Regis MA,0,Wheaton MA,0,Sch
-2025-08-31,Goucher,0,Marywood,0,Sch
+2025-08-31,Notre Dame MD,0,Bryn Mawr,6,
+2025-08-31,Springfield,2,Stevens,3,
+2025-08-31,Anderson IN,0,Olivet MI,0,
+2025-08-31,Piedmont,4,Meredith,2,
+2025-08-31,Regis MA,0,Wheaton MA,0,
+2025-08-31,Goucher,1,Marywood,10,
 2025-08-31,St Mary's IN,0,Franklin,0,Sch
-2025-08-31,St Benedict,0,Chris Newport,0,Sch
+2025-08-31,Trinity DC,0,Hollins,12,
+2025-08-31,St Benedict,0,Chris Newport,2,
+2025-08-31,Monmouth IL,1,Buena Vista,2,
+2025-08-31,R Stockton,0,Scranton,2,
 2025-09-01,Trine,0,Capital,0,Sch
 2025-09-01,Concordia Mhd,0,MN Morris,0,Sch
 2025-09-01,S Wesleyan,0,Bob Jones,0,Sch
@@ -299,8 +301,6 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-01,Piedmont,0,NC Wesleyan,0,Sch
 2025-09-01,Bethel MN,0,WI Whitewater,0,Sch
 2025-09-01,Defiance,0,Bluffton,0,Sch
-2025-09-01,Yeshiva,0,Mt St Mary NY,0,Sch
-2025-09-01,Trinity DC,0,Hollins,0,Sch
 2025-09-01,Pitt-Greensburg,0,Oberlin,0,Sch
 2025-09-01,Gwynedd-Mercy,0,Wilson,0,Sch
 2025-09-01,Arlington Bap,0,Dallas Univ,0,Sch
@@ -411,6 +411,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-03,WI Whitewater,0,Luther IA,0,Sch
 2025-09-03,Wheaton MA,0,Worcester St,0,Sch
 2025-09-03,St Elizabeth,0,Brooklyn Col,0,Sch
+2025-09-03,LaGrange,0,Point,0,Sch
 2025-09-03,Nichols,0,Russell Sage,0,Sch
 2025-09-03,Trinity DC,0,PSU-Beaver,0,Sch
 2025-09-03,Salve Regina,0,RI College,0,Sch
