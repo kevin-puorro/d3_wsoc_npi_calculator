@@ -1,57 +1,58 @@
 date,away_team,away_score,home_team,home_score,game_note
 2025-08-29,The State University of New York at Fredonia,0,California Lutheran University,1,
-2025-08-29,Wartburg College,0,Calvin University,2,
-2025-08-29,Capital University,4,Allegheny College,1,
+2025-08-29,Wartburg College,0,Calvin University,0,Sch
+2025-08-29,Capital University,0,Allegheny College,0,Sch
 2025-08-29,Carroll University (Wisconsin),0,University of Wisconsin-La Crosse,7,
 2025-08-29,Carthage College,0,Macalester College,1,
 2025-08-29,Franciscan University of Steubenville,0,Case Western Reserve University,7,
-2025-08-29,Vermont State University Castleton,1,Plattsburgh State University of New York,2,
+2025-08-29,Vermont State University Castleton,0,Plattsburgh State University of New York,0,Sch
 2025-08-29,Centenary College (Louisiana),0,Belhaven University,5,
 2025-08-29,Covenant College,1,Centre College,3,
-2025-08-29,Bluffton University,1,Albion College,8,
-2025-08-29,East Texas Baptist University,0,University of Chicago,6,
+2025-08-29,Chapman University,2,Pacific University (Oregon),1,
+2025-08-29,Bluffton University,0,Albion College,0,Sch
+2025-08-29,East Texas Baptist University,0,University of Chicago,0,Sch
 2025-08-29,Westfield State University,1,Colby-Sawyer College,1,
-2025-08-29,Salisbury University,1,The College of New Jersey,4,
+2025-08-29,Salisbury University,0,The College of New Jersey,0,Sch
 2025-08-29,St. Catherine University,3,University of Wisconsin-Stevens Point,0,
 2025-08-29,Elmhurst University,4,Concordia University Chicago,0,
-2025-08-29,State University of New York at Cortland,0,University of Rochester,2,
+2025-08-29,State University of New York at Cortland,0,University of Rochester,0,Sch
 2025-08-29,Crown College (Minnesota),0,University of Wisconsin-River Falls,3,
 2025-08-29,Alma College,3,Earlham College,0,
 2025-08-29,Bryn Mawr College,1,Delaware Valley University,0,
-2025-08-29,DePauw University,3,Manchester University,1,
-2025-08-29,Wheaton College (Illinois),1,Dominican University (Illinois),0,
+2025-08-29,DePauw University,0,Manchester University,0,Sch
+2025-08-29,Wheaton College (Illinois),0,Dominican University (Illinois),0,Sch
 2025-08-29,Eastern Mennonite University,0,Greensboro College,3,
 2025-08-29,Edgewood University,0,Central College (Iowa),1,
-2025-08-29,Elizabethtown College,3,Muhlenberg College,1,
+2025-08-29,Elizabethtown College,0,Muhlenberg College,0,Sch
 2025-08-29,Franklin & Marshall College,2,Catholic University,0,
 2025-08-29,Geneva College,1,Juniata College,0,
 2025-08-29,Gettysburg College,2,Hood College,1,
 2025-08-29,Grove City College,2,Rochester Institute of Technology,2,
 2025-08-29,Mary Baldwin University,0,Guilford College,2,
-2025-08-29,Hamline University,0,University of Wisconsin-Stout,1,
+2025-08-29,Hamline University,0,University of Wisconsin-Stout,0,Sch
 2025-08-29,Hardin-Simmons University,7,University of Dallas,1,
 2025-08-29,Heidelberg University,1,State University of New York at Geneseo,1,
 2025-08-29,Hiram College,1,Adrian College,3,
 2025-08-29,Milwaukee School of Engineering,0,Hope College,3,
 2025-08-29,Principia College,0,Illinois College,1,
-2025-08-29,King's College (Pennsylvania),1,Kean University,2,
-2025-08-29,Knox College,0,Millikin University,4,
+2025-08-29,King's College (Pennsylvania),0,Kean University,0,Sch
+2025-08-29,Knox College,0,Millikin University,0,Sch
 2025-08-29,Lake Forest College,4,Greenville University,1,
 2025-08-29,Moravian University,0,Lebanon Valley College,1,
-2025-08-29,University of Wisconsin-Oshkosh,1,Lewis & Clark College,1,
+2025-08-29,University of Wisconsin-Oshkosh,0,Lewis & Clark College,0,Sch
 2025-08-29,University of Wisconsin-Platteville,2,Augsburg University,0,
 2025-08-29,Lycoming College,2,Utica University,1,
-2025-08-29,Wittenberg University,0,Marietta College,0,
+2025-08-29,Wittenberg University,0,Marietta College,0,Sch
 2025-08-29,Buena Vista University,2,Martin Luther College,0,
 2025-08-29,Concordia University Texas,0,University of Mary Hardin-Baylor,1,
-2025-08-29,Randolph-Macon College,0,University of Mary Washington,5,
+2025-08-29,Randolph-Macon College,0,University of Mary Washington,0,Sch
 2025-08-29,Farmingdale State College,3,Maryville College (Tennessee),0,
-2025-08-29,Averett University,2,Pfeiffer University,0,
+2025-08-29,Averett University,0,Pfeiffer University,0,Sch
 2025-08-29,Susquehanna University,0,Misericordia University,2,
 2025-08-29,Washington and Jefferson College,2,Muskingum University,0,
 2025-08-29,Endicott College,0,Nazareth University,2,
 2025-08-29,North Central College,0,Pomona-Pitzer Colleges,3,
-2025-08-29,Ursinus College,3,Penn State Berks College,2,
+2025-08-29,Ursinus College,0,Penn State Berks College,0,Sch
 2025-08-29,Benedictine University (Illinois),1,North Park University,5,
 2025-08-29,Berry College,4,Agnes Scott College,0,
 2025-08-29,Ripon College,1,Wisconsin Lutheran College,2,
@@ -97,15 +98,6 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-08-29,Washington College (Maryland),1,Widener University,0,
 2025-08-29,Ohio Wesleyan University,0,Mount St. Joseph University,2,
 2025-08-29,Bridgewater College (Virginia),1,Carnegie Mellon University,0,
-2025-08-29,Massachusetts Institute of Technology,2,Gordon College,0,
-2025-08-29,The City College of New York,0,University of Mount Saint Vincent,6,
-2025-08-29,Wilmington College (Ohio),2,Franklin College,1,
-2025-08-29,Immaculata University,2,Bryn Athyn College,1,
-2025-08-29,"University of Minnesota, Morris",1,Saint Mary's University of Minnesota,3,O1
-2025-08-29,Springfield College,5,Anna Maria College,0,
-2025-08-29,State University of New York at New Paltz,1,Russell Sage College,0,
-2025-08-29,University of Scranton,1,Stockton University,0,
-2025-08-29,Thiel College,0,La Roche University,4,
 2025-08-30,Milwaukee School of Engineering,1,Calvin University,3,
 2025-08-30,Coe College,0,Augsburg University,2,
 2025-08-30,Husson University,5,Colby-Sawyer College,0,
@@ -121,10 +113,11 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-08-30,Grove City College,0,Nazareth University,2,
 2025-08-30,State University of New York at Canton,0,Hilbert College,3,
 2025-08-30,Wartburg College,0,Hope College,3,
-2025-08-30,John Carroll University,1,Otterbein University,2,
+2025-08-30,Otterbein University,0,John Carroll University,0,Sch
 2025-08-30,State University of New York at Old Westbury,0,John Jay College of Criminal Justice,2,
 2025-08-30,Johns Hopkins University,1,Carleton College,1,
 2025-08-30,Westminster College (Pennsylvania),0,Juniata College,1,
+2025-08-30,Kean University,0,University of Scranton,4,
 2025-08-30,Keene State College,4,Rivier University,2,
 2025-08-30,King's College (Pennsylvania),0,Stockton University,3,
 2025-08-30,Lake Forest College,6,Webster University,1,
@@ -147,21 +140,16 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-08-30,Kenyon College,2,Bethany College (West Virginia),0,
 2025-08-30,Clark University (Massachusetts),6,Nichols College,0,
 2025-08-30,Emmanuel College (Massachusetts),5,Western Connecticut State University,0,
+2025-08-30,State University of New York at Morrisville,3,State University of New York Polytechnic Institute,3,
 2025-08-30,Simmons University,0,Wellesley College,5,
 2025-08-30,Keystone College,0,Alfred State College,13,
 2025-08-30,Beloit College,0,Kalamazoo College,4,
-2025-08-30,Loras College,0,"Concordia College, Moorhead",0,Sch
 2025-08-30,"Penn State University, Abington",0,Eastern University,2,
 2025-08-30,Endicott College,1,Rochester Institute of Technology,2,
-2025-08-30,Cedar Crest College,0,"Penn State University, Altoona",3,
-2025-08-30,Worcester Polytechnic Institute,2,Western New England University,0,
-2025-08-30,Emerson College,1,Gettysburg College,0,
-2025-08-30,Oberlin College,1,University of La Verne,1,
-2025-08-30,University of Scranton,4,Kean University,0,
-2025-08-30,University of Wisconsin-La Crosse,5,University of Wisconsin-Superior,0,
-2025-08-30,State University of New York Polytechnic Institute,3,State University of New York at Morrisville,3,
 2025-08-30,Wittenberg University,0,Carnegie Mellon University,3,
+2025-08-30,Worcester Polytechnic Institute,2,Western New England University,0,
 2025-08-30,Lancaster Bible College,0,Houghton University,4,
+2025-08-30,Massachusetts Institute of Technology,2,Gordon College,0,
 2025-08-31,Whitworth University,1,California Lutheran University,1,
 2025-08-31,Carthage College,1,Carleton College,5,
 2025-08-31,Allegheny College,0,Case Western Reserve University,6,
@@ -184,7 +172,6 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-08-31,Mississippi University for Women,0,Hendrix College,3,
 2025-08-31,State University of New York at New Paltz,0,Hobart and William Smith Colleges,3,
 2025-08-31,Illinois College,5,Nebraska Wesleyan University,4,
-2025-08-31,John Carroll University,1,"Pennsylvania State Univ. Erie, the Behrend College",1,
 2025-08-31,Johns Hopkins University,3,St. Olaf College,0,
 2025-08-31,Johnson & Wales University (Providence),1,Montclair State University,1,
 2025-08-31,Kenyon College,2,Baldwin Wallace University,0,
@@ -196,7 +183,6 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-08-31,"Rutgers, The State Univ. of New Jersey, Camden",0,McDaniel College,0,
 2025-08-31,Otterbein University,0,Messiah University,1,
 2025-08-31,Misericordia University,2,Washington College (Maryland),0,
-2025-08-31,Anna Maria College,0,Mount Holyoke College,0,Sch
 2025-08-31,Saint Vincent College,3,Muskingum University,0,
 2025-08-31,North Central College,2,University of Redlands,0,
 2025-08-31,North Park University,0,Illinois Institute of Technology,3,
@@ -217,7 +203,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-08-31,Worcester State University,2,University of New England,1,
 2025-08-31,Vassar College,4,Mount Saint Mary College (New York),0,
 2025-08-31,U.S. Merchant Marine Academy,0,Virginia Wesleyan University,4,
-2025-08-31,Albertus Magnus College,0,Wentworth Institute of Technology,0,
+2025-08-31,Albertus Magnus College,1,Wentworth Institute of Technology,2,
 2025-08-31,George Fox University,0,Whittier College,1,
 2025-08-31,University of Wisconsin-Oshkosh,1,Willamette University,0,
 2025-08-31,University of Wisconsin-Eau Claire,1,Central College (Iowa),2,
@@ -225,36 +211,40 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-08-31,Gustavus Adolphus College,1,University of Wisconsin-Stout,1,
 2025-08-31,Yeshiva University,1,Mitchell College,9,
 2025-08-31,New Jersey City University,3,Bard College,1,
-2025-08-31,Westfield State University,1,Emerson College,6,
-2025-08-31,Penn State Harrisburg,0,University of Mary Washington,0,Sch
+2025-08-31,Penn State Harrisburg,0,University of Mary Washington,1,
 2025-08-31,Claremont McKenna-Harvey Mudd-Scripps Colleges,2,New York University,0,
 2025-08-31,Transylvania University,0,Widener University,3,
-2025-08-31,Howard Payne University,0,Centenary College (Louisiana),0,Sch
 2025-08-31,Notre Dame of Maryland University,0,Bryn Mawr College,6,
 2025-08-31,Springfield College,2,Stevens Institute of Technology,3,
-2025-08-31,Anderson University (Indiana),0,The University of Olivet,0,
+2025-08-31,Anderson University (Indiana),3,The University of Olivet,0,
 2025-08-31,Piedmont University,4,Meredith College,2,
-2025-08-31,Regis College (Massachusetts),0,Wheaton College (Massachusetts),0,
+2025-08-31,Regis College (Massachusetts),0,Wheaton College (Massachusetts),2,
 2025-08-31,Goucher College,1,Marywood University,10,
-2025-08-31,Saint Mary's College (Indiana),0,Franklin College,0,Sch
-2025-08-31,Trinity Washington University,0,Hollins University,12,
+2025-08-31,Saint Mary's College (Indiana),2,Franklin College,0,
 2025-08-31,College of Saint Benedict,0,Christopher Newport University,2,
-2025-08-31,Monmouth College (Illinois),1,Buena Vista University,2,
+2025-08-31,University of Mount Saint Vincent,2,"Fairleigh Dickinson University, Florham",1,
+2025-08-31,Westfield State University,1,Emerson College,6,
 2025-08-31,Stockton University,0,University of Scranton,2,
-2025-09-01,Trine University,0,Capital University,0,Sch
-2025-09-01,"Concordia College, Moorhead",0,"University of Minnesota, Morris",0,Sch
-2025-09-01,Greenville University,0,DePauw University,0,Sch
-2025-09-01,Roger Williams University,0,Keene State College,0,Sch
-2025-09-01,Knox College,0,Webster University,0,Sch
-2025-09-01,George Fox University,0,University of La Verne,0,Sch
-2025-09-01,Randolph College,0,Mary Baldwin University,0,Sch
-2025-09-01,Salem College (North Carolina),0,Averett University,0,Sch
-2025-09-01,Piedmont University,0,North Carolina Wesleyan University,0,Sch
-2025-09-01,Bethel University (Minnesota),0,University of Wisconsin-Whitewater,0,Sch
-2025-09-01,"University of Pittsburgh, Greensburg",0,Oberlin College,0,Sch
-2025-09-01,Gwynedd Mercy University,0,Wilson College,0,Sch
-2025-09-01,Southwestern University (Texas),0,Concordia University Texas,0,Sch
-2025-09-01,University of Wisconsin-Platteville,0,Saint Mary's University of Minnesota,0,Sch
+2025-09-01,Trine University,3,Capital University,0,
+2025-09-01,"Concordia College, Moorhead",0,"University of Minnesota, Morris",0,
+2025-09-01,Greenville University,1,DePauw University,2,
+2025-09-01,Roger Williams University,6,Keene State College,1,
+2025-09-01,Knox College,0,Webster University,2,
+2025-09-01,George Fox University,0,University of La Verne,0,
+2025-09-01,Randolph College,0,Mary Baldwin University,1,
+2025-09-01,Salem College (North Carolina),3,Averett University,3,
+2025-09-01,Piedmont University,1,North Carolina Wesleyan University,0,
+2025-09-01,Bethel University (Minnesota),0,University of Wisconsin-Whitewater,1,
+2025-09-01,Yeshiva University,0,Mount Saint Mary College (New York),0,Sch
+2025-09-01,"University of Pittsburgh, Greensburg",4,Oberlin College,0,
+2025-09-01,Gwynedd Mercy University,0,Wilson College,1,
+2025-09-01,Southwestern University (Texas),2,Concordia University Texas,1,
+2025-09-01,University of Wisconsin-Platteville,1,Saint Mary's University of Minnesota,2,
+2025-09-01,Hollins University,12,Trinity Washington University,0,
+2025-09-01,Monmouth College (Illinois),1,Buena Vista University,2,
+2025-09-01,University of Mount Saint Vincent,0,Rensselaer Polytechnic Institute,3,
+2025-09-01,Rowan University,3,Smith College,1,
+2025-09-01,University of Wisconsin-River Falls,1,University of Wisconsin-Superior,2,
 2025-09-02,University of Dubuque,0,Carroll University (Wisconsin),0,Sch
 2025-09-02,Alfred University,0,Geneva College,0,Sch
 2025-09-02,Covenant College,0,Oglethorpe University,0,Sch

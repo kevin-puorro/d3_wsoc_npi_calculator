@@ -1,328 +1,321 @@
 team,wins,losses,ties,games,win_pct,owp,oowp,qualifying_wins,qualifying_losses,qualifying_ties,partial_wins,npi_rating
-University of Rochester,1,0,0,1,1.0,100.0,100.0,1,0,0,0,67.46041645720757
+Suffolk University,1,0,0,1,1.0,100.0,100.0,1,0,0,0,63.65619546877173
+State University of New York at Cortland,1,0,0,1,1.0,100.0,100.0,1,0,0,0,62.962970729859016
 Mount St. Joseph University,1,0,0,1,1.0,100.0,100.0,1,0,0,0,62.962934583415915
-Suffolk University,1,0,0,1,1.0,100.0,100.0,1,0,0,0,62.962934583415915
-Messiah University,1,0,0,1,1.0,100.0,50.0,1,0,0,0,61.904736363169576
+Saint Mary's University of Minnesota,1,0,0,1,1.0,100.0,100.0,1,0,0,0,62.962928818279124
+University of Wisconsin-Superior,1,0,0,1,1.0,100.0,0.0,1,0,0,0,61.481526381240066
 Claremont McKenna-Harvey Mudd-Scripps Colleges,1,0,0,1,1.0,100.0,0.0,1,0,0,0,60.00006890234856
+Anderson University (Indiana),1,0,0,1,1.0,100.0,0.0,1,0,0,0,60.00001036647984
+Roger Williams University,1,0,0,1,1.0,100.0,50.0,1,0,0,0,60.0
+Guilford College,1,0,0,1,1.0,100.0,50.0,1,0,0,0,60.0
+Pennsylvania College of Technology,1,0,0,1,1.0,100.0,50.0,1,0,0,0,60.0
 Pomona-Pitzer Colleges,1,0,0,1,1.0,100.0,50.0,1,0,0,0,60.0
 Illinois Institute of Technology,1,0,0,1,1.0,100.0,50.0,1,0,0,0,60.0
-Stevens Institute of Technology,1,0,0,1,1.0,100.0,50.0,1,0,0,0,60.0
-Hanover College,1,0,0,1,1.0,100.0,50.0,1,0,0,0,60.0
-Elizabethtown College,1,0,0,1,1.0,100.0,50.0,1,0,0,0,60.0
-Franklin & Marshall College,1,0,0,1,1.0,100.0,50.0,1,0,0,0,60.0
-Pennsylvania College of Technology,1,0,0,1,1.0,100.0,50.0,1,0,0,0,60.0
 Salem State University,1,0,0,1,1.0,100.0,50.0,1,0,0,0,60.0
+Franklin & Marshall College,1,0,0,1,1.0,100.0,50.0,1,0,0,0,60.0
 Howard Payne University,1,0,0,1,1.0,100.0,0.0,1,0,0,0,59.99995888152835
-University of Wisconsin-Platteville,1,0,0,1,1.0,100.0,0.0,1,0,0,0,59.47531447183262
-Chapman University,1,0,0,1,1.0,50.0,100.0,1,0,0,0,59.25920250016517
-University of Scranton,3,0,0,3,1.0,60.0,73.33333333333333,3,0,0,0,58.89365808474121
-Bridgewater College (Virginia),2,0,0,2,1.0,100.0,100.0,2,0,0,0,58.88888676042288
+Wentworth Institute of Technology,1,0,0,1,1.0,100.0,0.0,1,0,0,0,59.99995888152835
 Kenyon College,2,0,0,2,1.0,50.0,100.0,2,0,0,0,58.732500294876615
-Emerson College,2,0,0,2,1.0,75.0,75.0,2,0,0,0,58.504368177095216
-Hobart and William Smith Colleges,2,0,0,2,1.0,100.0,100.0,2,0,0,0,58.2010836484216
-Whittier College,2,0,0,2,1.0,50.0,100.0,2,0,0,0,57.843127677563324
-Greensboro College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,57.77777352084573
+Whittier College,2,0,0,2,1.0,50.0,100.0,2,0,0,0,58.553282757963586
+Bridgewater College (Virginia),2,0,0,2,1.0,100.0,100.0,2,0,0,0,58.2010836484216
+University of Scranton,2,0,0,2,1.0,100.0,100.0,2,0,0,0,58.2010836484216
+University of Chicago,1,0,0,1,1.0,50.0,50.0,1,0,0,0,58.2010553631035
 Stevenson University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,57.77777352084573
 Luther College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,57.77777352084573
 University of Hartford,1,0,0,1,1.0,50.0,50.0,1,0,0,0,57.77777352084573
+Greensboro College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,57.77777352084573
 Ithaca College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,57.77773520845721
-University of Chicago,2,0,0,2,1.0,50.0,100.0,2,0,0,0,57.77773520845721
-The College of New Jersey,1,0,1,2,0.75,100.0,50.0,1,0,1,0,57.623264688829394
-University of Wisconsin-Stout,1,0,1,2,0.75,100.0,62.5,1,0,1,0,57.615805714928236
-Husson University,1,0,0,1,1.0,50.0,0.0,1,0,0,0,57.47804672000767
-State University of New York at Cortland,1,1,0,2,0.5,100.0,75.0,1,1,0,0,57.2748670246596
-St. Catherine University,2,0,0,2,1.0,50.0,75.0,2,0,0,0,57.0940015577407
-St. Mary's College of Maryland,0,0,1,1,0.5,50.0,100.0,0,0,1,0,56.97352350858962
-Gustavus Adolphus College,0,0,1,1,0.5,100.0,100.0,0,0,1,0,56.96371702187952
+University of Wisconsin-Whitewater,1,0,0,1,1.0,50.0,50.0,1,0,0,0,57.77773520845721
+Wilson College,1,0,1,2,0.75,100.0,75.0,1,0,1,0,57.623264688829394
+Emerson College,1,0,0,1,1.0,50.0,0.0,1,0,0,0,57.14280605967246
+Husson University,1,0,0,1,1.0,50.0,0.0,1,0,0,0,57.14280605967246
+Saint Vincent College,2,0,0,2,1.0,50.0,100.0,2,0,0,0,57.094191394345664
+Lake Forest College,2,0,0,2,1.0,50.0,100.0,2,0,0,0,57.094191394345664
+"Penn State University, Altoona",0,0,1,1,0.5,100.0,100.0,0,0,1,0,57.00627197820464
 Marywood University,2,0,0,2,1.0,50.0,100.0,2,0,0,0,56.87827566080513
 Johns Hopkins University,1,0,1,2,0.75,100.0,37.5,1,0,1,0,56.835091151760786
 Carleton College,1,0,1,2,0.75,50.0,75.0,1,0,1,0,55.866155642240415
+DePauw University,1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.555730173749396
+Washington and Jefferson College,1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.555730173749396
 Macalester College,1,0,0,1,1.0,0.0,50.0,1,0,0,0,55.55555020870956
-Marymount University (Virginia),1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+University of Wisconsin-La Crosse,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Hardin-Simmons University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+University of Wisconsin-Oshkosh,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
 McMurry University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Centre College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Washington University in St. Louis,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Lycoming College,2,0,0,2,1.0,50.0,100.0,2,0,0,0,55.55554704169145
 Plymouth State University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
 Emmanuel College (Massachusetts),1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Millikin University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Brandeis University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Lycoming College,2,0,0,2,1.0,50.0,100.0,2,0,0,0,55.55554704169145
-Waynesburg University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Mitchell College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Washington University in St. Louis,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Averett University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Alfred University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Worcester Polytechnic Institute,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Wheaton College (Illinois),2,0,0,2,1.0,50.0,100.0,2,0,0,0,55.55554704169145
-Lawrence University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-University of Mount Saint Vincent,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Cornell College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Ohio Northern University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-John Jay College of Criminal Justice,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Belhaven University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
 State University of New York at Oswego,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Hardin-Simmons University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Wellesley College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-New England College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-William Paterson University of New Jersey,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Massachusetts Institute of Technology,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-University of Wisconsin-La Crosse,2,0,0,2,1.0,50.0,100.0,2,0,0,0,55.55554704169145
-Lebanon Valley College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Gwynedd Mercy University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Keene State College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Worcester State University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Drew University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-DePauw University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-University of Massachusetts Boston,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Albion College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-La Roche University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-"University of Pittsburgh, Bradford",1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
 Illinois College,2,0,0,2,1.0,50.0,100.0,2,0,0,0,55.55554704169145
-Lake Forest College,2,0,0,2,1.0,50.0,100.0,2,0,0,0,55.55554704169145
-Guilford College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Kalamazoo College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-Centre College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-University of Mary Washington,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+John Jay College of Criminal Justice,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Salisbury University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Mitchell College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Wheaton College (Massachusetts),1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Chapman University,2,0,0,2,1.0,50.0,100.0,2,0,0,0,55.55554704169145
+Alfred University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Trine University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Drew University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Worcester Polytechnic Institute,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Saint Mary's College (Indiana),1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Belhaven University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Stevens Institute of Technology,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+New England College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Massachusetts Institute of Technology,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Gettysburg College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Case Western Reserve University,2,0,0,2,1.0,50.0,100.0,2,0,0,0,55.55554704169145
 Eastern University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
-University of Wisconsin-River Falls,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.555540022284056
-Houghton University,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
-Buena Vista University,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
+University of Mary Washington,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Lawrence University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Messiah University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Marymount University (Virginia),1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Brandeis University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Ohio Northern University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+William Paterson University of New Jersey,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Wellesley College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Wheaton College (Illinois),1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Kalamazoo College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Hobart and William Smith Colleges,2,0,0,2,1.0,50.0,100.0,2,0,0,0,55.55554704169145
+Cornell College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Worcester State University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Muhlenberg College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Waynesburg University,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Hanover College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+Lebanon Valley College,1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
+"University of Pittsburgh, Bradford",1,0,0,1,1.0,50.0,50.0,1,0,0,0,55.55554704169145
 Christopher Newport University,1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.55547041691441
-Oglethorpe University,1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.55547041691441
-Berry College,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
-Saint Vincent College,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
-Piedmont University,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
-Capital University,1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.55547041691441
-Hope College,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
-Virginia Wesleyan University,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
 Hilbert College,1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.55547041691441
-Case Western Reserve University,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
-Calvin University,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
-Hollins University,1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.55547041691441
+Rowan University,1,0,0,1,1.0,0.0,50.0,1,0,0,0,55.55547041691441
+Hope College,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
+Bryn Mawr College,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
+Calvin University,1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.55547041691441
 Wisconsin Lutheran College,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
-Washington and Jefferson College,1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.55547041691441
+Oglethorpe University,1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.55547041691441
+Buena Vista University,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
+Houghton University,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
 Marian University (Wisconsin),1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.55547041691441
+Virginia Wesleyan University,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
+Hollins University,1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.55547041691441
+Ursinus College,1,0,0,1,1.0,0.0,100.0,1,0,0,0,55.55547041691441
+Berry College,2,0,0,2,1.0,0.0,100.0,2,0,0,0,55.55547041691441
+University of Massachusetts Boston,1,0,0,1,1.0,0.0,50.0,1,0,0,0,55.55547041691441
+Piedmont University,3,0,0,3,1.0,0.0,100.0,3,0,0,0,55.55547041691441
+St. Catherine University,2,0,0,2,1.0,50.0,58.33333333333333,2,0,0,0,55.54413838801214
 State University of New York at Brockport,1,0,1,2,0.75,50.0,75.0,1,0,1,0,54.841721211900975
+Misericordia University,2,0,0,2,1.0,50.0,75.0,2,0,0,0,54.53236108672845
 Nazareth University,2,0,0,2,1.0,25.0,87.5,2,0,0,0,54.44445802360663
+University of Puget Sound,1,0,1,2,0.75,100.0,37.5,1,0,1,0,54.368198050250655
 University of Lynchburg,1,0,1,2,0.75,100.0,0.0,1,0,1,0,54.368118033356126
+Rensselaer Polytechnic Institute,2,1,0,3,0.6666666666666666,100.0,66.66666666666667,2,1,0,0,54.35240563629183
 Skidmore College,0,0,1,1,0.5,100.0,50.0,0,0,1,0,54.12075730562728
 Central College (Iowa),2,0,0,2,1.0,50.0,75.0,2,0,0,0,53.99013347087826
-Misericordia University,2,0,0,2,1.0,50.0,75.0,2,0,0,0,53.82457127471609
-Clark University (Massachusetts),1,0,0,1,1.0,0.0,50.0,1,0,0,0,53.77772428407348
-Rensselaer Polytechnic Institute,1,1,0,2,0.5,100.0,50.0,1,1,0,0,53.70390360252934
+Arcadia University,1,1,0,2,0.5,100.0,50.0,1,1,0,0,53.70467287063931
 Ohio Wesleyan University,1,1,0,2,0.5,100.0,50.0,1,1,0,0,53.70390360252934
-University of Mary Hardin-Baylor,1,0,1,2,0.75,100.0,75.0,1,0,1,0,53.5719924115946
-University of Puget Sound,1,0,1,2,0.75,100.0,75.0,1,0,1,0,53.5719924115946
-Swarthmore College,2,0,0,2,1.0,50.0,75.0,2,0,0,0,53.39465677153553
+University of Wisconsin-Platteville,1,1,0,2,0.5,100.0,50.0,1,1,0,0,53.7037014345871
+Swarthmore College,2,0,0,2,1.0,50.0,75.0,2,0,0,0,53.48263477114676
 Geneva College,1,0,1,2,0.75,100.0,75.0,1,0,1,0,53.38059413650649
-New Jersey City University,2,0,0,2,1.0,50.0,75.0,2,0,0,0,53.333331361280464
 Sewanee,2,0,0,2,1.0,50.0,75.0,2,0,0,0,53.333331361280464
+New Jersey City University,2,0,0,2,1.0,50.0,75.0,2,0,0,0,53.333331361280464
 The College of Wooster,2,0,0,2,1.0,50.0,50.0,2,0,0,0,53.06123300366005
 Vassar College,2,0,0,2,1.0,0.0,75.0,2,0,0,0,52.94116676785078
-Bryn Mawr College,2,0,0,2,1.0,0.0,100.0,2,0,0,0,52.853134879205584
-Immaculata University,1,0,1,2,0.75,50.0,75.0,1,0,1,0,52.777773520845734
-"Penn State University, Altoona",1,0,1,2,0.75,50.0,75.0,1,0,1,0,52.777773520845734
-Albertus Magnus College,1,0,1,2,0.75,0.0,50.0,1,0,1,0,52.77772428407348
-The University of Olivet,1,0,1,2,0.75,0.0,75.0,1,0,1,0,52.476137943854255
-Otterbein University,1,1,0,2,0.5,50.0,50.0,1,1,0,0,52.38092683936004
-Occidental College,1,0,0,1,1.0,0.0,50.0,1,0,0,0,52.3137159128892
-Alvernia University,0,0,1,1,0.5,100.0,50.0,0,0,1,0,52.22258126333955
-Wilson College,0,0,1,1,0.5,100.0,50.0,0,0,1,0,52.22258126333955
-Wentworth Institute of Technology,0,0,1,1,0.5,50.0,0.0,0,0,1,0,52.2222265726904
-Elmhurst University,2,0,0,2,1.0,0.0,75.0,2,0,0,0,52.13677147423673
+Occidental College,1,0,0,1,1.0,0.0,50.0,1,0,0,0,52.453576028927294
 Hendrix College,1,0,0,1,1.0,0.0,0.0,1,0,0,0,51.99992863662886
-Anderson University (Indiana),0,0,1,1,0.5,50.0,0.0,0,0,1,0,51.98087936476241
+Clark University (Massachusetts),1,0,0,1,1.0,0.0,0.0,1,0,0,0,51.99992863662886
+University of Wisconsin-River Falls,2,1,0,3,0.6666666666666666,0.0,72.22222222222221,2,1,0,0,51.85183069094768
+University of Mary Hardin-Baylor,1,0,1,2,0.75,50.0,62.5,1,0,1,0,51.73313001460801
 Rhodes College,1,0,1,2,0.75,0.0,50.0,1,0,1,0,51.73300193995044
-Carnegie Mellon University,1,1,0,2,0.5,100.0,50.0,1,1,0,0,51.11182046130017
-University of Wisconsin-Oshkosh,1,0,1,2,0.75,0.0,75.0,1,0,1,0,50.92586916683184
-Arcadia University,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.73008041713241
-California Lutheran University,1,0,1,2,0.75,0.0,75.0,1,0,1,0,50.49018650111391
-"St. Joseph's University, New York L.I.",0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
-Johnson & Wales University (Providence),0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
-Regis College (Massachusetts),0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
-Rhode Island College,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
-University of St. Thomas (Texas),0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
-North Central College,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
-North Park University,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
-Alfred State College,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
-Pacific Lutheran University,0,0,2,2,0.5,50.0,50.0,0,0,2,0,50.0
-Catholic University,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
+Elmhurst University,2,0,0,2,1.0,0.0,50.0,2,0,0,0,51.16125671599852
+California Lutheran University,1,0,1,2,0.75,0.0,75.0,1,0,1,0,50.70870798936089
 "University of Minnesota, Morris",0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
-Bethel University (Minnesota),0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
-University of Northwestern-St. Paul,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
-University of La Verne,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
-Wilmington College (Ohio),1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
+Immaculata University,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+University of Wisconsin-Stout,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+University of St. Thomas (Texas),0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+Averett University,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+Salem College (North Carolina),0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+Pacific Lutheran University,0,0,2,2,0.5,50.0,50.0,0,0,2,0,50.0
+Alvernia University,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+Rhode Island College,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
+Johnson & Wales University (Providence),0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+Catholic University,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
 Trinity University (Texas),0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
-Oberlin College,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
-Saint Mary's University of Minnesota,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
-Muhlenberg College,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
-Wheaton College (Massachusetts),0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
-Springfield College,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
+North Park University,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
+"St. Joseph's University, New York L.I.",0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+"Concordia College, Moorhead",0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+Alfred State College,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
+Gustavus Adolphus College,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
 Eastern Connecticut State University,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+Keene State College,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
 Montclair State University,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+North Central College,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
+St. Mary's College of Maryland,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+The College of New Jersey,0,0,1,1,0.5,50.0,50.0,0,0,1,0,50.0
+Mary Baldwin University,1,1,0,2,0.5,50.0,50.0,1,1,0,0,50.0
 New York University,1,1,0,2,0.5,0.0,75.0,1,1,0,0,49.99999029726255
+The University of Olivet,1,1,0,2,0.5,0.0,75.0,1,1,0,0,49.99996145427667
+Albertus Magnus College,1,1,0,2,0.5,0.0,50.0,1,1,0,0,49.99992863662886
 University of the Ozarks (Arkansas),1,1,0,2,0.5,0.0,50.0,1,1,0,0,49.99992863662886
 Baldwin Wallace University,0,1,1,2,0.25,100.0,75.0,0,1,1,0,49.84544826944369
-Ursinus College,2,0,0,2,1.0,0.0,75.0,2,0,0,0,49.812862442697536
+Hamline University,1,0,0,1,1.0,0.0,0.0,1,0,0,0,49.629595484945796
 Rochester Institute of Technology,1,0,1,2,0.75,0.0,87.5,1,0,1,0,49.44445802360663
-Augsburg University,1,1,0,2,0.5,0.0,50.0,1,1,0,0,49.329176840922905
-Gettysburg College,1,1,0,2,0.5,100.0,37.5,1,1,0,0,49.12027545944913
-Lewis & Clark College,0,1,1,2,0.25,100.0,25.0,0,1,1,0,49.07430993432
-Kean University,1,1,0,2,0.5,66.66666666666666,30.0,1,1,0,0,49.04630334923386
-State University of New York at New Paltz,1,1,0,2,0.5,100.0,50.0,1,1,0,0,48.94211865818211
-Washington College (Maryland),1,1,0,2,0.5,100.0,25.0,1,1,0,0,48.92419831386084
-Washington and Lee University,1,1,0,2,0.5,100.0,25.0,1,1,0,0,48.69894378290206
-Farmingdale State College,1,1,0,2,0.5,100.0,25.0,1,1,0,0,48.666727704321715
+Washington College (Maryland),1,1,0,2,0.5,100.0,25.0,1,1,0,0,49.29474836600618
+Carnegie Mellon University,1,1,0,2,0.5,100.0,50.0,1,1,0,0,48.94211865818211
+Stockton University,1,1,0,2,0.5,100.0,50.0,1,1,0,0,48.94211865818211
+East Texas Baptist University,0,0,1,1,0.5,50.0,50.0,0,0,1,0,48.94180177975366
+Washington and Lee University,1,1,0,2,0.5,100.0,25.0,1,1,0,0,48.74544404559197
+Whitworth University,0,1,1,2,0.25,100.0,25.0,0,1,1,0,48.70505434363211
+Linfield University,0,0,2,2,0.5,50.0,50.0,0,0,2,0,48.677245839293974
 Bard College,1,1,0,2,0.5,100.0,25.0,1,1,0,0,48.666727704321715
-Salisbury University,1,1,0,2,0.5,50.0,50.0,1,1,0,0,48.584240223637735
-Hamline University,1,1,0,2,0.5,25.0,50.0,1,1,0,0,48.57808807923445
-Stockton University,1,2,0,3,0.3333333333333333,80.0,30.0,1,2,0,0,48.40252652519953
-Whitworth University,0,1,1,2,0.25,100.0,25.0,0,1,1,0,48.3334474269028
-University of Wisconsin-Stevens Point,1,1,0,2,0.5,50.0,50.0,1,1,0,0,48.290617651160446
+Farmingdale State College,1,1,0,2,0.5,100.0,25.0,1,1,0,0,48.666727704321715
+Gwynedd Mercy University,1,1,0,2,0.5,50.0,50.0,1,1,0,0,48.604785126212526
+Webster University,1,1,0,2,0.5,100.0,25.0,1,1,0,0,48.29084159379187
+"University of Pittsburgh, Greensburg",1,1,0,2,0.5,100.0,25.0,1,1,0,0,48.29084159379187
+University of La Verne,0,0,1,1,0.5,50.0,100.0,0,0,1,0,48.142725566132675
 St. Olaf College,1,1,0,2,0.5,25.0,75.0,1,1,0,0,48.13823290268792
 State University of New York at Potsdam,0,0,1,1,0.5,50.0,50.0,0,0,1,0,47.77777352084573
+McDaniel College,0,0,1,1,0.5,50.0,50.0,0,0,1,0,47.77777352084573
 Loras College,0,0,1,1,0.5,50.0,50.0,0,0,1,0,47.77777352084573
 Methodist University,0,0,1,1,0.5,50.0,50.0,0,0,1,0,47.77777352084573
-McDaniel College,0,0,1,1,0.5,50.0,50.0,0,0,1,0,47.77777352084573
 State University of New York at Geneseo,0,0,1,1,0.5,0.0,50.0,0,0,1,0,47.77773520845721
-Linfield University,0,0,2,2,0.5,0.0,100.0,0,0,2,0,47.77773520845721
+University of Northwestern-St. Paul,0,0,1,1,0.5,0.0,50.0,0,0,1,0,47.77773520845721
+"University of California, Santa Cruz",0,1,1,2,0.25,50.0,50.0,0,1,1,0,47.75132558927747
+George Fox University,0,1,1,2,0.25,100.0,50.0,0,1,1,0,47.67866138899632
+University of Wisconsin-Stevens Point,1,1,0,2,0.5,50.0,50.0,1,1,0,0,47.37896224526696
 State University of New York at Morrisville,0,0,1,1,0.5,0.0,100.0,0,0,1,0,47.35446613699561
-East Texas Baptist University,0,1,1,2,0.25,100.0,25.0,0,1,1,0,47.224229737516225
-"University of California, Santa Cruz",0,1,1,2,0.25,100.0,25.0,0,1,1,0,47.224229737516225
-The College of St. Scholastica,0,1,1,2,0.25,50.0,50.0,0,1,1,0,47.222226479154294
-"Rutgers, The State Univ. of New Jersey, Camden",0,1,1,2,0.25,50.0,50.0,0,1,1,0,47.222226479154294
 Eastern Mennonite University,0,1,1,2,0.25,50.0,50.0,0,1,1,0,47.222226479154294
-Heidelberg University,0,1,1,2,0.25,50.0,25.0,0,1,1,0,47.222226479154294
+Bethel University (Minnesota),0,1,1,2,0.25,50.0,25.0,0,1,1,0,47.222226479154294
 St. Lawrence University,0,1,1,2,0.25,50.0,50.0,0,1,1,0,47.222226479154294
-Westfield State University,0,1,1,2,0.25,50.0,37.5,0,1,1,0,47.14080331841564
+"Rutgers, The State Univ. of New Jersey, Camden",0,1,1,2,0.25,50.0,50.0,0,1,1,0,47.222226479154294
+The College of St. Scholastica,0,1,1,2,0.25,50.0,50.0,0,1,1,0,47.222226479154294
+Heidelberg University,0,1,1,2,0.25,50.0,25.0,0,1,1,0,47.222226479154294
 Bethany College (West Virginia),0,1,0,1,0.0,100.0,50.0,0,1,0,0,46.986210738789296
-Colby-Sawyer College,0,1,1,2,0.25,0.0,50.0,0,1,1,0,46.84747668139795
 State University of New York Polytechnic Institute,0,1,1,2,0.25,100.0,25.0,0,1,1,0,46.69384281542473
+Southwestern University (Texas),1,1,0,2,0.5,25.0,62.5,1,1,0,0,46.68711757982393
 Denison University,1,1,0,2,0.5,0.0,50.0,1,1,0,0,46.687007393311035
-DeSales University,0,1,0,1,0.0,100.0,100.0,0,1,0,0,46.561166277229724
+University of Mount Saint Vincent,1,1,0,2,0.5,50.0,50.0,1,1,0,0,46.677222661322425
+Marietta College,0,1,0,1,0.0,100.0,100.0,0,1,0,0,46.561166277229724
+Kean University,0,1,0,1,0.0,100.0,100.0,0,1,0,0,46.561166277229724
 Grove City College,0,1,1,2,0.25,100.0,12.5,0,1,1,0,46.55568420302657
 Edgewood University,1,1,0,2,0.5,100.0,25.0,1,1,0,0,46.46484538395098
+Colby-Sawyer College,0,1,1,2,0.25,0.0,25.0,0,1,1,0,46.428520345386744
+Westfield State University,0,1,1,2,0.25,0.0,25.0,0,1,1,0,46.428520345386744
 Hartwick College,0,0,1,1,0.5,50.0,50.0,0,0,1,0,46.39583195366311
+Haverford College,1,1,0,2,0.5,0.0,75.0,1,1,0,0,46.29630406319235
 Adrian College,1,1,0,2,0.5,0.0,50.0,1,1,0,0,46.29626791674925
-Plattsburgh State University of New York,1,1,0,2,0.5,0.0,50.0,1,1,0,0,46.29626791674925
-George Fox University,0,1,0,1,0.0,100.0,50.0,0,1,0,0,46.274623897492255
-Marietta College,0,1,1,2,0.25,100.0,50.0,0,1,1,0,46.11182046130017
+Augsburg University,1,1,0,2,0.5,0.0,50.0,1,1,0,0,46.29626215161246
 Juniata College,1,1,0,2,0.5,50.0,50.0,1,1,0,0,46.10644532718014
 Alma College,1,1,0,2,0.5,50.0,50.0,1,1,0,0,45.918375860802904
 State University of New York at Oneonta,0,1,1,2,0.25,50.0,50.0,0,1,1,0,45.5182020389378
 Goucher College,0,1,0,1,0.0,100.0,50.0,0,1,0,0,45.50336662494854
-"Pennsylvania State Univ. Erie, the Behrend College",0,0,1,1,0.5,0.0,0.0,0,0,1,0,45.2380696965029
-Haverford College,1,1,0,2,0.5,0.0,50.0,1,1,0,0,44.54664049791011
-Franciscan University of Steubenville,0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
-College of Saint Benedict,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
-Muskingum University,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
-Monmouth College (Illinois),0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
-Aurora University,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
+Lewis & Clark College,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
 Principia College,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
-Nebraska Wesleyan University,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
-Lancaster Bible College,0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
-Carroll University (Wisconsin),0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
 Milwaukee School of Engineering,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
-Meredith College,0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
-Martin Luther College,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
-Webster University,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
-Utica University,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
-Greenville University,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
+Wartburg College,0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
+North Carolina Wesleyan University,0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
+DeSales University,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
+Muskingum University,0,2,0,2,0.0,100.0,25.0,0,1,0,0,44.444687774295865
+State University of New York at New Paltz,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
+Lancaster Bible College,0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
+Monmouth College (Illinois),0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
 "Buffalo State, State University of New York",0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
-U.S. Merchant Marine Academy,0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
+Nebraska Wesleyan University,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
 State University of New York at Canton,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
-Allegheny College,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
-LaGrange College,0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
-Agnes Scott College,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
-Dominican University (Illinois),0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
-Trinity Washington University,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
-University of Wisconsin-Superior,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
+College of Saint Benedict,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
+Delaware Valley University,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
 Ripon College,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
-Wartburg College,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
-"University of Pittsburgh, Greensburg",0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
-St. Norbert College,0,2,0,2,0.0,100.0,25.0,0,1,0,0,44.44446382808084
-Crown College (Minnesota),0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.44446382808084
-Moravian University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Lakeland University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Smith College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-North Central University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Westminster College (Missouri),0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Chatham University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Thiel College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Manchester University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Gordon College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Bluffton University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Thomas College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Bridgewater State University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Millsaps College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Pfeiffer University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-University of Maine at Presque Isle,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Covenant College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Pacific University (Oregon),0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
+Martin Luther College,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
+Agnes Scott College,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
+Utica University,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
+Franciscan University of Steubenville,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
+LaGrange College,0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
+Trinity Washington University,0,2,0,2,0.0,100.0,0.0,0,2,0,0,44.444687774295865
+Meredith College,0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
+Greenville University,0,2,0,2,0.0,100.0,25.0,0,1,0,0,44.444687774295865
+Notre Dame of Maryland University,0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
+Allegheny College,0,1,0,1,0.0,100.0,50.0,0,1,0,0,44.444687774295865
+U.S. Merchant Marine Academy,0,1,0,1,0.0,100.0,0.0,0,1,0,0,44.444687774295865
 Mount Aloysius College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Beloit College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Western Connecticut State University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Yeshiva University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+University of Maine at Presque Isle,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
 Centenary University (New Jersey),0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Knox College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Centenary College (Louisiana),0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Wilkes University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Shenandoah University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-State University of New York at Old Westbury,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Mary Baldwin University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-"Penn State University, Abington",0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Randolph-Macon College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Carthage College,0,2,0,2,0.0,50.0,25.0,0,1,0,0,44.444452958308574
-University of Valley Forge,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
 Rose-Hulman Institute of Technology,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-University of Dallas,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Westminster College (Missouri),0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Millsaps College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+"Penn State University, Abington",0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Gordon College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Lakeland University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Willamette University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+State University of New York at Old Westbury,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
 Manhattanville University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-University of New England,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Western New England University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-Rivier University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Penn State Harrisburg,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Carthage College,0,2,0,2,0.0,50.0,25.0,0,1,0,0,44.444452958308574
+Bridgewater State University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Beloit College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Neumann University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Franklin College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+North Central University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Wilkes University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
 State University of New York at Cobleskill,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Moravian University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Regis College (Massachusetts),0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Smith College,0,2,0,2,0.0,50.0,0.0,0,2,0,0,44.444452958308574
+Yeshiva University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Aurora University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
 Simmons University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-The City College of New York,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
-John Carroll University,0,1,1,2,0.25,0.0,25.0,0,1,1,0,44.047593506026715
-Wittenberg University,0,1,1,2,0.25,0.0,100.0,0,1,1,0,43.88888676042288
-Widener University,1,1,0,2,0.5,0.0,75.0,1,1,0,0,43.484663261307574
-York College (Pennsylvania),1,1,0,2,0.5,0.0,75.0,1,1,0,0,43.3522628306341
-"Rutgers, The State Univ. of New Jersey, Newark",1,1,0,2,0.5,0.0,75.0,1,1,0,0,43.333331361280464
+Wilmington College (Ohio),0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Springfield College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+University of Dallas,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Thomas College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Covenant College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Western Connecticut State University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Hood College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Chatham University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Capital University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Otterbein University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+U.S. Coast Guard Academy,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Carroll University (Wisconsin),0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Shenandoah University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Western New England University,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+University of New England,0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Centenary College (Louisiana),0,1,0,1,0.0,50.0,50.0,0,1,0,0,44.444452958308574
+Widener University,1,1,0,2,0.5,0.0,75.0,1,1,0,0,43.70227023161752
+Plattsburgh State University of New York,0,1,0,1,0.0,50.0,100.0,0,1,0,0,43.480735673090294
+York College (Pennsylvania),1,1,0,2,0.5,0.0,50.0,1,1,0,0,43.37927642701032
 Maryville College (Tennessee),1,1,0,2,0.5,0.0,75.0,1,1,0,0,43.333331361280464
-Concordia University Texas,0,1,0,1,0.0,50.0,100.0,0,1,0,0,42.857706697308885
-Southwestern University (Texas),0,1,0,1,0.0,50.0,100.0,0,1,0,0,42.857706697308885
+"Rutgers, The State Univ. of New Jersey, Newark",1,1,0,2,0.5,0.0,75.0,1,1,0,0,43.333331361280464
 Sarah Lawrence College,0,1,0,1,0.0,100.0,0.0,0,1,0,0,42.353010078818414
-Notre Dame of Maryland University,0,1,0,1,0.0,100.0,0.0,0,1,0,0,42.28257925948764
-Cedar Crest College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,42.22258126333955
-Bryn Athyn College,0,1,0,1,0.0,50.0,50.0,0,1,0,0,42.22258126333955
-Nichols College,0,2,0,2,0.0,50.0,0.0,0,1,0,0,42.2222265726904
-Rockford University,0,2,0,2,0.0,100.0,0.0,0,1,0,0,41.709386164110526
-Willamette University,0,1,0,1,0.0,50.0,0.0,0,1,0,0,40.74097660098666
-The State University of New York at Fredonia,0,2,0,2,0.0,50.0,0.0,0,1,0,0,40.39227095631335
+Crown College (Minnesota),0,1,0,1,0.0,50.0,0.0,0,1,0,0,41.481526381240066
+St. Norbert College,0,2,0,2,0.0,66.66666666666666,25.0,0,1,0,0,41.481526381240066
+The State University of New York at Fredonia,0,2,0,2,0.0,50.0,0.0,0,1,0,0,40.56722442713345
 Mount Saint Mary College (New York),0,2,0,2,0.0,50.0,0.0,0,1,0,0,40.00006890234856
-U.S. Coast Guard Academy,0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
-Franklin College,0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
-Benedictine University (Illinois),0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
-University of Redlands,0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
-Anna Maria College,0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
-Dean College,0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
-St. John Fisher University,0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
+Rockford University,0,2,0,2,0.0,50.0,0.0,0,1,0,0,40.00001036647984
 Keystone College,0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
+Randolph College,0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
+University of Redlands,0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
+St. John Fisher University,0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
+Dean College,0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
+Benedictine University (Illinois),0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
+Rivier University,0,1,0,1,0.0,0.0,50.0,0,1,0,0,40.0
 Mississippi University for Women,0,2,0,2,0.0,0.0,0.0,0,1,0,0,39.99995888152835
-Delaware Valley University,0,2,0,2,0.0,100.0,0.0,0,1,0,0,39.85038433719494
+Nichols College,0,2,0,2,0.0,0.0,0.0,0,1,0,0,39.99995888152835
 Endicott College,0,2,0,2,0.0,75.0,12.5,0,1,0,0,39.55568420302657
-Hood College,0,1,0,1,0.0,0.0,100.0,0,1,0,0,39.29615703345959
-Russell Sage College,0,1,0,1,0.0,0.0,100.0,0,1,0,0,39.15346460080255
-Neumann University,0,1,0,1,0.0,0.0,50.0,0,1,0,0,38.88580593590626
-Coe College,0,2,0,2,0.0,0.0,12.5,0,1,0,0,38.88098142842614
-King's College (Pennsylvania),0,2,0,2,0.0,0.0,73.33333333333333,0,1,0,0,38.72198426499872
-Concordia University Chicago,0,2,0,2,0.0,50.0,25.0,0,1,0,0,38.63246309319734
+Wittenberg University,0,1,0,1,0.0,0.0,100.0,0,1,0,0,39.15346460080255
+King's College (Pennsylvania),0,1,0,1,0.0,0.0,100.0,0,1,0,0,39.15346460080255
+University of Valley Forge,0,1,0,1,0.0,0.0,50.0,0,1,0,0,38.88580593590626
+Knox College,0,1,0,1,0.0,0.0,100.0,0,1,0,0,38.63265261494193
+Oberlin College,0,1,0,1,0.0,0.0,100.0,0,1,0,0,38.63265261494193
 University of Wisconsin-Eau Claire,0,2,0,2,0.0,50.0,37.5,0,1,0,0,38.51065316546358
+Concordia University Chicago,0,2,0,2,0.0,50.0,25.0,0,1,0,0,37.903112751743265
+Concordia University Texas,0,2,0,2,0.0,25.0,37.5,0,1,0,0,37.34978564268963
 Roanoke College,0,2,0,2,0.0,0.0,0.0,0,1,0,0,37.34971163329427
+"Fairleigh Dickinson University, Florham",0,1,0,1,0.0,0.0,50.0,0,1,0,0,37.34325159563993
 Grinnell College,0,1,0,1,0.0,0.0,100.0,0,1,0,0,37.17180957506355
+Susquehanna University,0,2,0,2,0.0,50.0,25.0,0,1,0,0,37.03800620396822
 Hiram College,0,1,0,1,0.0,0.0,0.0,0,1,0,0,37.037236935862666
-Vermont State University Castleton,0,1,0,1,0.0,0.0,0.0,0,1,0,0,37.037236935862666
+Coe College,0,2,0,2,0.0,0.0,0.0,0,1,0,0,37.03703476792043
 Westminster College (Pennsylvania),0,1,0,1,0.0,0.0,50.0,0,1,0,0,36.88499296347832
 Earlham College,0,2,0,2,0.0,50.0,50.0,0,1,0,0,36.73470239141515
-Susquehanna University,0,2,0,2,0.0,50.0,25.0,0,1,0,0,35.63836609136786
-Transylvania University,0,2,0,2,0.0,50.0,25.0,0,1,0,0,34.78809083480203
-Penn State Berks College,0,2,0,2,0.0,50.0,0.0,0,1,0,0,34.68193818273189
-Spalding University,0,2,0,2,0.0,50.0,25.0,0,1,0,0,34.66672770432171
+Transylvania University,0,2,0,2,0.0,50.0,25.0,0,1,0,0,34.96268422413237
+Penn State Berks College,0,1,0,1,0.0,0.0,0.0,0,1,0,0,34.704030782434565
 State University of New York at Delhi,0,2,0,2,0.0,50.0,25.0,0,1,0,0,34.66672770432171
+Spalding University,0,2,0,2,0.0,50.0,25.0,0,1,0,0,34.66672770432171
