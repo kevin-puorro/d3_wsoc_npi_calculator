@@ -922,11 +922,6 @@ def main():
         # Show special note for 2025 (mostly scheduled games)
         if selected_year == 2025:
             st.markdown("---")
-            st.markdown("""
-            <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
-
-            </div>
-            """, unsafe_allow_html=True)
     
     # Show current season in main area
     st.markdown(f"## {selected_year} Season Dashboard")
