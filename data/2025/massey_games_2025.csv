@@ -283,7 +283,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-01,Piedmont,1,NC Wesleyan,0,
 2025-09-01,Bethel MN,0,WI Whitewater,1,
 2025-09-01,Defiance,0,Bluffton,5,
-2025-09-01,Yeshiva,0,Mt St Mary NY,0,Sch
+2025-09-01,Yeshiva,0,Mt St Mary NY,20,
 2025-09-01,Pitt-Greensburg,4,Oberlin,0,
 2025-09-01,Gwynedd-Mercy,0,Wilson,1,
 2025-09-01,Arlington Bap,0,Dallas Univ,8,
@@ -295,42 +295,43 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-01,Mt St Vincent,0,Rensselaer,3,
 2025-09-01,Rowan,3,Smith,1,
 2025-09-01,WI River Falls,1,WI Superior,2,
-2025-09-02,Dubuque,0,Carroll WI,0,Sch
-2025-09-02,Alfred,0,Geneva,0,Sch
-2025-09-02,Covenant,0,Oglethorpe,0,Sch
-2025-09-02,Curry,0,Dean,0,Sch
-2025-09-02,Worcester Tech,0,Amherst,0,Sch
-2025-09-02,Elizabethtown,0,Frank & Marsh,0,Sch
-2025-09-02,Williams,0,Hamilton,0,Sch
-2025-09-02,Houghton,0,Hilbert,0,Sch
-2025-09-02,Hinds CC,0,Belhaven MS,0,Sch
-2025-09-02,Pratt Inst,0,John Jay,0,Sch
-2025-09-02,Marietta,0,Wash & Jeff,0,Sch
-2025-09-02,Suffolk,0,MA Dartmouth,0,Sch
-2025-09-02,Brandeis,0,Babson,0,Sch
-2025-09-02,Middlebury,0,Plymouth St,0,Sch
-2025-09-02,Monmouth IL,0,Millikin,0,Sch
-2025-09-02,Oswego St,0,Geneseo St,0,Sch
+2025-09-02,Dubuque,1,Carroll WI,1,
+2025-09-02,Alfred,1,Geneva,0,
+2025-09-02,Covenant,1,Oglethorpe,3,
+2025-09-02,Curry,6,Dean,1,
+2025-09-02,Worcester Tech,0,Amherst,1,
+2025-09-02,Elizabethtown,1,Frank & Marsh,5,
+2025-09-02,Williams,2,Hamilton,0,
+2025-09-02,Houghton,4,Hilbert,0,
+2025-09-02,Hinds CC,1,Belhaven MS,0,
+2025-09-02,Pratt Inst,0,John Jay,2,
+2025-09-02,Lycoming,5,Keuka,0,
+2025-09-02,Marietta,1,Wash & Jeff,0,
+2025-09-02,Suffolk,1,MA Dartmouth,0,
+2025-09-02,Brandeis,0,Babson,0,
+2025-09-02,Middlebury,7,Plymouth St,0,
+2025-09-02,Monmouth IL,0,Millikin,6,
+2025-09-02,Oswego St,1,Geneseo St,1,
 2025-09-02,Spurgeon,0,Principia,0,Sch
 2025-09-02,Purchase,0,Lehman,0,Sch
-2025-09-02,St Joseph's LI,0,Ramapo,0,Sch
-2025-09-02,Carlow,0,PSU-Mont Alto,0,Sch
-2025-09-02,St Mary-Woods,0,Anderson IN,0,Sch
-2025-09-02,Utica,0,SUNY Canton,0,Sch
-2025-09-02,Smith,0,Union NY,0,Sch
-2025-09-02,Washington StL,0,IL Wesleyan,0,Sch
-2025-09-02,W Woods,0,Westminster MO,0,Sch
-2025-09-02,WI Superior,0,WI LaCrosse,0,Sch
-2025-09-02,Dakota Wesleyan,0,Buena Vista,0,Sch
-2025-09-02,Blackburn,0,UHSP,0,Sch
+2025-09-02,St Joseph's LI,1,Ramapo,2,
+2025-09-02,Carlow,0,PSU-Mont Alto,1,
+2025-09-02,St Mary-Woods,0,Anderson IN,2,
+2025-09-02,Utica,7,SUNY Canton,0,
+2025-09-02,Smith,0,Union NY,1,
+2025-09-02,Washington StL,6,IL Wesleyan,0,
+2025-09-02,MA Col Lib Arts,0,Wentworth Tech,4,
+2025-09-02,W Woods,0,Westminster MO,1,
+2025-09-02,WI Superior,0,WI LaCrosse,6,
+2025-09-02,Dakota Wesleyan,0,Buena Vista,0,
 2025-09-02,SUNY Maritime,0,York NY,0,Sch
-2025-09-02,Manhattanville,0,NJ City,0,Sch
-2025-09-02,N Central MN,0,Faith Bap,0,Sch
-2025-09-02,Morrisville St,0,Hartwick,0,Sch
-2025-09-02,W Connecticut,0,Rivier,0,Sch
-2025-09-02,MIT,0,Lesley,0,Sch
-2025-09-02,Emmanuel MA,0,CT College,0,Sch
-2025-09-02,Alice Lloyd,0,Brevard,0,Sch
+2025-09-02,Manhattanville,2,NJ City,4,
+2025-09-02,N Central MN,1,Faith Bap,0,
+2025-09-02,Morrisville St,0,Hartwick,3,
+2025-09-02,W Connecticut,2,Rivier,2,
+2025-09-02,MIT,6,Lesley,0,
+2025-09-02,Emmanuel MA,1,CT College,2,
+2025-09-02,Alice Lloyd,0,Brevard,20,
 2025-09-03,Capital,0,Albion,0,Sch
 2025-09-03,Carthage,0,Concordia IL,0,Sch
 2025-09-03,Case Western,0,John Carroll,0,Sch
@@ -380,6 +381,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-03,Penn Col Tech,0,Mt Aloysius,0,Sch
 2025-09-03,Mt Holyoke,0,Albertus Magnus,0,Sch
 2025-09-03,N Central IL,0,IL Tech,0,Sch
+2025-09-03,PSU-Schuylkill,0,Valley Forge,0,Sch
 2025-09-03,Elmhurst,0,Benedictine IL,0,Sch
 2025-09-03,Berry,0,Emory,0,Sch
 2025-09-03,St Lawrence,0,Rochester NY,0,Sch
@@ -395,7 +397,6 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-03,Thomas ME,0,Bowdoin,0,Sch
 2025-09-03,U New England,0,Westfield St,0,Sch
 2025-09-03,La Roche,0,Waynesburg,0,Sch
-2025-09-03,MA Col Lib Arts,0,Wentworth Tech,0,Sch
 2025-09-03,Wilkes,0,Wm Paterson,0,Sch
 2025-09-03,WI Whitewater,0,Luther IA,0,Sch
 2025-09-03,Wheaton MA,0,Worcester St,0,Sch
