@@ -924,7 +924,7 @@ def main():
             st.markdown("---")
             st.markdown("""
             <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
-                <strong>📅 2025 Season Note:</strong> Season has not started yet and games have not been played yet.
+
             </div>
             """, unsafe_allow_html=True)
     
