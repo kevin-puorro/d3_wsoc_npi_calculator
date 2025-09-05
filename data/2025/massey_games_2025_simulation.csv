@@ -408,15 +408,16 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-03,Centenary University (New Jersey),2,Cairn University,2,
 2025-09-03,Gordon College,5,Regis College (Massachusetts),0,
 2025-09-03,Keuka College,4,Hilbert College,0,
-2025-09-04,McMurry University,0,Hardin-Simmons University,0,Sch
+2025-09-04,McMurry University,0,Hardin-Simmons University,2,
 2025-09-04,"University of Pittsburgh, Bradford",0,Penn State Berks College,0,Sch
-2025-09-04,Luther College,0,Rockford University,0,Sch
-2025-09-04,Yeshiva University,0,Farmingdale State College,0,Sch
-2025-09-04,State University of New York at Potsdam,0,VTSU-Johnson,0,Sch
+2025-09-04,Luther College,7,Rockford University,0,
+2025-09-04,Yeshiva University,0,Farmingdale State College,11,
+2025-09-04,State University of New York at Potsdam,1,VTSU-Johnson,0,
 2025-09-04,Lycoming College,0,Keuka College,0,Sch
-2025-09-04,LaGrange College,0,Warren Wilson College,0,Sch
-2025-09-04,Concordia University Texas,0,Howard Payne University,0,Sch
-2025-09-04,North Central University,0,Saint Mary's College (Indiana),0,Sch
+2025-09-04,LaGrange College,0,Warren Wilson College,0,
+2025-09-04,Concordia University Texas,0,Howard Payne University,4,
+2025-09-04,North Central University,1,Saint Mary's College (Indiana),5,
+2025-09-04,Bryn Athyn College,3,Centenary University (New Jersey),2,
 2025-09-05,California Lutheran University,0,Pacific Lutheran University,0,Sch
 2025-09-05,Calvin University,0,Washington University in St. Louis,0,Sch
 2025-09-05,Milwaukee School of Engineering,0,Chapman University,0,Sch

@@ -476,17 +476,18 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-03,Centenary NJ,2,Cairn,2,
 2025-09-03,Gordon,5,Regis MA,0,
 2025-09-03,Keuka,4,Hilbert,0,
-2025-09-04,McMurry,0,Hardin-Simmons,0,Sch
-2025-09-04,Central Bap,0,Hendrix,0,Sch
+2025-09-04,McMurry,0,Hardin-Simmons,2,
+2025-09-04,Central Bap,1,Hendrix,3,
 2025-09-04,Pitt-Bradford,0,PSU-Berks,0,Sch
-2025-09-04,Luther IA,0,Rockford,0,Sch
-2025-09-04,Yeshiva,0,Farmingdale,0,Sch
-2025-09-04,SUNY Potsdam,0,NVU-Johnson,0,Sch
-2025-09-04,Stanton,0,Whittier,0,Sch
+2025-09-04,Luther IA,7,Rockford,0,
+2025-09-04,Yeshiva,0,Farmingdale,11,
+2025-09-04,SUNY Potsdam,1,NVU-Johnson,0,
+2025-09-04,Stanton,0,Whittier,2,
 2025-09-04,Lycoming,0,Keuka,0,Sch
-2025-09-04,LaGrange,0,Warren Wilson,0,Sch
-2025-09-04,Concordia TX,0,Howard Payne,0,Sch
-2025-09-04,N Central MN,0,St Mary's IN,0,Sch
+2025-09-04,LaGrange,0,Warren Wilson,0,
+2025-09-04,Concordia TX,0,Howard Payne,4,
+2025-09-04,N Central MN,1,St Mary's IN,5,
+2025-09-04,Bryn Athyn,3,Centenary NJ,2,
 2025-09-05,Cal Lutheran,0,Pac Lutheran,0,Sch
 2025-09-05,Calvin,0,Washington StL,0,Sch
 2025-09-05,Milwaukee Eng,0,Chapman,0,Sch
@@ -929,6 +930,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-11,Concordia IL,0,St Mary's IN,0,Sch
 2025-09-11,Regent,0,Agnes Scott,0,Sch
 2025-09-11,Hamline,0,MN Morris,0,Sch
+2025-09-11,Lewis & Clark,0,Warner Pacific,0,Sch
 2025-09-11,Martin Luther,0,Waldorf,0,Sch
 2025-09-11,Blackburn,0,Mt Mary,0,Sch
 2025-09-11,Pratt Inst,0,Purchase,0,Sch
@@ -951,7 +953,6 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-12,Elmhurst,0,Lawrence,0,Sch
 2025-09-12,Millsaps,0,Hendrix,0,Sch
 2025-09-12,J&W RI,0,Nichols,0,Sch
-2025-09-12,Lewis & Clark,0,Warner Pacific,0,Sch
 2025-09-12,Maranatha Bap,0,Rockford,0,Sch
 2025-09-12,Misericordia,0,M Hardin-Baylor,0,Sch
 2025-09-12,Moravian,0,Eastern Univ,0,Sch
