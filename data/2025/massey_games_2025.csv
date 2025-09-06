@@ -488,52 +488,51 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-04,Concordia TX,0,Howard Payne,4,
 2025-09-04,N Central MN,1,St Mary's IN,5,
 2025-09-04,Bryn Athyn,3,Centenary NJ,2,
-2025-09-05,Cal Lutheran,0,Pac Lutheran,0,Sch
-2025-09-05,Calvin,0,Washington StL,0,Sch
-2025-09-05,Milwaukee Eng,0,Chapman,0,Sch
-2025-09-05,M Hardin-Baylor,0,Chris Newport,0,Sch
-2025-09-05,Dubuque,0,Concordia IL,0,Sch
-2025-09-05,Northwestern MN,0,Concordia Mhd,0,Sch
-2025-09-05,Cortland St,0,Worcester Tech,0,Sch
-2025-09-05,Rhodes,0,Covenant,0,Sch
-2025-09-05,Crown MN,0,Faith Bap,0,Sch
-2025-09-05,Baldwin-Wallace,0,Denison,0,Sch
-2025-09-05,Grinnell,0,St Mary's MN,0,Sch
-2025-09-05,North American,0,Schreiner,0,Sch
-2025-09-05,Harris-Stowe,0,Greenville,0,Sch
-2025-09-05,Hope,0,Carleton MN,0,Sch
-2025-09-05,John Carroll,0,Maryville TN,0,Sch
-2025-09-05,Lawrence,0,WI LaCrosse,0,Sch
-2025-09-05,Curry,0,MA Dartmouth,0,Sch
-2025-09-05,Oglethorpe,0,Piedmont,0,Sch
-2025-09-05,Oswego St,0,Keuka,0,Sch
-2025-09-05,Redlands,0,Willamette,0,Sch
-2025-09-05,Roanoke,0,Meredith,0,Sch
-2025-09-05,St Scholastica,0,WI Platteville,0,Sch
-2025-09-05,PSU-Mont Alto,0,Trinity DC,0,Sch
-2025-09-05,Utica,0,SUNY Fredonia,0,Sch
-2025-09-05,Trinity TX,0,Dallas Univ,0,Sch
-2025-09-05,Mt St Joseph,0,VA Wesleyan,0,Sch
-2025-09-05,Warner Pacific,0,Linfield,0,Sch
-2025-09-05,Wash & Jeff,0,La Roche,0,Sch
+2025-09-05,Cal Lutheran,1,Pac Lutheran,0,
+2025-09-05,Calvin,0,Washington StL,2,
+2025-09-05,Milwaukee Eng,1,Chapman,1,
+2025-09-05,M Hardin-Baylor,0,Chris Newport,1,
+2025-09-05,Dubuque,4,Concordia IL,0,
+2025-09-05,Northwestern MN,1,Concordia Mhd,0,
+2025-09-05,Cortland St,1,Worcester Tech,1,
+2025-09-05,Covenant,0,Rhodes,5,
+2025-09-05,Crown MN,0,Faith Bap,0,
+2025-09-05,Baldwin-Wallace,1,Denison,5,
+2025-09-05,Grinnell,0,St Mary's MN,2,
+2025-09-05,North American,0,Schreiner,8,
+2025-09-05,Harris-Stowe,0,Greenville,2,
+2025-09-05,Hope,0,Carleton MN,3,
+2025-09-05,John Carroll,1,Maryville TN,0,
+2025-09-05,Lawrence,0,WI LaCrosse,5,
+2025-09-05,Curry,1,MA Dartmouth,2,
+2025-09-05,Oglethorpe,2,Piedmont,0,
+2025-09-05,Keuka,0,Oswego St,4,
+2025-09-05,Redlands,2,Willamette,2,
+2025-09-05,Meredith,0,Roanoke,2,
+2025-09-05,St Scholastica,0,WI Platteville,1,
+2025-09-05,PSU-Mont Alto,7,Trinity DC,0,
+2025-09-05,Utica,2,SUNY Fredonia,2,
+2025-09-05,Trinity TX,3,Dallas Univ,0,
+2025-09-05,Mt St Joseph,0,VA Wesleyan,2,
+2025-09-05,Warner Pacific,2,Linfield,5,
+2025-09-05,Wash & Jeff,2,La Roche,0,
 2025-09-05,Westminster PA,0,Carlow,0,Sch
-2025-09-05,WI Eau Claire,0,Wheaton IL,0,Sch
-2025-09-05,Kentucky Chr,0,Berea,0,Sch
-2025-09-05,Wiley,0,Centenary,0,Sch
-2025-09-05,St Thomas TX,0,E Texas Bap,0,Sch
-2025-09-05,N Central MN,0,Grace Chr,0,Sch
-2025-09-05,Austin Col,0,Texas Col,0,Sch
-2025-09-05,Bethany WV,0,PSU-Altoona,0,Sch
-2025-09-05,Trine,0,Rochester Tech,0,Sch
-2025-09-05,Agnes Scott,0,Warren Wilson,0,Sch
-2025-09-05,SUNY Cobleskill,0,Morrisville St,0,Sch
-2025-09-05,NJ City,0,Lynchburg,0,Sch
-2025-09-05,J&W NC,0,E Mennonite,0,Sch
-2025-09-05,Pomona-Pitzer,0,Puget Sound,0,Sch
-2025-09-05,SW Univ TX,0,Belhaven MS,0,Sch
+2025-09-05,WI Eau Claire,1,Wheaton IL,1,
+2025-09-05,Wiley,0,Centenary,0,
+2025-09-05,St Thomas TX,0,E Texas Bap,1,
+2025-09-05,N Central MN,0,Grace Chr,0,
+2025-09-05,Austin Col,0,Texas Col,0,
+2025-09-05,Bethany WV,1,PSU-Altoona,2,
+2025-09-05,Trine,0,Rochester Tech,0,
+2025-09-05,Agnes Scott,4,Warren Wilson,2,
+2025-09-05,SUNY Cobleskill,2,Morrisville St,5,
+2025-09-05,NJ City,0,Lynchburg,2,
+2025-09-05,J&W NC,0,E Mennonite,3,
+2025-09-05,Pomona-Pitzer,1,Puget Sound,0,
+2025-09-05,Belhaven MS,0,SW Univ TX,1,
 2025-09-05,Simpson IA,0,Macalester,0,Sch
-2025-09-05,UC Santa Cruz,0,Pacific OR,0,Sch
-2025-09-05,Life Pacific,0,Claremont M.S.,0,Sch
+2025-09-05,UC Santa Cruz,3,Pacific OR,0,
+2025-09-05,Life Pacific,0,Claremont M.S.,2,
 2025-09-06,Calvin,0,Greenville,0,Sch
 2025-09-06,Edgewood,0,Carroll WI,0,Sch
 2025-09-06,Concordia WI,0,Carthage,0,Sch
@@ -979,6 +978,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-12,Meredith,0,Berry,0,Sch
 2025-09-13,Cal Lutheran,0,Westmont,0,Sch
 2025-09-13,Calvin,0,Chicago,0,Sch
+2025-09-13,Carroll MT,0,Whitman,0,Sch
 2025-09-13,WI Lutheran,0,Carthage,0,Sch
 2025-09-13,Castleton,0,W Connecticut,0,Sch
 2025-09-13,Centre,0,Denison,0,Sch
@@ -1123,9 +1123,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-13,St Thomas TX,0,Howard Payne,0,Sch
 2025-09-13,Colby-Sawyer,0,St Joseph's ME,0,Sch
 2025-09-13,Gordon,0,Curry,0,Sch
-2025-09-13,Carroll MT,0,Whitworth,0,Sch
 2025-09-14,Capital,0,Hanover,0,Sch
-2025-09-14,Carroll MT,0,Whitman,0,Sch
 2025-09-14,Ohio Northern,0,Case Western,0,Sch
 2025-09-14,Centre,0,Mt St Joseph,0,Sch
 2025-09-14,Chris Newport,0,Ohio Wesleyan,0,Sch

@@ -67,15 +67,14 @@ date,game,missing_teams
 2025-09-04,Central Bap 1 @ Hendrix 3,away: Central Bap
 2025-09-04,Stanton 0 @ Whittier 2,away: Stanton
 2025-09-05,Crown MN 0 @ Faith Bap 0,home: Faith Bap
-2025-09-05,North American 0 @ Schreiner 0,away: North American
-2025-09-05,Harris-Stowe 0 @ Greenville 0,away: Harris-Stowe
-2025-09-05,PSU-Mont Alto 0 @ Trinity DC 0,away: PSU-Mont Alto
-2025-09-05,Warner Pacific 0 @ Linfield 0,away: Warner Pacific
-2025-09-05,Kentucky Chr 0 @ Berea 0,away: Kentucky Chr
+2025-09-05,North American 0 @ Schreiner 8,away: North American
+2025-09-05,Harris-Stowe 0 @ Greenville 2,away: Harris-Stowe
+2025-09-05,PSU-Mont Alto 7 @ Trinity DC 0,away: PSU-Mont Alto
+2025-09-05,Warner Pacific 2 @ Linfield 5,away: Warner Pacific
 2025-09-05,Wiley 0 @ Centenary 0,away: Wiley
 2025-09-05,N Central MN 0 @ Grace Chr 0,home: Grace Chr
 2025-09-05,Austin Col 0 @ Texas Col 0,home: Texas Col
-2025-09-05,Life Pacific 0 @ Claremont M.S. 0,away: Life Pacific
+2025-09-05,Life Pacific 0 @ Claremont M.S. 2,away: Life Pacific
 2025-09-06,Erskine 0 @ Bob Jones 0,"home: Bob Jones, away: Erskine"
 2025-09-06,Grace Chr 0 @ Alma 0,away: Grace Chr
 2025-09-06,IN S Bend 0 @ Manchester 0,away: IN S Bend
@@ -127,6 +126,7 @@ date,game,missing_teams
 2025-09-12,Great Lakes Chr 0 @ Ripon 0,away: Great Lakes Chr
 2025-09-12,Central Penn 0 @ Trinity DC 0,away: Central Penn
 2025-09-13,Cal Lutheran 0 @ Westmont 0,home: Westmont
+2025-09-13,Carroll MT 0 @ Whitman 0,away: Carroll MT
 2025-09-13,Bob Jones 0 @ Citadel 0,"home: Citadel, away: Bob Jones"
 2025-09-13,Indiana-East 0 @ Earlham 0,away: Indiana-East
 2025-09-13,ME Ft Kent 0 @ Husson 0,away: ME Ft Kent
@@ -140,8 +140,6 @@ date,game,missing_teams
 2025-09-13,SUNY Poly 0 @ SUNY-ESF 0,home: SUNY-ESF
 2025-09-13,Spurgeon 0 @ Blackburn 0,away: Spurgeon
 2025-09-13,Great Lakes Chr 0 @ Elmhurst 0,away: Great Lakes Chr
-2025-09-13,Carroll MT 0 @ Whitworth 0,away: Carroll MT
-2025-09-14,Carroll MT 0 @ Whitman 0,away: Carroll MT
 2025-09-14,Madonna 0 @ Alma 0,away: Madonna
 2025-09-14,ME Presque Isle 0 @ Fisher 0,home: Fisher
 2025-09-16,Carolina Univ 0 @ Brevard 0,away: Carolina Univ
