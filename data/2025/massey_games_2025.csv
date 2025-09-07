@@ -533,166 +533,166 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-05,Simpson IA,0,Macalester,0,Sch
 2025-09-05,UC Santa Cruz,3,Pacific OR,0,
 2025-09-05,Life Pacific,0,Claremont M.S.,2,
-2025-09-06,Calvin,0,Greenville,0,Sch
-2025-09-06,Edgewood,0,Carroll WI,0,Sch
-2025-09-06,Concordia WI,0,Carthage,0,Sch
-2025-09-06,Case Western,0,Grove City,0,Sch
-2025-09-06,Earlham,0,Albion,0,Sch
-2025-09-06,Albright,0,Juniata,0,Sch
-2025-09-06,Clarkson,0,Rochester NY,0,Sch
-2025-09-06,Crown MN,0,Coe,0,Sch
-2025-09-06,Bowdoin,0,Colby,0,Sch
-2025-09-06,Colby-Sawyer,0,Dean,0,Sch
-2025-09-06,Alfred,0,Hilbert,0,Sch
-2025-09-06,NYU,0,College of NJ,0,Sch
-2025-09-06,WI River Falls,0,St Catherine,0,Sch
-2025-09-06,Alfred St,0,PSU-Berks,0,Sch
-2025-09-06,Marietta,0,Allegheny,0,Sch
-2025-09-06,Amherst,0,CT College,0,Sch
-2025-09-06,John Carroll,0,Covenant,0,Sch
-2025-09-06,Erskine,0,Bob Jones,0,Sch
-2025-09-06,Grace Chr,0,Alma,0,Sch
-2025-09-06,Wilkes,0,Alvernia,0,Sch
-2025-09-06,Delaware Val,0,Susquehanna,0,Sch
-2025-09-06,DeSales,0,Coast Guard,0,Sch
-2025-09-06,Bridgewater VA,0,Dickinson,0,Sch
-2025-09-06,Dominican IL,0,N Central IL,0,Sch
-2025-09-06,Elmhurst,0,IL Tech,0,Sch
-2025-09-06,S Virginia,0,Ferrum,0,Sch
-2025-09-06,Framingham St,0,MA Col Lib Arts,0,Sch
-2025-09-06,Franciscan OH,0,Kenyon,0,Sch
-2025-09-06,Washington & Lee,0,Frank & Marsh,0,Sch
-2025-09-06,Oberlin,0,Geneva,0,Sch
-2025-09-06,Randolph-Macon,0,Gettysburg,0,Sch
-2025-09-06,Greensboro,0,Averett,0,Sch
-2025-09-06,Grinnell,0,WI LaCrosse,0,Sch
-2025-09-06,Mary Baldwin,0,Regent,0,Sch
-2025-09-06,Middlebury,0,Hamilton,0,Sch
-2025-09-06,Hanover,0,Spalding,0,Sch
-2025-09-06,Hardin-Simmons,0,Ohio Wesleyan,0,Sch
-2025-09-06,Wooster,0,Heidelberg,0,Sch
-2025-09-06,Olivet MI,0,Hiram,0,Sch
-2025-09-06,St Mary's MD,0,Hobart & Smith,0,Sch
-2025-09-06,Hood,0,Bryn Mawr,0,Sch
-2025-09-06,Hope,0,St Olaf,0,Sch
-2025-09-06,IL Wesleyan,0,Illinois Col,0,Sch
-2025-09-06,IN S Bend,0,Manchester,0,Sch
-2025-09-06,R Stockton,0,Ithaca,0,Sch
+2025-09-06,Calvin,1,Greenville,0,
+2025-09-06,Edgewood,0,Carroll WI,0,
+2025-09-06,Concordia WI,0,Carthage,0,
+2025-09-06,Case Western,6,Grove City,0,
+2025-09-06,Earlham,0,Albion,3,
+2025-09-06,Albright,0,Juniata,0,
+2025-09-06,Clarkson,1,Rochester NY,1,
+2025-09-06,Crown MN,1,Coe,1,
+2025-09-06,Bowdoin,0,Colby,1,
+2025-09-06,Colby-Sawyer,3,Dean,2,
+2025-09-06,Alfred,4,Hilbert,1,
+2025-09-06,NYU,4,College of NJ,2,
+2025-09-06,WI River Falls,0,St Catherine,4,
+2025-09-06,Alfred St,1,PSU-Berks,2,
+2025-09-06,Marietta,1,Allegheny,1,
+2025-09-06,Amherst,3,CT College,0,
+2025-09-06,Covenant,0,John Carroll,2,
+2025-09-06,Erskine,1,Bob Jones,1,
+2025-09-06,Grace Chr,0,Alma,3,
+2025-09-06,Wilkes,1,Alvernia,0,
+2025-09-06,Delaware Val,0,Susquehanna,4,
+2025-09-06,DeSales,0,Coast Guard,2,
+2025-09-06,Bridgewater VA,0,Dickinson,2,
+2025-09-06,Dominican IL,0,N Central IL,1,
+2025-09-06,Elmhurst,0,IL Tech,4,
+2025-09-06,S Virginia,1,Ferrum,1,
+2025-09-06,Framingham St,1,MA Col Lib Arts,4,
+2025-09-06,Franciscan OH,0,Kenyon,3,
+2025-09-06,Washington & Lee,1,Frank & Marsh,0,
+2025-09-06,Oberlin,0,Geneva,0,
+2025-09-06,Randolph-Macon,0,Gettysburg,2,
+2025-09-06,Greensboro,4,Averett,1,
+2025-09-06,Grinnell,0,WI LaCrosse,4,
+2025-09-06,Mary Baldwin,4,Regent,0,
+2025-09-06,Middlebury,1,Hamilton,0,
+2025-09-06,Hanover,1,Spalding,2,
+2025-09-06,Hardin-Simmons,0,Ohio Wesleyan,0,
+2025-09-06,Wooster,3,Heidelberg,1,
+2025-09-06,Olivet MI,0,Hiram,1,
+2025-09-06,St Mary's MD,0,Hobart & Smith,0,
+2025-09-06,Hood,0,Bryn Mawr,1,
+2025-09-06,Hope,1,St Olaf,3,
+2025-09-06,IL Wesleyan,3,Illinois Col,0,
+2025-09-06,IN S Bend,1,Manchester,0,
+2025-09-06,Ithaca,0,R Stockton,1,
 2025-09-06,John Jay,0,PSU-Abington,0,Sch
-2025-09-06,Johns Hopkins,0,Shenandoah,0,Sch
-2025-09-06,Wesleyan CT,0,J&W RI,0,Sch
-2025-09-06,Asbury,0,Wittenberg,0,Sch
-2025-09-06,Wheaton MA,0,Keene St,0,Sch
-2025-09-06,Widener,0,King's PA,0,Sch
-2025-09-06,Aurora,0,Knox,0,Sch
-2025-09-06,La Verne,0,The Master's,0,Sch
-2025-09-06,Lawrence,0,St Mary's MN,0,Sch
-2025-09-06,Lebanon Val,0,Elizabethtown,0,Sch
-2025-09-06,Northwest WA,0,Lewis & Clark,0,Sch
-2025-09-06,Bethany Luth,0,Augsburg,0,Sch
-2025-09-06,Mt Aloysius,0,Lycoming,0,Sch
-2025-09-06,WI Platteville,0,Augustana IL,0,Sch
-2025-09-06,Wentworth Tech,0,ME Farmington,0,Sch
-2025-09-06,Martin Luther,0,Maranatha Bap,0,Sch
-2025-09-06,Marian WI,0,WI Whitewater,0,Sch
-2025-09-06,NC Wesleyan,0,Mary Washington,0,Sch
-2025-09-06,Otterbein,0,Adrian,0,Sch
-2025-09-06,Rhodes,0,Maryville TN,0,Sch
-2025-09-06,York PA,0,McDaniel,0,Sch
-2025-09-06,Ursinus,0,Messiah,0,Sch
-2025-09-06,Westminster MO,0,Millikin,0,Sch
-2025-09-06,Millsaps,0,Le Tourneau,0,Sch
-2025-09-06,MS Women,0,LaGrange,0,Sch
-2025-09-06,Marywood,0,Moravian,0,Sch
-2025-09-06,Principia,0,Mt Mary,0,Sch
-2025-09-06,Muhlenberg,0,Neumann,0,Sch
-2025-09-06,Muskingum,0,Franklin,0,Sch
-2025-09-06,Nazareth,0,St Lawrence,0,Sch
-2025-09-06,Norwich,0,Elms,0,Sch
-2025-09-06,Soka,0,Occidental,0,Sch
-2025-09-06,Benedictine IL,0,Webster,0,Sch
+2025-09-06,Johns Hopkins,3,Shenandoah,1,
+2025-09-06,Wesleyan CT,1,J&W RI,0,
+2025-09-06,Asbury,2,Wittenberg,4,
+2025-09-06,Wheaton MA,4,Keene St,0,
+2025-09-06,Widener,2,King's PA,1,
+2025-09-06,Aurora,0,Knox,1,
+2025-09-06,La Verne,0,The Master's,3,
+2025-09-06,Lawrence,0,St Mary's MN,3,
+2025-09-06,Lebanon Val,2,Elizabethtown,0,
+2025-09-06,Northwest WA,3,Lewis & Clark,2,
+2025-09-06,Bethany Luth,0,Augsburg,10,
+2025-09-06,Mt Aloysius,1,Lycoming,7,
+2025-09-06,WI Platteville,4,Augustana IL,2,
+2025-09-06,Wentworth Tech,5,ME Farmington,1,
+2025-09-06,Martin Luther,4,Maranatha Bap,0,
+2025-09-06,Marian WI,1,WI Whitewater,1,
+2025-09-06,NC Wesleyan,0,Mary Washington,4,
+2025-09-06,Otterbein,0,Adrian,1,
+2025-09-06,Rhodes,2,Maryville TN,1,
+2025-09-06,York PA,2,McDaniel,0,
+2025-09-06,Ursinus,0,Messiah,3,
+2025-09-06,Westminster MO,1,Millikin,2,
+2025-09-06,Millsaps,0,Le Tourneau,3,
+2025-09-06,MS Women,0,LaGrange,1,
+2025-09-06,Marywood,2,Moravian,0,
+2025-09-06,Principia,2,Mt Mary,0,
+2025-09-06,Muhlenberg,2,Neumann,1,
+2025-09-06,Muskingum,1,Franklin,4,
+2025-09-06,Nazareth,1,St Lawrence,2,
+2025-09-06,Norwich,1,Elms,2,
+2025-09-06,Soka,1,Occidental,1,
+2025-09-06,Benedictine IL,0,Webster,2,
 2025-09-06,Pfeiffer,0,Piedmont,0,Sch
-2025-09-06,Manhattanville,0,Ramapo,0,Sch
-2025-09-06,Peace,0,Randolph Col,0,Sch
-2025-09-06,Rockford,0,Ripon,0,Sch
-2025-09-06,Roanoke,0,NJ City,0,Sch
+2025-09-06,Manhattanville,0,Ramapo,1,
+2025-09-06,Peace,0,Randolph Col,2,
+2025-09-06,Rockford,0,Ripon,8,
+2025-09-06,NJ City,0,Roanoke,1,
 2025-09-06,Pratt Inst,0,Rutgers-Newark,0,Sch
-2025-09-06,Wartburg,0,St Benedict,0,Sch
-2025-09-06,Kalamazoo,0,Bethel MN,0,Sch
-2025-09-06,Marymount VA,0,St Vincent,0,Sch
-2025-09-06,Rowan,0,Salisbury,0,Sch
-2025-09-06,Sewanee,0,Transylvania,0,Sch
-2025-09-06,Skidmore,0,SUNY Oneonta,0,Sch
-2025-09-06,S Maine,0,U New England,0,Sch
-2025-09-06,St John Fisher,0,PSU-Behrend,0,Sch
-2025-09-06,SUNY Poly,0,SUNY Delhi,0,Sch
-2025-09-06,SUNY-ESF,0,SUNY Canton,0,Sch
-2025-09-06,Bluffton,0,St Mary's IN,0,Sch
-2025-09-06,Farmingdale,0,Drew,0,Sch
-2025-09-06,Keuka,0,SUNY Fredonia,0,Sch
-2025-09-06,Sarah Lawrence,0,Swarthmore,0,Sch
-2025-09-06,Williams,0,Tufts,0,Sch
-2025-09-06,Babson,0,Union NY,0,Sch
-2025-09-06,SW Christian,0,Univ Ozarks,0,Sch
-2025-09-06,Utica,0,Oswego St,0,Sch
-2025-09-06,RI College,0,Brandeis,0,Sch
-2025-09-06,Scranton,0,Vassar,0,Sch
-2025-09-06,Bridgewater MA,0,Anna Maria,0,Sch
-2025-09-06,Trine,0,Wheaton IL,0,Sch
+2025-09-06,Wartburg,2,St Benedict,1,
+2025-09-06,Bethel MN,0,Kalamazoo,3,
+2025-09-06,Marymount VA,1,St Vincent,3,
+2025-09-06,Rowan,1,Salisbury,0,
+2025-09-06,Sewanee,0,Transylvania,0,
+2025-09-06,Skidmore,0,SUNY Oneonta,1,
+2025-09-06,S Maine,1,U New England,2,
+2025-09-06,St John Fisher,0,PSU-Behrend,1,
+2025-09-06,SUNY Poly,1,SUNY Delhi,3,
+2025-09-06,SUNY-ESF,4,SUNY Canton,1,
+2025-09-06,Bluffton,0,St Mary's IN,5,
+2025-09-06,Farmingdale,1,Drew,3,
+2025-09-06,Keuka,1,SUNY Fredonia,1,
+2025-09-06,Sarah Lawrence,0,Swarthmore,3,
+2025-09-06,Williams,1,Tufts,2,
+2025-09-06,Babson,1,Union NY,1,
+2025-09-06,SW Christian,2,Univ Ozarks,0,
+2025-09-06,Utica,0,Oswego St,1,
+2025-09-06,RI College,0,Brandeis,2,
+2025-09-06,Scranton,2,Vassar,3,
+2025-09-06,Bridgewater MA,7,Anna Maria,0,
+2025-09-06,Trine,0,Wheaton IL,1,
 2025-09-06,Wm Paterson,0,FDU Madison,0,Sch
-2025-09-06,WI Eau Claire,0,Rochester Tech,0,Sch
-2025-09-06,WI Stout,0,WI Superior,0,Sch
-2025-09-06,Worcester St,0,Fitchburg St,0,Sch
-2025-09-06,Brooklyn Col,0,Valley Forge,0,Sch
-2025-09-06,MN Morris,0,Buena Vista,0,Sch
-2025-09-06,Buffalo St,0,Brockport St,0,Sch
-2025-09-06,Huntington,0,Anderson IN,0,Sch
-2025-09-06,Blackburn,0,Stephens,0,Sch
-2025-09-06,Wiley,0,Huntingdon,0,Sch
-2025-09-06,SUNY Maritime,0,Centenary NJ,0,Sch
-2025-09-06,Goucher,0,Notre Dame MD,0,Sch
-2025-09-06,Bates,0,Trinity CT,0,Sch
-2025-09-06,Regis MA,0,Rivier,0,Sch
-2025-09-06,Ohio Northern,0,Carnegie Mellon,0,Sch
+2025-09-06,WI Eau Claire,1,Rochester Tech,2,
+2025-09-06,WI Stout,1,WI Superior,0,
+2025-09-06,Worcester St,1,Fitchburg St,0,
+2025-09-06,Brooklyn Col,1,Valley Forge,0,
+2025-09-06,MN Morris,2,Buena Vista,1,
+2025-09-06,Buffalo St,0,Brockport St,0,
+2025-09-06,Huntington,0,Anderson IN,0,
+2025-09-06,Wiley,0,Huntingdon,0,
+2025-09-06,SUNY Maritime,1,Centenary NJ,8,
+2025-09-06,Goucher,2,Notre Dame MD,1,
+2025-09-06,Bates,0,Trinity CT,2,
+2025-09-06,Regis MA,2,Rivier,3,
+2025-09-06,Ohio Northern,0,Carnegie Mellon,1,
 2025-09-06,Bard,0,Lehman,0,Sch
 2025-09-06,Mt Union,0,Thiel,0,Sch
-2025-09-06,Nichols,0,Plymouth St,0,Sch
-2025-09-06,MA Maritime,0,Salem MA,0,Sch
-2025-09-06,Penn Col Tech,0,Elmira,0,Sch
-2025-09-06,NVU-Johnson,0,Plattsburgh St,0,Sch
+2025-09-06,Nichols,2,Plymouth St,5,
+2025-09-06,MA Maritime,0,Salem MA,4,
+2025-09-06,Penn Col Tech,6,Elmira,0,
+2025-09-06,NVU-Johnson,1,Plattsburgh St,6,
 2025-09-06,York NY,0,St Elizabeth,0,Sch
-2025-09-06,Hartford,0,Springfield,0,Sch
+2025-09-06,Hartford,4,Springfield,1,
 2025-09-06,Mt St Vincent,0,Montclair St,0,Sch
-2025-09-06,Stevens,0,St Joseph's LI,0,Sch
-2025-09-06,Gwynedd-Mercy,0,PSU-Brandywine,0,Sch
-2025-09-06,Pitt-Bradford,0,Chatham,0,Sch
-2025-09-06,W Connecticut,0,Merchant Marine,0,Sch
-2025-09-06,E Connecticut,0,Simmons,0,Sch
-2025-09-06,W New England,0,Clark MA,0,Sch
-2025-09-06,Eastern Univ,0,Cairn,0,Sch
-2025-09-06,Suffolk,0,Emerson,0,Sch
-2025-09-06,Wesleyan GA,0,Salem NC,0,Sch
-2025-09-06,ME Maritime,0,ME Presque Isle,0,Sch
+2025-09-06,Stevens,0,St Joseph's LI,1,
+2025-09-06,Gwynedd-Mercy,2,PSU-Brandywine,1,
+2025-09-06,Pitt-Bradford,0,Chatham,6,
+2025-09-06,W Connecticut,1,Merchant Marine,0,
+2025-09-06,E Connecticut,5,Simmons,0,
+2025-09-06,W New England,1,Clark MA,1,
+2025-09-06,Eastern Univ,4,Cairn,0,
+2025-09-06,Suffolk,0,Emerson,0,
+2025-09-06,Wesleyan GA,0,Salem NC,7,
+2025-09-06,ME Maritime,5,ME Presque Isle,0,
 2025-09-06,SUNY New Paltz,0,Arcadia,0,Sch
-2025-09-06,Catholic,0,Haverford,0,Sch
-2025-09-06,Cedar Crest,0,Immaculata,0,Sch
-2025-09-06,WI Oshkosh,0,Gust Adolphus,0,Sch
-2025-09-06,Northwestern MN,0,NE Wesleyan,0,Sch
-2025-09-06,N England Col,0,St Joseph CT,0,Sch
-2025-09-06,Russell Sage,0,MA Boston,0,Sch
-2025-09-06,Stevenson,0,Washington MD,0,Sch
+2025-09-06,Catholic,3,Haverford,1,
+2025-09-06,Cedar Crest,0,Immaculata,3,
+2025-09-06,WI Oshkosh,1,Gust Adolphus,1,
+2025-09-06,Northwestern MN,2,NE Wesleyan,5,
+2025-09-06,N England Col,0,St Joseph CT,6,
+2025-09-06,Russell Sage,0,MA Boston,1,
+2025-09-06,Stevenson,0,Washington MD,1,
 2025-09-06,Roger Williams,0,Endicott,0,Sch
-2025-09-06,PSU-Harrisburg,0,Pitt-Greensburg,0,Sch
+2025-09-06,PSU-Harrisburg,5,Pitt-Greensburg,3,
 2025-09-06,North Park,0,Central IA,0,Sch
-2025-09-06,Keystone,0,Waynesburg,0,Sch
-2025-09-06,Wilmington OH,0,Centre,0,Sch
-2025-09-06,Meredith,0,Lynchburg,0,Sch
-2025-09-06,TX Lutheran,0,Howard Payne,0,Sch
-2025-09-06,Trinity TX,0,MIT,0,Sch
-2025-09-06,Gordon,0,Misericordia,0,Sch
+2025-09-06,Keystone,0,Waynesburg,15,
+2025-09-06,Wilmington OH,0,Centre,1,
+2025-09-06,Meredith,0,Lynchburg,3,
+2025-09-06,TX Lutheran,3,Howard Payne,1,
+2025-09-06,Rensselaer,0,Hartwick,1,
+2025-09-06,Trinity TX,1,MIT,3,
+2025-09-06,Gordon,0,Misericordia,4,
 2025-09-06,City Col NY,0,Albertus Magnus,0,Sch
-2025-09-06,Mt St Mary NY,0,Lasell,0,Sch
-2025-09-06,Monmouth IL,0,Lakeland,0,Sch
+2025-09-06,Mt St Mary NY,1,Lasell,2,
+2025-09-06,Monmouth IL,3,Lakeland,2,
 2025-09-07,Cal Lutheran,0,Puget Sound,0,Sch
 2025-09-07,Hardin-Simmons,0,Capital,0,Sch
 2025-09-07,Castleton,0,Middlebury,0,Sch
@@ -743,7 +743,6 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-07,Fisher,0,ME Presque Isle,0,Sch
 2025-09-07,Agnes Scott,0,Salem NC,0,Sch
 2025-09-07,MIT,0,Dallas Univ,0,Sch
-2025-09-07,Rensselaer,0,Hartwick,0,Sch
 2025-09-07,Colby,0,Emmanuel MA,0,Sch
 2025-09-07,Carleton MN,0,Simpson IA,0,Sch
 2025-09-07,MN Morris,0,Cornell IA,0,Sch
@@ -793,6 +792,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-09,Principia,0,UHSP,0,Sch
 2025-09-09,Caltech,0,Westcliff,0,Sch
 2025-09-09,Wiley,0,Le Tourneau,0,Sch
+2025-09-09,Blue Mtn,0,Belhaven MS,0,Sch
 2025-09-09,Fitchburg St,0,Nichols,0,Sch
 2025-09-09,PSU-New Kens,0,La Roche,0,Sch
 2025-09-09,PSU-Brandywine,0,Valley Forge,0,Sch

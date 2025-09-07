@@ -75,16 +75,15 @@ date,game,missing_teams
 2025-09-05,N Central MN 0 @ Grace Chr 0,home: Grace Chr
 2025-09-05,Austin Col 0 @ Texas Col 0,home: Texas Col
 2025-09-05,Life Pacific 0 @ Claremont M.S. 2,away: Life Pacific
-2025-09-06,Erskine 0 @ Bob Jones 0,"home: Bob Jones, away: Erskine"
-2025-09-06,Grace Chr 0 @ Alma 0,away: Grace Chr
-2025-09-06,IN S Bend 0 @ Manchester 0,away: IN S Bend
-2025-09-06,La Verne 0 @ The Master's 0,home: The Master's
-2025-09-06,Northwest WA 0 @ Lewis & Clark 0,away: Northwest WA
-2025-09-06,Soka 0 @ Occidental 0,away: Soka
-2025-09-06,SUNY-ESF 0 @ SUNY Canton 0,away: SUNY-ESF
-2025-09-06,SW Christian 0 @ Univ Ozarks 0,away: SW Christian
+2025-09-06,Erskine 1 @ Bob Jones 1,"home: Bob Jones, away: Erskine"
+2025-09-06,Grace Chr 0 @ Alma 3,away: Grace Chr
+2025-09-06,IN S Bend 1 @ Manchester 0,away: IN S Bend
+2025-09-06,La Verne 0 @ The Master's 3,home: The Master's
+2025-09-06,Northwest WA 3 @ Lewis & Clark 2,away: Northwest WA
+2025-09-06,Soka 1 @ Occidental 1,away: Soka
+2025-09-06,SUNY-ESF 4 @ SUNY Canton 1,away: SUNY-ESF
+2025-09-06,SW Christian 2 @ Univ Ozarks 0,away: SW Christian
 2025-09-06,Huntington 0 @ Anderson IN 0,away: Huntington
-2025-09-06,Blackburn 0 @ Stephens 0,home: Stephens
 2025-09-06,Wiley 0 @ Huntingdon 0,away: Wiley
 2025-09-07,Houston-Victoria 0 @ McMurry 0,away: Houston-Victoria
 2025-09-07,Schreiner 0 @ Texas A&M-SA 0,home: Texas A&M-SA
@@ -100,6 +99,7 @@ date,game,missing_teams
 2025-09-09,Principia 0 @ UHSP 0,home: UHSP
 2025-09-09,Caltech 0 @ Westcliff 0,home: Westcliff
 2025-09-09,Wiley 0 @ Le Tourneau 0,away: Wiley
+2025-09-09,Blue Mtn 0 @ Belhaven MS 0,away: Blue Mtn
 2025-09-09,PSU-New Kens 0 @ La Roche 0,away: PSU-New Kens
 2025-09-09,Five Towns 0 @ SUNY Maritime 0,away: Five Towns
 2025-09-09,Eureka 0 @ Faith Bap 0,home: Faith Bap
