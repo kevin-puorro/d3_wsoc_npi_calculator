@@ -639,7 +639,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-06,Scranton,2,Vassar,3,
 2025-09-06,Bridgewater MA,7,Anna Maria,0,
 2025-09-06,Trine,0,Wheaton IL,1,
-2025-09-06,Wm Paterson,0,FDU Madison,0,Sch
+2025-09-06,Wm Paterson,2,FDU Madison,0,
 2025-09-06,WI Eau Claire,1,Rochester Tech,2,
 2025-09-06,WI Stout,1,WI Superior,0,
 2025-09-06,Worcester St,1,Fitchburg St,0,
@@ -680,7 +680,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-06,N England Col,0,St Joseph CT,6,
 2025-09-06,Russell Sage,0,MA Boston,1,
 2025-09-06,Stevenson,0,Washington MD,1,
-2025-09-06,Roger Williams,0,Endicott,0,Sch
+2025-09-06,Roger Williams,1,Endicott,0,
 2025-09-06,PSU-Harrisburg,5,Pitt-Greensburg,3,
 2025-09-06,North Park,0,Central IA,0,Sch
 2025-09-06,Keystone,0,Waynesburg,15,
@@ -693,64 +693,63 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-06,City Col NY,0,Albertus Magnus,0,Sch
 2025-09-06,Mt St Mary NY,1,Lasell,2,
 2025-09-06,Monmouth IL,3,Lakeland,2,
-2025-09-07,Cal Lutheran,0,Puget Sound,0,Sch
-2025-09-07,Hardin-Simmons,0,Capital,0,Sch
-2025-09-07,Castleton,0,Middlebury,0,Sch
-2025-09-07,Centre,0,DePauw,0,Sch
-2025-09-07,Mt St Joseph,0,Chris Newport,0,Sch
-2025-09-07,Knox,0,Coe,0,Sch
-2025-09-07,SUNY New Paltz,0,College of NJ,0,Sch
-2025-09-07,Concordia IL,0,Beloit,0,Sch
-2025-09-07,NE Wesleyan,0,Concordia Mhd,0,Sch
-2025-09-07,CT College,0,Salve Regina,0,Sch
-2025-09-07,Carnegie Mellon,0,Denison,0,Sch
-2025-09-07,DeSales,0,Mt Holyoke,0,Sch
-2025-09-07,Brevard,0,E Mennonite,0,Sch
-2025-09-07,Smith,0,Amherst,0,Sch
-2025-09-07,Hamline,0,WI Stevens Pt,0,Sch
-2025-09-07,Hobart & Smith,0,Salisbury,0,Sch
-2025-09-07,Huntingdon,0,Centenary,0,Sch
-2025-09-07,Ithaca,0,Drew,0,Sch
-2025-09-07,Johns Hopkins,0,Washington & Lee,0,Sch
-2025-09-07,Lake Forest,0,St Norbert,0,Sch
-2025-09-07,UC Santa Cruz,0,Lewis & Clark,0,Sch
-2025-09-07,N England Col,0,ME Farmington,0,Sch
-2025-09-07,Martin Luther,0,Lakeland,0,Sch
-2025-09-07,M Hardin-Baylor,0,VA Wesleyan,0,Sch
-2025-09-07,Houston-Victoria,0,McMurry,0,Sch
-2025-09-07,Milwaukee Eng,0,Claremont M.S.,0,Sch
-2025-09-07,Pomona-Pitzer,0,Pac Lutheran,0,Sch
-2025-09-07,Redlands,0,Linfield,0,Sch
-2025-09-07,Rose-Hulman,0,Washington StL,0,Sch
-2025-09-07,Emory,0,St Benedict,0,Sch
-2025-09-07,Bethel MN,0,Carthage,0,Sch
-2025-09-07,St Mary's MD,0,Rowan,0,Sch
-2025-09-07,St Scholastica,0,Dubuque,0,Sch
-2025-09-07,PSU-Harrisburg,0,St Vincent,0,Sch
-2025-09-07,Schreiner,0,Texas A&M-SA,0,Sch
-2025-09-07,Farmingdale,0,R Stockton,0,Sch
-2025-09-07,Thomas ME,0,Colby-Sawyer,0,Sch
-2025-09-07,Brandeis,0,Wellesley,0,Sch
-2025-09-07,Warner Pacific,0,Willamette,0,Sch
-2025-09-07,PSU-Altoona,0,Wash & Jeff,0,Sch
-2025-09-07,W Connecticut,0,Wesleyan CT,0,Sch
-2025-09-07,Whitman,0,Eastern Oregon,0,Sch
+2025-09-07,Cal Lutheran,2,Puget Sound,1,
+2025-09-07,Hardin-Simmons,1,Capital,1,
+2025-09-07,Castleton,0,Middlebury,5,
+2025-09-07,Centre,2,DePauw,0,
+2025-09-07,Mt St Joseph,0,Chris Newport,4,
+2025-09-07,Knox,2,Coe,0,
+2025-09-07,SUNY New Paltz,0,College of NJ,1,
+2025-09-07,Concordia IL,1,Beloit,1,
+2025-09-07,NE Wesleyan,0,Concordia Mhd,0,
+2025-09-07,CT College,1,Salve Regina,0,
+2025-09-07,Carnegie Mellon,2,Denison,1,
+2025-09-07,DeSales,1,Mt Holyoke,1,
+2025-09-07,Brevard,4,E Mennonite,0,
+2025-09-07,Smith,1,Amherst,2,
+2025-09-07,Hamline,0,WI Stevens Pt,0,
+2025-09-07,Hobart & Smith,3,Salisbury,0,
+2025-09-07,Huntingdon,3,Centenary,1,
+2025-09-07,Ithaca,1,Drew,0,
+2025-09-07,Johns Hopkins,1,Washington & Lee,2,
+2025-09-07,Lake Forest,4,St Norbert,0,
+2025-09-07,UC Santa Cruz,4,Lewis & Clark,1,
+2025-09-07,N England Col,1,ME Farmington,5,
+2025-09-07,Martin Luther,1,Lakeland,0,
+2025-09-07,M Hardin-Baylor,1,VA Wesleyan,1,
+2025-09-07,Houston-Victoria,0,McMurry,0,
+2025-09-07,Milwaukee Eng,2,Claremont M.S.,4,
+2025-09-07,Pomona-Pitzer,1,Pac Lutheran,0,
+2025-09-07,Redlands,0,Linfield,2,
+2025-09-07,Rose-Hulman,0,Washington StL,4,
+2025-09-07,Emory,4,St Benedict,0,
+2025-09-07,Bethel MN,1,Carthage,2,
+2025-09-07,St Mary's MD,0,Rowan,4,
+2025-09-07,St Scholastica,1,Dubuque,2,
+2025-09-07,PSU-Harrisburg,2,St Vincent,0,
+2025-09-07,Farmingdale,1,R Stockton,1,
+2025-09-07,Thomas ME,0,Colby-Sawyer,2,
+2025-09-07,Brandeis,2,Wellesley,1,
+2025-09-07,Warner Pacific,2,Willamette,3,
+2025-09-07,PSU-Altoona,1,Wash & Jeff,4,
+2025-09-07,W Connecticut,0,Wesleyan CT,5,
 2025-09-07,La Sierra,0,Whittier,0,Sch
-2025-09-07,Old Westbury,0,Yeshiva,0,Sch
-2025-09-07,TX Lutheran,0,UTRGV,0,Sch
-2025-09-07,J&W NC,0,Hollins,0,Sch
-2025-09-07,NYU,0,Arcadia,0,Sch
-2025-09-07,Fisher,0,ME Presque Isle,0,Sch
-2025-09-07,Agnes Scott,0,Salem NC,0,Sch
-2025-09-07,MIT,0,Dallas Univ,0,Sch
-2025-09-07,Colby,0,Emmanuel MA,0,Sch
+2025-09-07,Old Westbury,8,Yeshiva,0,
+2025-09-07,TX Lutheran,0,UTRGV,6,
+2025-09-07,J&W NC,2,Hollins,0,
+2025-09-07,NYU,0,Arcadia,0,
+2025-09-07,Fisher,1,ME Presque Isle,0,
+2025-09-07,Agnes Scott,0,Salem NC,0,O1
+2025-09-07,MIT,7,Dallas Univ,0,
+2025-09-07,Colby,2,Emmanuel MA,2,
 2025-09-07,Carleton MN,0,Simpson IA,0,Sch
-2025-09-07,MN Morris,0,Cornell IA,0,Sch
-2025-09-07,St Thomas TX,0,Belhaven MS,0,Sch
+2025-09-07,MN Morris,0,Cornell IA,4,
+2025-09-07,St Thomas TX,2,Belhaven MS,2,
 2025-09-07,Berea,0,Wesleyan GA,0,Sch
-2025-09-07,Kalamazoo,0,Concordia WI,0,Sch
-2025-09-07,Marymount VA,0,Pitt-Greensburg,0,Sch
-2025-09-07,SW Univ TX,0,E Texas Bap,0,Sch
+2025-09-07,Kalamazoo,0,Concordia WI,0,
+2025-09-07,Marymount VA,0,Pitt-Greensburg,0,
+2025-09-07,SW Univ TX,0,E Texas Bap,0,
+2025-09-07,SUNY Oneonta,0,Rensselaer,1,
 2025-09-08,WI Whitewater,0,Carroll WI,0,Sch
 2025-09-08,Emory,0,St Catherine,0,Sch
 2025-09-08,St Joseph's NY,0,John Jay,0,Sch
@@ -924,6 +923,9 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-10,Monmouth IL,0,IL Wesleyan,0,Sch
 2025-09-10,Stephens,0,Westminster MO,0,Sch
 2025-09-10,Gordon,0,Salve Regina,0,Sch
+2025-09-10,R Stockton,0,Centenary NJ,0,Sch
+2025-09-10,Albertus Magnus,0,Mitchell,0,Sch
+2025-09-10,Regent,0,Wesleyan GA,0,Sch
 2025-09-11,Clarkson,0,SUNY Potsdam,0,Sch
 2025-09-11,Colby-Sawyer,0,Salem MA,0,Sch
 2025-09-11,Concordia IL,0,St Mary's IN,0,Sch
