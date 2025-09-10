@@ -652,38 +652,38 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-08,Wilson College,0,Neumann University,2,
 2025-09-08,Lancaster Bible College,0,Gwynedd Mercy University,0,Sch
 2025-09-08,Blackburn College,0,Monmouth College (Illinois),5,
-2025-09-09,Case Western Reserve University,0,Heidelberg University,0,Sch
+2025-09-09,Case Western Reserve University,1,Heidelberg University,0,
 2025-09-09,Transylvania University,0,Centre College,0,Sch
-2025-09-09,State University of New York at Canton,0,Clarkson University,0,Sch
-2025-09-09,University of Southern Maine,0,Colby College,0,Sch
-2025-09-09,State University of New York at Cortland,0,Smith College,0,Sch
-2025-09-09,Covenant College,0,Berry College,0,Sch
-2025-09-09,Eastern University,0,Delaware Valley University,0,Sch
-2025-09-09,Ripon College,0,Elmhurst University,0,Sch
-2025-09-09,Franklin & Marshall College,0,York College (Pennsylvania),0,Sch
-2025-09-09,Hamilton College,0,State University of New York at Oswego,0,Sch
-2025-09-09,Hiram College,0,Kenyon College,0,Sch
-2025-09-09,Goucher College,0,Hood College,0,Sch
-2025-09-09,Westminster College (Pennsylvania),0,Lycoming College,0,Sch
-2025-09-09,Kalamazoo College,0,Augustana College (Illinois),0,Sch
-2025-09-09,Manchester University,0,The University of Olivet,0,Sch
+2025-09-09,State University of New York at Canton,0,Clarkson University,6,
+2025-09-09,University of Southern Maine,0,Colby College,5,
+2025-09-09,State University of New York at Cortland,5,Smith College,2,
+2025-09-09,Covenant College,1,Berry College,1,
+2025-09-09,Eastern University,3,Delaware Valley University,0,
+2025-09-09,Ripon College,0,Elmhurst University,2,
+2025-09-09,Franklin & Marshall College,2,York College (Pennsylvania),1,
+2025-09-09,Hamilton College,3,State University of New York at Oswego,1,
+2025-09-09,Hiram College,0,Kenyon College,2,
+2025-09-09,Goucher College,0,Hood College,2,
+2025-09-09,Westminster College (Pennsylvania),1,Lycoming College,4,
+2025-09-09,Kalamazoo College,1,Augustana College (Illinois),0,
+2025-09-09,Manchester University,0,The University of Olivet,1,
 2025-09-09,University of Wisconsin-Oshkosh,0,Milwaukee School of Engineering,0,Sch
-2025-09-09,Moravian University,0,Muhlenberg College,0,Sch
-2025-09-09,Norwich University,0,Plymouth State University,0,Sch
-2025-09-09,Beloit College,0,Rockford University,0,Sch
-2025-09-09,Russell Sage College,0,State University of New York at Delhi,0,Sch
-2025-09-09,State University of New York at Potsdam,0,Utica University,0,Sch
-2025-09-09,Union College (New York),0,Western New England University,0,Sch
-2025-09-09,Yeshiva University,0,U.S. Merchant Marine Academy,0,Sch
-2025-09-09,Fitchburg State University,0,Nichols College,0,Sch
-2025-09-09,Massachusetts College of Liberal Arts,0,Elms College,0,Sch
-2025-09-09,Trinity College (Connecticut),0,University of Saint Joseph (Connecticut),0,Sch
-2025-09-09,State University of New York Polytechnic Institute,0,Bard College,0,Sch
-2025-09-09,Eastern Connecticut State University,0,University of Hartford,0,Sch
-2025-09-09,Baldwin Wallace University,0,Ohio Wesleyan University,0,Sch
-2025-09-09,Houghton University,0,"University of Pittsburgh, Bradford",0,Sch
-2025-09-09,Rivier University,0,Suffolk University,0,Sch
-2025-09-09,Lesley University,0,Massachusetts Maritime Academy,0,Sch
+2025-09-09,Moravian University,1,Muhlenberg College,0,
+2025-09-09,Norwich University,2,Plymouth State University,1,
+2025-09-09,Beloit College,3,Rockford University,0,
+2025-09-09,Russell Sage College,1,State University of New York at Delhi,0,
+2025-09-09,State University of New York at Potsdam,0,Utica University,2,
+2025-09-09,Union College (New York),3,Western New England University,0,
+2025-09-09,Yeshiva University,0,U.S. Merchant Marine Academy,12,
+2025-09-09,Fitchburg State University,2,Nichols College,4,
+2025-09-09,Massachusetts College of Liberal Arts,0,Elms College,4,
+2025-09-09,Trinity College (Connecticut),3,University of Saint Joseph (Connecticut),0,
+2025-09-09,State University of New York Polytechnic Institute,2,Bard College,3,
+2025-09-09,Eastern Connecticut State University,0,University of Hartford,3,
+2025-09-09,Baldwin Wallace University,0,Ohio Wesleyan University,3,
+2025-09-09,Houghton University,6,"University of Pittsburgh, Bradford",0,
+2025-09-09,Rivier University,0,Suffolk University,5,
+2025-09-09,Lesley University,4,Massachusetts Maritime Academy,0,
 2025-09-09,Cornell College,0,Simpson College,0,Sch
 2025-09-10,North Central College,0,Calvin University,0,Sch
 2025-09-10,Carthage College,0,University of Wisconsin-Whitewater,0,Sch
