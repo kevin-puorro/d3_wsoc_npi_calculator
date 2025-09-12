@@ -903,7 +903,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-10,Hilbert,1,Keuka,1,
 2025-09-10,Mt St Mary NY,1,NJ City,2,
 2025-09-10,City Col NY,0,St Joseph's NY,0,Sch
-2025-09-10,Christendom,0,Trinity DC,0,Sch
+2025-09-10,Christendom,12,Trinity DC,0,
 2025-09-10,Simmons,3,Anna Maria,2,
 2025-09-10,Marymount VA,1,Catholic,1,
 2025-09-10,Carlow,0,Chatham,5,
@@ -921,26 +921,26 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-10,Gordon,0,Salve Regina,1,
 2025-09-10,R Stockton,5,Centenary NJ,0,
 2025-09-10,Regent,2,Wesleyan GA,0,
-2025-09-11,Clarkson,0,SUNY Potsdam,0,Sch
-2025-09-11,Colby-Sawyer,0,Salem MA,0,Sch
-2025-09-11,Concordia IL,0,St Mary's IN,0,Sch
-2025-09-11,Regent,0,Agnes Scott,0,Sch
-2025-09-11,Hamline,0,MN Morris,0,Sch
-2025-09-11,Lewis & Clark,0,Warner Pacific,0,Sch
-2025-09-11,Martin Luther,0,Waldorf,0,Sch
-2025-09-11,Blackburn,0,Mt Mary,0,Sch
-2025-09-11,Pratt Inst,0,Purchase,0,Sch
-2025-09-11,Rhodes,0,Belhaven MS,0,Sch
-2025-09-11,Bethel MN,0,Macalester,0,Sch
-2025-09-11,Schreiner,0,Howard Payne,0,Sch
-2025-09-11,Yeshiva,0,Manhattanville,0,Sch
-2025-09-11,North American,0,St Thomas TX,0,Sch
+2025-09-11,Clarkson,0,SUNY Potsdam,2,
+2025-09-11,Colby-Sawyer,0,Salem MA,3,
+2025-09-11,Concordia IL,0,St Mary's IN,3,
+2025-09-11,Regent,1,Agnes Scott,2,
+2025-09-11,Hamline,6,MN Morris,0,
+2025-09-11,Lewis & Clark,0,Warner Pacific,0,
+2025-09-11,Martin Luther,2,Waldorf,2,
+2025-09-11,Blackburn,2,Mt Mary,0,
+2025-09-11,Pratt Inst,4,Purchase,0,
+2025-09-11,Rhodes,2,Belhaven MS,0,
+2025-09-11,Bethel MN,0,Macalester,5,
+2025-09-11,Schreiner,1,Howard Payne,2,
+2025-09-11,Yeshiva,0,Manhattanville,12,
+2025-09-11,North American,0,St Thomas TX,3,
 2025-09-11,PSU-Schuylkill,0,Keystone,0,Sch
-2025-09-11,SUNY New Paltz,0,Montclair St,0,Sch
-2025-09-11,Covenant,0,Emory,0,Sch
-2025-09-11,UC Santa Cruz,0,Claremont M.S.,0,Sch
-2025-09-11,Benedictine IL,0,Lake Forest,0,Sch
-2025-09-11,York PA,0,Lancaster Bib,0,Sch
+2025-09-11,SUNY New Paltz,1,Montclair St,1,
+2025-09-11,Covenant,0,Emory,7,
+2025-09-11,UC Santa Cruz,0,Claremont M.S.,2,
+2025-09-11,Benedictine IL,0,Lake Forest,8,
+2025-09-11,York PA,3,Lancaster Bib,0,
 2025-09-12,Capital,0,Hope,0,Sch
 2025-09-12,Chris Newport,0,Case Western,0,Sch
 2025-09-12,Augustana IL,0,Cornell IA,0,Sch

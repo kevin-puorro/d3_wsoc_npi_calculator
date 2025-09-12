@@ -787,21 +787,21 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-10,Monmouth College (Illinois),1,Illinois Wesleyan University,5,
 2025-09-10,Gordon College,0,Salve Regina University,1,
 2025-09-10,Stockton University,5,Centenary University (New Jersey),0,
-2025-09-11,Clarkson University,0,State University of New York at Potsdam,0,Sch
-2025-09-11,Colby-Sawyer College,0,Salem State University,0,Sch
-2025-09-11,Concordia University Chicago,0,Saint Mary's College (Indiana),0,Sch
-2025-09-11,Hamline University,0,"University of Minnesota, Morris",0,Sch
-2025-09-11,Blackburn College,0,Mount Mary,0,Sch
-2025-09-11,Pratt Institute,0,"Purchase College, State University of New York",0,Sch
-2025-09-11,Rhodes College,0,Belhaven University,0,Sch
-2025-09-11,Bethel University (Minnesota),0,Macalester College,0,Sch
-2025-09-11,Schreiner University,0,Howard Payne University,0,Sch
-2025-09-11,Yeshiva University,0,Manhattanville University,0,Sch
-2025-09-11,State University of New York at New Paltz,0,Montclair State University,0,Sch
-2025-09-11,Covenant College,0,Emory University,0,Sch
-2025-09-11,"University of California, Santa Cruz",0,Claremont McKenna-Harvey Mudd-Scripps Colleges,0,Sch
-2025-09-11,Benedictine University (Illinois),0,Lake Forest College,0,Sch
-2025-09-11,York College (Pennsylvania),0,Lancaster Bible College,0,Sch
+2025-09-11,Clarkson University,0,State University of New York at Potsdam,2,
+2025-09-11,Colby-Sawyer College,0,Salem State University,3,
+2025-09-11,Concordia University Chicago,0,Saint Mary's College (Indiana),3,
+2025-09-11,Hamline University,6,"University of Minnesota, Morris",0,
+2025-09-11,Blackburn College,2,Mount Mary,0,
+2025-09-11,Pratt Institute,4,"Purchase College, State University of New York",0,
+2025-09-11,Rhodes College,2,Belhaven University,0,
+2025-09-11,Bethel University (Minnesota),0,Macalester College,5,
+2025-09-11,Schreiner University,1,Howard Payne University,2,
+2025-09-11,Yeshiva University,0,Manhattanville University,12,
+2025-09-11,State University of New York at New Paltz,1,Montclair State University,1,
+2025-09-11,Covenant College,0,Emory University,7,
+2025-09-11,"University of California, Santa Cruz",0,Claremont McKenna-Harvey Mudd-Scripps Colleges,2,
+2025-09-11,Benedictine University (Illinois),0,Lake Forest College,8,
+2025-09-11,York College (Pennsylvania),3,Lancaster Bible College,0,
 2025-09-12,Capital University,0,Hope College,0,Sch
 2025-09-12,Christopher Newport University,0,Case Western Reserve University,0,Sch
 2025-09-12,Augustana College (Illinois),0,Cornell College,0,Sch
