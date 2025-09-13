@@ -802,34 +802,34 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-11,"University of California, Santa Cruz",0,Claremont McKenna-Harvey Mudd-Scripps Colleges,2,
 2025-09-11,Benedictine University (Illinois),0,Lake Forest College,8,
 2025-09-11,York College (Pennsylvania),3,Lancaster Bible College,0,
-2025-09-12,Capital University,0,Hope College,0,Sch
-2025-09-12,Christopher Newport University,0,Case Western Reserve University,0,Sch
-2025-09-12,Augustana College (Illinois),0,Cornell College,0,Sch
-2025-09-12,The College of St. Scholastica,0,Crown College (Minnesota),0,Sch
-2025-09-12,DeSales University,0,Susquehanna University,0,Sch
-2025-09-12,Edgewood University,0,Beloit College,0,Sch
-2025-09-12,Elmhurst University,0,Lawrence University,0,Sch
-2025-09-12,Millsaps College,0,Hendrix College,0,Sch
-2025-09-12,Johnson & Wales University (Providence),0,Nichols College,0,Sch
-2025-09-12,Maranatha Baptist University,0,Rockford University,0,Sch
-2025-09-12,Misericordia University,0,University of Mary Hardin-Baylor,0,Sch
-2025-09-12,Moravian University,0,Eastern University,0,Sch
+2025-09-12,Capital University,0,Hope College,2,
+2025-09-12,Christopher Newport University,1,Case Western Reserve University,1,
+2025-09-12,Augustana College (Illinois),3,Cornell College,0,
+2025-09-12,The College of St. Scholastica,4,Crown College (Minnesota),0,
+2025-09-12,DeSales University,2,Susquehanna University,1,
+2025-09-12,Edgewood University,1,Beloit College,0,
+2025-09-12,Elmhurst University,1,Lawrence University,1,
+2025-09-12,Millsaps College,2,Hendrix College,2,
+2025-09-12,Johnson & Wales University (Providence),4,Nichols College,0,
+2025-09-12,Maranatha Baptist University,0,Rockford University,4,
+2025-09-12,Misericordia University,4,University of Mary Hardin-Baylor,1,
+2025-09-12,Moravian University,1,Eastern University,1,
 2025-09-12,Mount Mary,0,Wisconsin Lutheran College,0,Sch
-2025-09-12,Roanoke College,0,Greensboro College,0,Sch
-2025-09-12,Carnegie Mellon University,0,Shenandoah University,0,Sch
-2025-09-12,Hardin-Simmons University,0,Trinity University (Texas),0,Sch
-2025-09-12,Utica University,0,State University of New York at Morrisville,0,Sch
-2025-09-12,Washington University in St. Louis,0,North Central College,0,Sch
-2025-09-12,Waynesburg University,0,Baldwin Wallace University,0,Sch
-2025-09-12,Bridgewater State University,0,Massachusetts Maritime Academy,0,Sch
-2025-09-12,Willamette University,0,George Fox University,0,Sch
-2025-09-12,Salem College (North Carolina),0,Hollins University,0,Sch
-2025-09-12,McMurry University,0,Southwestern University (Texas),0,Sch
-2025-09-12,Ohio Northern University,0,Ohio Wesleyan University,0,Sch
-2025-09-12,Southern Virginia University,0,Washington and Lee University,0,Sch
-2025-09-12,Wilmington College (Ohio),0,Westminster College (Pennsylvania),0,Sch
-2025-09-12,Linfield University,0,Pacific University (Oregon),0,Sch
-2025-09-12,Meredith College,0,Berry College,0,Sch
+2025-09-12,Roanoke College,3,Greensboro College,0,
+2025-09-12,Carnegie Mellon University,1,Shenandoah University,1,
+2025-09-12,Hardin-Simmons University,1,Trinity University (Texas),2,
+2025-09-12,Utica University,5,State University of New York at Morrisville,0,
+2025-09-12,Washington University in St. Louis,1,North Central College,0,
+2025-09-12,Waynesburg University,1,Baldwin Wallace University,0,
+2025-09-12,Bridgewater State University,7,Massachusetts Maritime Academy,0,
+2025-09-12,Willamette University,0,George Fox University,0,
+2025-09-12,Salem College (North Carolina),4,Hollins University,2,
+2025-09-12,McMurry University,0,Southwestern University (Texas),0,
+2025-09-12,Ohio Northern University,0,Ohio Wesleyan University,0,
+2025-09-12,Southern Virginia University,0,Washington and Lee University,1,
+2025-09-12,Wilmington College (Ohio),0,Westminster College (Pennsylvania),0,
+2025-09-12,Linfield University,3,Pacific University (Oregon),0,
+2025-09-12,Meredith College,1,Berry College,2,
 2025-09-13,Calvin University,0,University of Chicago,0,Sch
 2025-09-13,Wisconsin Lutheran College,0,Carthage College,0,Sch
 2025-09-13,Vermont State University Castleton,0,Western Connecticut State University,0,Sch
@@ -890,7 +890,6 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-13,Norwich University,0,Albertus Magnus College,0,Sch
 2025-09-13,St. Lawrence University,0,State University of New York at Oswego,0,Sch
 2025-09-13,Grinnell College,0,Benedictine University (Illinois),0,Sch
-2025-09-13,Clarkson University,0,Ramapo College,0,Sch
 2025-09-13,St. Mary's College of Maryland,0,Randolph-Macon College,0,Sch
 2025-09-13,Illinois Institute of Technology,0,Rose-Hulman Institute of Technology,0,Sch
 2025-09-13,St. Joseph's University NY (Brooklyn),0,"Rutgers, The State Univ. of New Jersey, Newark",0,Sch
@@ -960,6 +959,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-13,University of St. Thomas (Texas),0,Howard Payne University,0,Sch
 2025-09-13,Colby-Sawyer College,0,Saint Joseph's College (Maine),0,Sch
 2025-09-13,Gordon College,0,Curry College,0,Sch
+2025-09-13,Clarkson University,0,Worcester Polytechnic Institute,0,Sch
 2025-09-14,Capital University,0,Hanover College,0,Sch
 2025-09-14,Ohio Northern University,0,Case Western Reserve University,0,Sch
 2025-09-14,Centre College,0,Mount St. Joseph University,0,Sch

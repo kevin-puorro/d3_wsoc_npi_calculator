@@ -941,39 +941,39 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-11,UC Santa Cruz,0,Claremont M.S.,2,
 2025-09-11,Benedictine IL,0,Lake Forest,8,
 2025-09-11,York PA,3,Lancaster Bib,0,
-2025-09-12,Capital,0,Hope,0,Sch
-2025-09-12,Chris Newport,0,Case Western,0,Sch
-2025-09-12,Augustana IL,0,Cornell IA,0,Sch
-2025-09-12,St Scholastica,0,Crown MN,0,Sch
-2025-09-12,DeSales,0,Susquehanna,0,Sch
-2025-09-12,Edgewood,0,Beloit,0,Sch
-2025-09-12,Elmhurst,0,Lawrence,0,Sch
-2025-09-12,Millsaps,0,Hendrix,0,Sch
-2025-09-12,J&W RI,0,Nichols,0,Sch
-2025-09-12,Maranatha Bap,0,Rockford,0,Sch
-2025-09-12,Misericordia,0,M Hardin-Baylor,0,Sch
-2025-09-12,Moravian,0,Eastern Univ,0,Sch
+2025-09-12,Capital,0,Hope,2,
+2025-09-12,Chris Newport,1,Case Western,1,
+2025-09-12,Augustana IL,3,Cornell IA,0,
+2025-09-12,St Scholastica,4,Crown MN,0,
+2025-09-12,DeSales,2,Susquehanna,1,
+2025-09-12,Edgewood,1,Beloit,0,
+2025-09-12,Elmhurst,1,Lawrence,1,
+2025-09-12,Millsaps,2,Hendrix,2,
+2025-09-12,J&W RI,4,Nichols,0,
+2025-09-12,Maranatha Bap,0,Rockford,4,
+2025-09-12,Misericordia,4,M Hardin-Baylor,1,
+2025-09-12,Moravian,1,Eastern Univ,1,
 2025-09-12,Mt Mary,0,WI Lutheran,0,Sch
-2025-09-12,Westcliff,0,Occidental,0,Sch
-2025-09-12,Shaw NC,0,Pfeiffer,0,Sch
-2025-09-12,Great Lakes Chr,0,Ripon,0,Sch
-2025-09-12,Roanoke,0,Greensboro,0,Sch
-2025-09-12,Carnegie Mellon,0,Shenandoah,0,Sch
-2025-09-12,Hardin-Simmons,0,Trinity TX,0,Sch
-2025-09-12,Utica,0,Morrisville St,0,Sch
-2025-09-12,Washington StL,0,N Central IL,0,Sch
-2025-09-12,Waynesburg,0,Baldwin-Wallace,0,Sch
-2025-09-12,Bridgewater MA,0,MA Maritime,0,Sch
-2025-09-12,Willamette,0,George Fox,0,Sch
-2025-09-12,Salem NC,0,Hollins,0,Sch
+2025-09-12,Westcliff,3,Occidental,1,
+2025-09-12,Shaw NC,6,Pfeiffer,0,
+2025-09-12,Great Lakes Chr,0,Ripon,0,
+2025-09-12,Roanoke,3,Greensboro,0,
+2025-09-12,Carnegie Mellon,1,Shenandoah,1,
+2025-09-12,Hardin-Simmons,1,Trinity TX,2,
+2025-09-12,Utica,5,Morrisville St,0,
+2025-09-12,Washington StL,1,N Central IL,0,
+2025-09-12,Waynesburg,1,Baldwin-Wallace,0,
+2025-09-12,Bridgewater MA,7,MA Maritime,0,
+2025-09-12,Willamette,0,George Fox,0,
+2025-09-12,Salem NC,4,Hollins,2,
 2025-09-12,Central Penn,0,Trinity DC,0,Sch
-2025-09-12,McMurry,0,SW Univ TX,0,Sch
-2025-09-12,Carlow,0,Hiram,0,Sch
-2025-09-12,Ohio Northern,0,Ohio Wesleyan,0,Sch
-2025-09-12,S Virginia,0,Washington & Lee,0,Sch
-2025-09-12,Wilmington OH,0,Westminster PA,0,Sch
-2025-09-12,Linfield,0,Pacific OR,0,Sch
-2025-09-12,Meredith,0,Berry,0,Sch
+2025-09-12,McMurry,0,SW Univ TX,0,
+2025-09-12,Carlow,0,Hiram,2,
+2025-09-12,Ohio Northern,0,Ohio Wesleyan,0,
+2025-09-12,S Virginia,0,Washington & Lee,1,
+2025-09-12,Wilmington OH,0,Westminster PA,0,
+2025-09-12,Linfield,3,Pacific OR,0,
+2025-09-12,Meredith,1,Berry,2,
 2025-09-13,Cal Lutheran,0,Westmont,0,Sch
 2025-09-13,Calvin,0,Chicago,0,Sch
 2025-09-13,Carroll MT,0,Whitman,0,Sch
@@ -1043,7 +1043,6 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-13,St Lawrence,0,Oswego St,0,Sch
 2025-09-13,Notre Dame MD,0,PSU-Schuylkill,0,Sch
 2025-09-13,Grinnell,0,Benedictine IL,0,Sch
-2025-09-13,Clarkson,0,Ramapo,0,Sch
 2025-09-13,St Mary's MD,0,Randolph-Macon,0,Sch
 2025-09-13,The Master's,0,Redlands,0,Sch
 2025-09-13,IL Tech,0,Rose-Hulman,0,Sch
@@ -1122,6 +1121,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-13,Colby-Sawyer,0,St Joseph's ME,0,Sch
 2025-09-13,Gordon,0,Curry,0,Sch
 2025-09-13,Carroll MT,0,Whitworth,0,Sch
+2025-09-13,Clarkson,0,Worcester Tech,0,Sch
 2025-09-14,Capital,0,Hanover,0,Sch
 2025-09-14,Ohio Northern,0,Case Western,0,Sch
 2025-09-14,Centre,0,Mt St Joseph,0,Sch
