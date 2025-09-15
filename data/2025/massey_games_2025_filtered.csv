@@ -960,45 +960,45 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-13,Colby-Sawyer College,0,Saint Joseph's College (Maine),2,
 2025-09-13,Gordon College,1,Curry College,0,
 2025-09-13,Clarkson University,0,Worcester Polytechnic Institute,2,
-2025-09-14,Capital University,0,Hanover College,0,Sch
-2025-09-14,Ohio Northern University,0,Case Western Reserve University,0,Sch
-2025-09-14,Centre College,0,Mount St. Joseph University,0,Sch
-2025-09-14,Christopher Newport University,0,Ohio Wesleyan University,0,Sch
-2025-09-14,Nebraska Wesleyan University,0,Cornell College,0,Sch
-2025-09-14,Carnegie Mellon University,0,State University of New York at Cortland,0,Sch
-2025-09-14,University of Mount Union,0,Denison University,0,Sch
-2025-09-14,University of Wisconsin-La Crosse,0,Edgewood University,0,Sch
-2025-09-14,Berry College,0,Greensboro College,0,Sch
-2025-09-14,University of Wisconsin-Whitewater,0,Grinnell College,0,Sch
-2025-09-14,Hendrix College,0,Rhodes College,0,Sch
-2025-09-14,Huntingdon College,0,Oglethorpe University,0,Sch
-2025-09-14,Illinois College,0,Kalamazoo College,0,Sch
-2025-09-14,John Carroll University,0,Baldwin Wallace University,0,Sch
-2025-09-14,Juniata College,0,"Penn State University, Altoona",0,Sch
-2025-09-14,Lawrence University,0,University of Wisconsin-Stevens Point,0,Sch
-2025-09-14,Webster University,0,Aurora University,0,Sch
-2025-09-14,McMurry University,0,Trinity University (Texas),0,Sch
-2025-09-14,Middlebury College,0,Vassar College,0,Sch
-2025-09-14,Millsaps College,0,University of the Ozarks (Arkansas),0,Sch
-2025-09-14,Texas Lutheran University,0,Misericordia University,0,Sch
-2025-09-14,"Purchase College, State University of New York",0,Yeshiva University,0,Sch
-2025-09-14,College of Saint Benedict,0,University of Wisconsin-Oshkosh,0,Sch
-2025-09-14,Bethel University (Minnesota),0,University of Wisconsin-Stout,0,Sch
-2025-09-14,Skidmore College,0,Williams College,0,Sch
-2025-09-14,State University of New York at Delhi,0,Maine Maritime Academy,0,Sch
-2025-09-14,Arcadia University,0,Farmingdale State College,0,Sch
-2025-09-14,State University of New York at Cobleskill,0,Thomas College,0,Sch
-2025-09-14,Illinois Wesleyan University,0,Wartburg College,0,Sch
-2025-09-14,Washington University in St. Louis,0,Trine University,0,Sch
-2025-09-14,Linfield University,0,Willamette University,0,Sch
-2025-09-14,The College of Wooster,0,"Buffalo State, State University of New York",0,Sch
-2025-09-14,Washington and Lee University,0,Emory University,0,Sch
-2025-09-14,Hardin-Simmons University,0,Southwestern University (Texas),0,Sch
-2025-09-14,"University of Pittsburgh, Greensburg",0,Pennsylvania College of Technology,0,Sch
-2025-09-14,LaGrange College,0,Centenary College (Louisiana),0,Sch
-2025-09-14,Berea College,0,Salem College (North Carolina),0,Sch
-2025-09-14,George Fox University,0,Pacific University (Oregon),0,Sch
-2025-09-14,Montclair State University,0,Manhattanville University,0,Sch
+2025-09-14,Capital University,2,Hanover College,0,
+2025-09-14,Ohio Northern University,0,Case Western Reserve University,6,
+2025-09-14,Centre College,1,Mount St. Joseph University,0,
+2025-09-14,Christopher Newport University,2,Ohio Wesleyan University,1,
+2025-09-14,Nebraska Wesleyan University,7,Cornell College,1,
+2025-09-14,Carnegie Mellon University,2,State University of New York at Cortland,0,
+2025-09-14,University of Mount Union,0,Denison University,0,
+2025-09-14,University of Wisconsin-La Crosse,4,Edgewood University,0,
+2025-09-14,Berry College,6,Greensboro College,0,
+2025-09-14,University of Wisconsin-Whitewater,0,Grinnell College,1,
+2025-09-14,Hendrix College,1,Rhodes College,2,
+2025-09-14,Huntingdon College,0,Oglethorpe University,6,
+2025-09-14,Illinois College,0,Kalamazoo College,4,
+2025-09-14,John Carroll University,1,Baldwin Wallace University,0,
+2025-09-14,Juniata College,1,"Penn State University, Altoona",0,
+2025-09-14,Lawrence University,2,University of Wisconsin-Stevens Point,2,
+2025-09-14,Webster University,1,Aurora University,0,
+2025-09-14,McMurry University,1,Trinity University (Texas),4,
+2025-09-14,Middlebury College,1,Vassar College,0,
+2025-09-14,Millsaps College,0,University of the Ozarks (Arkansas),0,
+2025-09-14,Texas Lutheran University,0,Misericordia University,1,
+2025-09-14,"Purchase College, State University of New York",10,Yeshiva University,0,
+2025-09-14,College of Saint Benedict,1,University of Wisconsin-Oshkosh,2,
+2025-09-14,Bethel University (Minnesota),1,University of Wisconsin-Stout,2,
+2025-09-14,Skidmore College,0,Williams College,4,
+2025-09-14,State University of New York at Delhi,1,Maine Maritime Academy,3,
+2025-09-14,Arcadia University,2,Farmingdale State College,0,
+2025-09-14,State University of New York at Cobleskill,1,Thomas College,3,
+2025-09-14,Illinois Wesleyan University,2,Wartburg College,1,
+2025-09-14,Washington University in St. Louis,1,Trine University,1,
+2025-09-14,Linfield University,4,Willamette University,1,
+2025-09-14,The College of Wooster,0,"Buffalo State, State University of New York",0,
+2025-09-14,Washington and Lee University,0,Emory University,1,
+2025-09-14,Hardin-Simmons University,4,Southwestern University (Texas),3,
+2025-09-14,"University of Pittsburgh, Greensburg",1,Pennsylvania College of Technology,3,
+2025-09-14,LaGrange College,2,Centenary College (Louisiana),0,
+2025-09-14,Berea College,2,Salem College (North Carolina),3,
+2025-09-14,George Fox University,0,Pacific University (Oregon),0,
+2025-09-14,Montclair State University,4,Manhattanville University,0,
 2025-09-15,Carroll University (Wisconsin),0,Beloit College,0,Sch
 2025-09-15,Sarah Lawrence College,0,"Rutgers, The State Univ. of New Jersey, Newark",0,Sch
 2025-09-15,Emory University,0,William Peace University,0,Sch

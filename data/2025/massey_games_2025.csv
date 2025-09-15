@@ -976,7 +976,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-12,Meredith,1,Berry,2,
 2025-09-13,Cal Lutheran,0,Westmont,1,
 2025-09-13,Calvin,1,Chicago,2,
-2025-09-13,Carroll MT,0,Whitman,0,Sch
+2025-09-13,Carroll MT,1,Whitman,1,
 2025-09-13,WI Lutheran,0,Carthage,3,
 2025-09-13,Castleton,0,W Connecticut,2,
 2025-09-13,Centre,1,Denison,1,
@@ -1072,6 +1072,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-13,Bard,2,Brooklyn Col,0,
 2025-09-13,Bryn Mawr,0,York PA,4,
 2025-09-13,Buena Vista,1,Monmouth IL,4,
+2025-09-13,Concordia TX,1,Houston-Victoria,1,
 2025-09-13,Waldorf,0,N Central MN,0,Sch
 2025-09-13,St Elizabeth,0,Centenary NJ,0,Sch
 2025-09-13,Haverford,0,Scranton,0,
@@ -1120,48 +1121,48 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-13,Colby-Sawyer,0,St Joseph's ME,2,
 2025-09-13,Gordon,1,Curry,0,
 2025-09-13,Clarkson,0,Worcester Tech,2,
-2025-09-14,Capital,0,Hanover,0,Sch
-2025-09-14,Ohio Northern,0,Case Western,0,Sch
-2025-09-14,Centre,0,Mt St Joseph,0,Sch
-2025-09-14,Chris Newport,0,Ohio Wesleyan,0,Sch
-2025-09-14,NE Wesleyan,0,Cornell IA,0,Sch
-2025-09-14,Carnegie Mellon,0,Cortland St,0,Sch
-2025-09-14,Madonna,0,Alma,0,Sch
-2025-09-14,Mt Union,0,Denison,0,Sch
-2025-09-14,WI LaCrosse,0,Edgewood,0,Sch
-2025-09-14,Berry,0,Greensboro,0,Sch
-2025-09-14,WI Whitewater,0,Grinnell,0,Sch
-2025-09-14,Hendrix,0,Rhodes,0,Sch
-2025-09-14,Huntingdon,0,Oglethorpe,0,Sch
-2025-09-14,Illinois Col,0,Kalamazoo,0,Sch
-2025-09-14,John Carroll,0,Baldwin-Wallace,0,Sch
-2025-09-14,Juniata,0,PSU-Altoona,0,Sch
-2025-09-14,Lawrence,0,WI Stevens Pt,0,Sch
-2025-09-14,Webster,0,Aurora,0,Sch
-2025-09-14,McMurry,0,Trinity TX,0,Sch
-2025-09-14,Middlebury,0,Vassar,0,Sch
-2025-09-14,Millsaps,0,Univ Ozarks,0,Sch
-2025-09-14,TX Lutheran,0,Misericordia,0,Sch
-2025-09-14,Purchase,0,Yeshiva,0,Sch
-2025-09-14,St Benedict,0,WI Oshkosh,0,Sch
-2025-09-14,Bethel MN,0,WI Stout,0,Sch
-2025-09-14,Skidmore,0,Williams,0,Sch
-2025-09-14,SUNY Delhi,0,ME Maritime,0,Sch
-2025-09-14,Arcadia,0,Farmingdale,0,Sch
-2025-09-14,SUNY Cobleskill,0,Thomas ME,0,Sch
-2025-09-14,IL Wesleyan,0,Wartburg,0,Sch
-2025-09-14,Washington StL,0,Trine,0,Sch
-2025-09-14,Linfield,0,Willamette,0,Sch
-2025-09-14,Wooster,0,Buffalo St,0,Sch
-2025-09-14,Washington & Lee,0,Emory,0,Sch
-2025-09-14,ME Presque Isle,0,Fisher,0,Sch
-2025-09-14,Hardin-Simmons,0,SW Univ TX,0,Sch
-2025-09-14,Pitt-Greensburg,0,Penn Col Tech,0,Sch
-2025-09-14,LaGrange,0,Centenary,0,Sch
-2025-09-14,Berea,0,Salem NC,0,Sch
-2025-09-14,George Fox,0,Pacific OR,0,Sch
-2025-09-14,Montclair St,0,Manhattanville,0,Sch
-2025-09-14,J&W NC,0,NC Wesleyan,0,Sch
+2025-09-14,Capital,2,Hanover,0,
+2025-09-14,Ohio Northern,0,Case Western,6,
+2025-09-14,Centre,1,Mt St Joseph,0,
+2025-09-14,Chris Newport,2,Ohio Wesleyan,1,
+2025-09-14,NE Wesleyan,7,Cornell IA,1,
+2025-09-14,Carnegie Mellon,2,Cortland St,0,
+2025-09-14,Madonna,2,Alma,3,
+2025-09-14,Mt Union,0,Denison,0,
+2025-09-14,WI LaCrosse,4,Edgewood,0,
+2025-09-14,Berry,6,Greensboro,0,
+2025-09-14,WI Whitewater,0,Grinnell,1,
+2025-09-14,Hendrix,1,Rhodes,2,
+2025-09-14,Huntingdon,0,Oglethorpe,6,
+2025-09-14,Illinois Col,0,Kalamazoo,4,
+2025-09-14,John Carroll,1,Baldwin-Wallace,0,
+2025-09-14,Juniata,1,PSU-Altoona,0,
+2025-09-14,Lawrence,2,WI Stevens Pt,2,
+2025-09-14,Webster,1,Aurora,0,
+2025-09-14,McMurry,1,Trinity TX,4,
+2025-09-14,Middlebury,1,Vassar,0,
+2025-09-14,Millsaps,0,Univ Ozarks,0,
+2025-09-14,TX Lutheran,0,Misericordia,1,
+2025-09-14,Purchase,10,Yeshiva,0,
+2025-09-14,St Benedict,1,WI Oshkosh,2,
+2025-09-14,Bethel MN,1,WI Stout,2,
+2025-09-14,Skidmore,0,Williams,4,
+2025-09-14,SUNY Delhi,1,ME Maritime,3,
+2025-09-14,Arcadia,2,Farmingdale,0,
+2025-09-14,SUNY Cobleskill,1,Thomas ME,3,
+2025-09-14,IL Wesleyan,2,Wartburg,1,
+2025-09-14,Washington StL,1,Trine,1,
+2025-09-14,Linfield,4,Willamette,1,
+2025-09-14,Wooster,0,Buffalo St,0,
+2025-09-14,Washington & Lee,0,Emory,1,
+2025-09-14,ME Presque Isle,1,Fisher,3,
+2025-09-14,Hardin-Simmons,4,SW Univ TX,3,
+2025-09-14,Pitt-Greensburg,1,Penn Col Tech,3,
+2025-09-14,LaGrange,2,Centenary,0,
+2025-09-14,Berea,2,Salem NC,3,
+2025-09-14,George Fox,0,Pacific OR,0,
+2025-09-14,Montclair St,4,Manhattanville,0,
+2025-09-14,J&W NC,1,NC Wesleyan,0,
 2025-09-15,Carroll WI,0,Beloit,0,Sch
 2025-09-15,Sarah Lawrence,0,Rutgers-Newark,0,Sch
 2025-09-15,Emory,0,Peace,0,Sch
