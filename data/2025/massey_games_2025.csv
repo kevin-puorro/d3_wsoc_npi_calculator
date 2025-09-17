@@ -1155,50 +1155,50 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-15,W Connecticut,4,St Joseph CT,1,
 2025-09-15,Medgar Evers,0,SUNY Maritime,0,Sch
 2025-09-15,Trinity DC,0,Hollins,10,
-2025-09-16,Colby,0,U New England,0,Sch
-2025-09-16,Keene St,0,Colby-Sawyer,0,Sch
-2025-09-16,Johns Hopkins,0,College of NJ,0,Sch
-2025-09-16,Concordia Mhd,0,Hamline,0,Sch
-2025-09-16,Sewanee,0,Covenant,0,Sch
-2025-09-16,Hanover,0,DePauw,0,Sch
-2025-09-16,Thiel,0,Hilbert,0,Sch
-2025-09-16,Hope,0,Wheaton IL,0,Sch
-2025-09-16,Huntingdon,0,Berry,0,Sch
-2025-09-16,Greenville,0,Illinois Col,0,Sch
-2025-09-16,Gust Adolphus,0,Augsburg,0,Sch
-2025-09-16,Adrian,0,Wilmington OH,0,Sch
-2025-09-16,Endicott,0,Babson,0,Sch
-2025-09-16,MA Maritime,0,N England Col,0,Sch
-2025-09-16,Oberlin,0,Otterbein,0,Sch
-2025-09-16,St John Fisher,0,Rochester NY,0,Sch
-2025-09-16,Rutgers-Camden,0,Bryn Mawr,0,Sch
-2025-09-16,St Mary's MN,0,Bethel MN,0,Sch
-2025-09-16,St Lawrence,0,SUNY Canton,0,Sch
-2025-09-16,Carleton MN,0,St Olaf,0,Sch
-2025-09-16,La Roche,0,St Vincent,0,Sch
-2025-09-16,W New England,0,Smith,0,Sch
-2025-09-16,S Maine,0,Bowdoin,0,Sch
-2025-09-16,PSU-Behrend,0,SUNY Fredonia,0,Sch
-2025-09-16,Carolina Univ,0,Brevard,0,Sch
-2025-09-16,Carlow,0,Waynesburg,0,Sch
-2025-09-16,Springfield,0,Wesleyan CT,0,Sch
-2025-09-16,WI Lutheran,0,Maranatha Bap,0,Sch
-2025-09-16,WI Stevens Pt,0,Dubuque,0,Sch
-2025-09-16,Worcester St,0,Clark MA,0,Sch
-2025-09-16,Rivier,0,Nichols,0,Sch
-2025-09-16,Lehman,0,Old Westbury,0,Sch
+2025-09-16,Colby,3,U New England,0,
+2025-09-16,Keene St,1,Colby-Sawyer,1,
+2025-09-16,Johns Hopkins,4,College of NJ,0,
+2025-09-16,Concordia Mhd,0,Hamline,2,
+2025-09-16,Sewanee,3,Covenant,0,
+2025-09-16,Hanover,2,DePauw,2,
+2025-09-16,Thiel,0,Hilbert,4,
+2025-09-16,Hope,3,Wheaton IL,0,
+2025-09-16,Huntingdon,1,Berry,4,
+2025-09-16,Greenville,2,Illinois Col,1,
+2025-09-16,Gust Adolphus,4,Augsburg,3,
+2025-09-16,Adrian,2,Wilmington OH,3,
+2025-09-16,Endicott,0,Babson,0,
+2025-09-16,MA Maritime,0,N England Col,2,
+2025-09-16,Oberlin,0,Otterbein,2,
+2025-09-16,St John Fisher,2,Rochester NY,3,
+2025-09-16,Rutgers-Camden,2,Bryn Mawr,0,
+2025-09-16,St Mary's MN,1,Bethel MN,0,
+2025-09-16,St Lawrence,7,SUNY Canton,0,
+2025-09-16,Carleton MN,1,St Olaf,1,
+2025-09-16,La Roche,0,St Vincent,7,
+2025-09-16,W New England,1,Smith,1,
+2025-09-16,S Maine,2,Bowdoin,5,
+2025-09-16,PSU-Behrend,1,SUNY Fredonia,0,
+2025-09-16,Carolina Univ,0,Brevard,9,
+2025-09-16,Carlow,0,Waynesburg,6,
+2025-09-16,Springfield,0,Wesleyan CT,6,
+2025-09-16,WI Lutheran,12,Maranatha Bap,0,
+2025-09-16,WI Stevens Pt,2,Dubuque,2,
+2025-09-16,Worcester St,0,Clark MA,3,
+2025-09-16,Rivier,7,Nichols,2,
+2025-09-16,Lehman,1,Old Westbury,2,
 2025-09-16,NVU-Johnson,0,Vermont Tech,0,Sch
-2025-09-16,Le Tourneau,0,Howard Payne,0,Sch
-2025-09-16,St Joseph's NY,0,Pratt Inst,0,Sch
-2025-09-16,Fitchburg St,0,Regis MA,0,Sch
-2025-09-16,Eastern Univ,0,Immaculata,0,Sch
-2025-09-16,Tougaloo,0,Belhaven MS,0,Sch
-2025-09-16,NVU-Lyndon,0,ME Farmington,0,Sch
-2025-09-16,Tufts,0,Gordon,0,Sch
-2025-09-16,Rensselaer,0,Mt St Vincent,0,Sch
-2025-09-16,Olivet MI,0,Lourdes,0,Sch
-2025-09-16,ME Ft Kent,0,Assumption,0,Sch
-2025-09-16,Hannibal-Lagr,0,Principia,0,Sch
+2025-09-16,Le Tourneau,0,Howard Payne,2,
+2025-09-16,St Joseph's NY,0,Pratt Inst,14,
+2025-09-16,Fitchburg St,0,Regis MA,0,
+2025-09-16,Eastern Univ,4,Immaculata,0,
+2025-09-16,Tougaloo,0,Belhaven MS,9,
+2025-09-16,NVU-Lyndon,0,ME Farmington,10,
+2025-09-16,Tufts,2,Gordon,1,
+2025-09-16,Rensselaer,0,Mt St Vincent,0,
+2025-09-16,Olivet MI,0,Lourdes,6,
+2025-09-16,ME Ft Kent,1,Assumption,2,
+2025-09-16,Hannibal-Lagr,2,Principia,0,
 2025-09-17,Pomona-Pitzer,0,Cal Lutheran,0,Sch
 2025-09-17,LaGrange,0,Albany GA,0,Sch
 2025-09-17,Ohio Wesleyan,0,Capital,0,Sch
