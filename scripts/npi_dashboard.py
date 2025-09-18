@@ -1536,13 +1536,25 @@ def main():
                     included_games = team_game_results[team_game_results['Included in NPI'] == 'Yes']
                     excluded_games = team_game_results[team_game_results['Included in NPI'] == 'No']
                     
-                    col1, col2, col3 = st.columns(3)
+                    # Get team's NPI rating
+                    team_npi_rating = None
+                    if npi_data is not None and not npi_data.empty:
+                        team_row = npi_data[npi_data['team'] == selected_team_for_analysis]
+                        if not team_row.empty:
+                            team_npi_rating = team_row.iloc[0]['npi_rating']
+                    
+                    col1, col2, col3, col4 = st.columns(4)
                     with col1:
                         st.metric("Total Games", len(team_game_results))
                     with col2:
                         st.metric("Included in NPI", len(included_games))
                     with col3:
                         st.metric("Excluded from NPI", len(excluded_games))
+                    with col4:
+                        if team_npi_rating is not None:
+                            st.metric("Team NPI", f"{team_npi_rating:.2f}")
+                        else:
+                            st.metric("Team NPI", "N/A")
                 else:
                     st.info(f"No game results found for {selected_team_for_analysis}")
         else:
