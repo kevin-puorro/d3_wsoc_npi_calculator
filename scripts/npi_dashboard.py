@@ -740,6 +740,70 @@ def load_simulation_npi_data(year):
         return None  # Don't show error for simulation data
 
 
+def get_opponent_npi(opponent_name, npi_data):
+    """
+    Get opponent NPI rating from the NPI ratings CSV.
+    
+    Args:
+        opponent_name: Name of the opponent team
+        npi_data: DataFrame containing NPI ratings
+        
+    Returns:
+        NPI rating if found, None otherwise
+    """
+    if npi_data is None or npi_data.empty:
+        print(f"DEBUG: No NPI data available")
+        return None
+    
+    # Direct lookup - team names should match exactly
+    opponent_npi_row = npi_data[npi_data['team'] == opponent_name]
+    
+    if not opponent_npi_row.empty:
+        npi_rating = opponent_npi_row.iloc[0]['npi_rating']
+        print(f"DEBUG: Found NPI for '{opponent_name}': {npi_rating}")
+        return npi_rating
+    else:
+        print(f"DEBUG: No NPI data found for opponent: '{opponent_name}'")
+        return None
+
+
+def calculate_npi_for_game_result(opponent_npi, won=True, tied=False):
+    """
+    Calculate NPI score for a specific game result against an opponent.
+    
+    Args:
+        opponent_npi: NPI rating of the opponent
+        won: Whether the team won (True) or lost (False)
+        tied: Whether the game ended in a tie
+        
+    Returns:
+        NPI score for this specific game result
+    """
+    # Determine win component
+    if won:
+        win_component = 100
+    elif tied:
+        win_component = 50
+    else:
+        win_component = 0
+    
+    # Calculate base NPI
+    base_npi = (win_component * 0.20) + (opponent_npi * 0.80)
+    
+    # Calculate quality bonus (using iteration > 3 logic for consistency)
+    quality_bonus = 0
+    if won:
+        quality_bonus = max(0, (opponent_npi - 54.00) * 0.500)
+    elif tied:
+        # Calculate full quality bonus, then divide by 2 for ties
+        full_bonus = max(0, (opponent_npi - 54.00) * 0.500)
+        quality_bonus = full_bonus / 2
+    
+    # Calculate total NPI
+    total_npi = base_npi + quality_bonus
+    return total_npi
+
+
 def get_team_schedule(team_name, games_df, user_id=None, year=None):
     """Get schedule for a specific team, optionally including simulation data"""
     if games_df is None:
@@ -762,6 +826,28 @@ def get_team_schedule(team_name, games_df, user_id=None, year=None):
     
     # Use simulation data if available, otherwise use original games data
     source_df = sim_games_df if sim_games_df is not None else games_df
+    
+    # Load NPI data to get opponent ratings for NPI score calculations
+    npi_data = None
+    if year:
+        try:
+            script_dir = Path(__file__).resolve().parent
+            project_root = script_dir.parent
+            data_dir = project_root / "data" / str(year)
+            npi_file = data_dir / f"npi_ratings_{year}.csv"
+            
+            print(f"DEBUG NPI LOADING: Looking for NPI file: {npi_file}")
+            print(f"DEBUG NPI LOADING: File exists: {npi_file.exists()}")
+            
+            if npi_file.exists():
+                npi_data = pd.read_csv(npi_file)
+                print(f"DEBUG NPI LOADING: Loaded NPI data with {len(npi_data)} teams")
+                print(f"DEBUG NPI LOADING: NPI data columns: {list(npi_data.columns)}")
+                print(f"DEBUG NPI LOADING: First 5 teams: {npi_data['team'].head().tolist()}")
+            else:
+                print(f"DEBUG NPI LOADING: NPI file not found: {npi_file}")
+        except Exception as e:
+            print(f"DEBUG NPI LOADING: Error loading NPI data: {e}")
     
     # Find games where the team is either home or away
     team_games = source_df[
@@ -833,6 +919,23 @@ def get_team_schedule(team_name, games_df, user_id=None, year=None):
         # We don't require the current result to match the predicted result for display purposes
         is_predicted = has_pred_note and predicted_result is not None
         
+        # Calculate NPI scores for beating, losing, and tying this opponent
+        npi_win_score = None
+        npi_loss_score = None
+        npi_tie_score = None
+        
+        # Get opponent's NPI rating
+        opponent_npi = get_opponent_npi(opponent, npi_data)
+        
+        if opponent_npi is not None:
+            # Calculate NPI scores for win, loss, and tie scenarios
+            npi_win_score = calculate_npi_for_game_result(opponent_npi, won=True, tied=False)
+            npi_loss_score = calculate_npi_for_game_result(opponent_npi, won=False, tied=False)
+            npi_tie_score = calculate_npi_for_game_result(opponent_npi, won=False, tied=True)
+            print(f"DEBUG: Calculated NPI scores for {team_name} vs {opponent}: Win={npi_win_score:.2f}, Loss={npi_loss_score:.2f}, Tie={npi_tie_score:.2f}")
+        else:
+            print(f"DEBUG: No NPI data available for {opponent}")
+        
         schedule_data.append({
             'Date': game['date'],
             'Opponent': opponent,
@@ -843,7 +946,10 @@ def get_team_schedule(team_name, games_df, user_id=None, year=None):
             'Overtime': overtime,
             'Status': 'Scheduled' if is_scheduled else 'Completed',
             'Predicted': is_predicted,
-            'Predicted_Result': predicted_result
+            'Predicted_Result': predicted_result,
+            'NPI Win Value': npi_win_score,
+            'NPI Tie Value': npi_tie_score,
+            'NPI Loss Value': npi_loss_score
         })
     
     # Convert to DataFrame and sort by date
@@ -1073,18 +1179,62 @@ def main():
         
         # Display team schedule
         if selected_team and games_df is not None:
-            schedule_df = get_team_schedule(selected_team, games_df)
+            schedule_df = get_team_schedule(selected_team, games_df, year=selected_year)
             
             if schedule_df is not None and not schedule_df.empty:
                 st.subheader(f"📅 {selected_team} Schedule")
+                
+                
+                # Debug: Show what's in the schedule DataFrame
+                print(f"DEBUG SCHEDULE DISPLAY: Schedule DataFrame shape: {schedule_df.shape}")
+                print(f"DEBUG SCHEDULE DISPLAY: Schedule DataFrame columns: {list(schedule_df.columns)}")
+                if 'NPI Win Value' in schedule_df.columns:
+                    print(f"DEBUG SCHEDULE DISPLAY: NPI Win Value values: {schedule_df['NPI Win Value'].tolist()}")
+                if 'NPI Loss Value' in schedule_df.columns:
+                    print(f"DEBUG SCHEDULE DISPLAY: NPI Loss Value values: {schedule_df['NPI Loss Value'].tolist()}")
+                if 'NPI Tie Value' in schedule_df.columns:
+                    print(f"DEBUG SCHEDULE DISPLAY: NPI Tie Value values: {schedule_df['NPI Tie Value'].tolist()}")
                 
                 # Format date for display
                 schedule_display = schedule_df.copy()
                 schedule_display['Date'] = schedule_display['Date'].dt.strftime('%m/%d/%Y')
                 
                 # Clean up display columns for better readability
-                display_columns = ['Date', 'Opponent', 'Home/Away', 'Team Score', 'Opponent Score', 'Result', 'Overtime', 'Status']
+                display_columns = ['Date', 'Opponent', 'Home/Away', 'Team Score', 'Opponent Score', 'Result', 'NPI Win Value', 'NPI Tie Value', 'NPI Loss Value']
                 schedule_display = schedule_display[display_columns]
+                
+                # Format NPI values to 2 decimal places and handle missing data
+                if 'NPI Win Value' in schedule_display.columns:
+                    # Convert to numeric, replacing non-numeric values with NaN
+                    schedule_display['NPI Win Value'] = pd.to_numeric(schedule_display['NPI Win Value'], errors='coerce')
+                    # Round numeric values to 2 decimal places
+                    schedule_display['NPI Win Value'] = schedule_display['NPI Win Value'].round(2)
+                    # Replace NaN values with "N/A" for display
+                    schedule_display['NPI Win Value'] = schedule_display['NPI Win Value'].fillna('N/A')
+                if 'NPI Tie Value' in schedule_display.columns:
+                    # Convert to numeric, replacing non-numeric values with NaN
+                    schedule_display['NPI Tie Value'] = pd.to_numeric(schedule_display['NPI Tie Value'], errors='coerce')
+                    # Round numeric values to 2 decimal places
+                    schedule_display['NPI Tie Value'] = schedule_display['NPI Tie Value'].round(2)
+                    # Replace NaN values with "N/A" for display
+                    schedule_display['NPI Tie Value'] = schedule_display['NPI Tie Value'].fillna('N/A')
+                if 'NPI Loss Value' in schedule_display.columns:
+                    # Convert to numeric, replacing non-numeric values with NaN
+                    schedule_display['NPI Loss Value'] = pd.to_numeric(schedule_display['NPI Loss Value'], errors='coerce')
+                    # Round numeric values to 2 decimal places
+                    schedule_display['NPI Loss Value'] = schedule_display['NPI Loss Value'].round(2)
+                    # Replace NaN values with "N/A" for display
+                    schedule_display['NPI Loss Value'] = schedule_display['NPI Loss Value'].fillna('N/A')
+                
+                # Check if all NPI values are N/A and show a note
+                if ('NPI Win Value' in schedule_display.columns and 
+                    'NPI Tie Value' in schedule_display.columns and
+                    'NPI Loss Value' in schedule_display.columns):
+                    all_npi_na = ((schedule_display['NPI Win Value'] == 'N/A').all() and 
+                                 (schedule_display['NPI Tie Value'] == 'N/A').all() and
+                                 (schedule_display['NPI Loss Value'] == 'N/A').all())
+                    if all_npi_na:
+                        st.info("ℹ️ NPI values are not available because NPI ratings data is not available for this season. This is normal for seasons with only scheduled games.")
                 
                 # Display schedule
                 st.dataframe(schedule_display, use_container_width=True, hide_index=True)
