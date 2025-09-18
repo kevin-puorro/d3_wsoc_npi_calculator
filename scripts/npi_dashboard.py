@@ -1200,7 +1200,7 @@ def main():
                 schedule_display['Date'] = schedule_display['Date'].dt.strftime('%m/%d/%Y')
                 
                 # Clean up display columns for better readability
-                display_columns = ['Date', 'Opponent', 'Home/Away', 'Team Score', 'Opponent Score', 'Result', 'NPI Win Value', 'NPI Tie Value', 'NPI Loss Value']
+                display_columns = ['Date', 'Opponent', 'Home/Away', 'Team Score', 'Opponent Score', 'Result', 'Overtime', 'Status', 'NPI Win Value', 'NPI Tie Value', 'NPI Loss Value']
                 schedule_display = schedule_display[display_columns]
                 
                 # Format NPI values to 2 decimal places and handle missing data
