@@ -792,6 +792,321 @@ def calculate_team_npi_values(team_npi_rating):
     }
 
 
+def get_team_game_results(team_name, year, npi_data):
+    """
+    Get detailed game results for a specific team, including NPI values and inclusion status.
+    
+    Args:
+        team_name: Name of the team to analyze
+        year: Season year
+        npi_data: DataFrame containing NPI ratings
+        
+    Returns:
+        DataFrame with team game results and analysis
+    """
+    try:
+        # Load the NPI games data
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(script_dir)
+        data_dir = os.path.join(project_root, "data", str(year))
+        
+        npi_games_file = os.path.join(data_dir, f"massey_games_{year}_npi.csv")
+        if not os.path.exists(npi_games_file):
+            print(f"DEBUG: NPI games file not found: {npi_games_file}")
+            return None
+        
+        games_df = pd.read_csv(npi_games_file)
+        if games_df.empty:
+            print(f"DEBUG: No games found in NPI games file")
+            return None
+        
+        # Filter games for the selected team
+        team_games = games_df[
+            (games_df['home_team'] == team_name) | 
+            (games_df['away_team'] == team_name)
+        ].copy()
+        
+        if team_games.empty:
+            print(f"DEBUG: No games found for team: {team_name}")
+            return None
+        
+        # Filter out games after regular season end date
+        # Convert date column to datetime for filtering
+        team_games['date'] = pd.to_datetime(team_games['date'])
+        
+        # Set regular season end date based on year
+        if year == 2025:
+            regular_season_end = pd.to_datetime("2025-11-09")
+        elif year == 2024:
+            regular_season_end = pd.to_datetime("2024-11-10")
+        else:
+            # Default to November 10th for other years
+            regular_season_end = pd.to_datetime(f"{year}-11-10")
+        
+        # Filter to only include games on or before regular season end date
+        team_games = team_games[team_games['date'] <= regular_season_end].copy()
+        
+        if team_games.empty:
+            print(f"DEBUG: No games found for team {team_name} within regular season")
+            return None
+        
+        # Process each game
+        game_results = []
+        for _, game in team_games.iterrows():
+            # Determine if team was home or away
+            is_home = game['home_team'] == team_name
+            opponent = game['away_team'] if is_home else game['home_team']
+            team_score = int(game['home_score']) if is_home else int(game['away_score'])
+            opp_score = int(game['away_score']) if is_home else int(game['home_score'])
+            
+            # Determine result
+            if team_score > opp_score:
+                result = "W"
+                won = True
+                tied = False
+            elif team_score < opp_score:
+                result = "L"
+                won = False
+                tied = False
+            else:
+                result = "T"
+                won = False
+                tied = True
+            
+            # Check for overtime
+            overtime = ""
+            if pd.notna(game.get('game_note', '')) and str(game['game_note']).strip() != "":
+                game_note = str(game['game_note']).strip()
+                if any(x in game_note.lower() for x in ['o1', 'o2', 'o3', 'o4', 'o5']):
+                    overtime = "OT"
+                    # Overtime games are treated as ties in NPI calculation
+                    result = "T"
+                    won = False
+                    tied = True
+            
+            # Get opponent NPI
+            opponent_npi = get_opponent_npi(opponent, npi_data)
+            
+            # Get opponent's NPI rank
+            opponent_rank = None
+            if npi_data is not None and not npi_data.empty:
+                # Sort NPI data by rating (highest first) to get rankings
+                npi_sorted = npi_data.sort_values('npi_rating', ascending=False).reset_index(drop=True)
+                npi_sorted['rank'] = range(1, len(npi_sorted) + 1)
+                
+                # Find opponent's rank
+                opponent_row = npi_sorted[npi_sorted['team'] == opponent]
+                if not opponent_row.empty:
+                    opponent_rank = opponent_row.iloc[0]['rank']
+            
+            # Calculate NPI values
+            npi_win_value = None
+            npi_tie_value = None
+            npi_loss_value = None
+            qwb = None
+            game_npi = None
+            
+            if opponent_npi is not None:
+                npi_win_value = calculate_npi_for_game_result(opponent_npi, won=True, tied=False)
+                npi_tie_value = calculate_npi_for_game_result(opponent_npi, won=False, tied=True)
+                npi_loss_value = calculate_npi_for_game_result(opponent_npi, won=False, tied=False)
+                qwb = npi_win_value - (npi_loss_value + 20)
+                
+                # Calculate the actual game NPI based on result
+                if won:
+                    game_npi = npi_win_value
+                elif tied:
+                    game_npi = npi_tie_value
+                else:
+                    game_npi = npi_loss_value
+            
+            # Determine if game is included in NPI calculation
+            included_in_npi = determine_game_inclusion(game_npi, won, tied, team_name, games_df, npi_data, year)
+            
+            game_results.append({
+                'Date': game['date'],
+                'NPI Rank': opponent_rank,
+                'Opponent': opponent,
+                'Home/Away': 'Home' if is_home else 'Away',
+                'Team Score': team_score,
+                'Opponent Score': opp_score,
+                'Result': result,
+                'Overtime': overtime,
+                'NPI Win Value': npi_win_value,
+                'NPI Tie Value': npi_tie_value,
+                'NPI Loss Value': npi_loss_value,
+                'QWB': qwb,
+                'Game NPI': game_npi,
+                'Included in NPI': included_in_npi
+            })
+        
+        # Convert to DataFrame and sort by Net NPI (highest first), then by NPI Rank (lowest first)
+        results_df = pd.DataFrame(game_results)
+        results_df['Date'] = pd.to_datetime(results_df['Date'])
+        # Sort by Net NPI descending, then by NPI Rank ascending
+        results_df = results_df.sort_values(['Game NPI', 'NPI Rank'], ascending=[False, True]).reset_index(drop=True)
+        
+        return results_df
+        
+    except Exception as e:
+        print(f"DEBUG: Error getting team game results: {e}")
+        return None
+
+
+def determine_game_inclusion(game_npi, won, tied, team_name, games_df, npi_data, year):
+    """
+    Determine if a game is included in the final NPI calculation based on NPI calculator logic.
+    
+    Args:
+        game_npi: NPI value for this specific game
+        won: Whether the team won
+        tied: Whether the game was tied
+        team_name: Name of the team
+        games_df: DataFrame with all games
+        npi_data: DataFrame with NPI ratings
+        year: Season year for date filtering
+        
+    Returns:
+        'Yes' if included, 'No' if excluded
+    """
+    try:
+        if game_npi is None:
+            return 'No'
+        
+        # Get team's initial NPI (OWP-based)
+        team_initial_npi = get_opponent_npi(team_name, npi_data)
+        if team_initial_npi is None:
+            team_initial_npi = 50.0  # Default fallback
+        
+        # Get all games for this team
+        team_games = games_df[
+            (games_df['home_team'] == team_name) | 
+            (games_df['away_team'] == team_name)
+        ].copy()
+        
+        # Filter out games after regular season end date
+        # Convert date column to datetime for filtering
+        team_games['date'] = pd.to_datetime(team_games['date'])
+        
+        # Set regular season end date based on year
+        if year == 2025:
+            regular_season_end = pd.to_datetime("2025-11-09")
+        elif year == 2024:
+            regular_season_end = pd.to_datetime("2024-11-10")
+        else:
+            # Default to November 10th for other years
+            regular_season_end = pd.to_datetime(f"{year}-11-10")
+        
+        # Filter to only include games on or before regular season end date
+        team_games = team_games[team_games['date'] <= regular_season_end].copy()
+        
+        # Process all team games to determine inclusion
+        all_game_npis = []
+        wins = []
+        losses = []
+        ties = []
+        
+        for _, game in team_games.iterrows():
+            is_home = game['home_team'] == team_name
+            team_score = int(game['home_score']) if is_home else int(game['away_score'])
+            opp_score = int(game['away_score']) if is_home else int(game['home_score'])
+            opponent = game['away_team'] if is_home else game['home_team']
+            
+            # Check for overtime
+            overtime_occurred = False
+            if pd.notna(game.get('game_note', '')) and str(game['game_note']).strip() != "":
+                game_note = str(game['game_note']).strip()
+                if any(x in game_note.lower() for x in ['o1', 'o2', 'o3', 'o4', 'o5']):
+                    overtime_occurred = True
+            
+            # Determine result
+            if overtime_occurred or team_score == opp_score:
+                game_won, game_tied = False, True
+            elif team_score > opp_score:
+                game_won, game_tied = True, False
+            else:
+                game_won, game_tied = False, False
+            
+            # Get opponent NPI and calculate game NPI
+            opponent_npi = get_opponent_npi(opponent, npi_data)
+            if opponent_npi is not None:
+                if game_won:
+                    calculated_npi = calculate_npi_for_game_result(opponent_npi, won=True, tied=False)
+                elif game_tied:
+                    calculated_npi = calculate_npi_for_game_result(opponent_npi, won=False, tied=True)
+                else:
+                    calculated_npi = calculate_npi_for_game_result(opponent_npi, won=False, tied=False)
+                
+                all_game_npis.append((calculated_npi, game_won, game_tied))
+                
+                if game_tied:
+                    ties.append(calculated_npi)
+                elif game_won:
+                    wins.append(calculated_npi)
+                else:
+                    losses.append(calculated_npi)
+        
+        # Apply NPI inclusion logic
+        used_npis = []
+        
+        # Sort wins and losses
+        wins.sort(reverse=True)
+        losses.sort()
+        
+        # Process wins and ties to meet minimum 8.0 win credits threshold
+        qualifying_threshold = 8.0
+        qualifying_games = 0
+        
+        # First, add ALL ties (they count as 0.5 win credits each)
+        for tie_npi in ties:
+            used_npis.append(tie_npi)
+            qualifying_games += 0.5
+        
+        # Then add ALL wins above initial NPI
+        for win_npi in wins:
+            if win_npi >= team_initial_npi:
+                used_npis.append(win_npi)
+                qualifying_games += 1
+        
+        # Finally add wins below initial NPI until we meet the 8.0 threshold
+        for win_npi in wins:
+            if win_npi < team_initial_npi and qualifying_games < qualifying_threshold:
+                remaining_needed = qualifying_threshold - qualifying_games
+                if remaining_needed >= 1.0:
+                    used_npis.append(win_npi)
+                    qualifying_games += 1
+                elif remaining_needed >= 0.5:
+                    used_npis.append(win_npi)
+                    qualifying_games += 0.5
+        
+        # Process losses
+        if losses:
+            # Add all instances of the worst loss
+            worst_loss = losses[0]
+            used_npis.extend(npi for npi in losses if npi == worst_loss)
+            
+            # Add all losses below initial NPI
+            seen_npis = {worst_loss}
+            for loss_npi in losses:
+                if loss_npi < team_initial_npi and loss_npi not in seen_npis:
+                    seen_npis.add(loss_npi)
+                    used_npis.extend(npi for npi in losses if npi == loss_npi)
+        
+        # Check if this specific game NPI is in the used list
+        # We need to account for multiple instances of the same NPI value
+        game_npi_count_in_used = used_npis.count(game_npi)
+        game_npi_count_in_all = all_game_npis.count((game_npi, won, tied))
+        
+        if game_npi_count_in_used >= game_npi_count_in_all:
+            return 'Yes'
+        else:
+            return 'No'
+            
+    except Exception as e:
+        print(f"DEBUG: Error determining game inclusion: {e}")
+        return 'Unknown'
+
+
 def calculate_npi_for_game_result(opponent_npi, won=True, tied=False):
     """
     Calculate NPI score for a specific game result against an opponent.
@@ -1068,6 +1383,9 @@ def main():
     games_df = load_games_data(selected_year)
     sim_npi_df = load_simulation_npi_data(selected_year)
     
+    # Load NPI data for team game results analysis
+    npi_data = npi_df  # Use the same data for consistency
+    
     # Check if we have at least one data source
     if npi_df is None and games_df is None:
         st.error(f"No data found for {selected_year}. Please ensure either NPI ratings or games data exists.")
@@ -1151,6 +1469,82 @@ def main():
             
             # Display all teams
             st.dataframe(df_display, use_container_width=True, hide_index=True)
+            
+            # Add team game results section
+            st.markdown("---")
+            st.subheader("Team NPI Analysis")
+            
+            # Team selector
+            team_names = df_display['Team'].tolist()
+            team_options = ["Choose a team"] + team_names
+            selected_team_for_analysis = st.selectbox(
+                "Select a team to view game results and NPI calculations:",
+                team_options,
+                key="team_analysis_selector_main"
+            )
+            
+            if selected_team_for_analysis and selected_team_for_analysis != "Choose a team":
+                # Load and display team game results
+                team_game_results = get_team_game_results(selected_team_for_analysis, selected_year, npi_data)
+                if team_game_results is not None and not team_game_results.empty:
+                    st.subheader(f"📊 {selected_team_for_analysis} NPI Analysis")
+                    
+                    # Format the results for display
+                    display_results = team_game_results.copy()
+                    # Data is already sorted by Net NPI and NPI Rank from the function
+                    
+                    # Round numeric columns
+                    numeric_columns = ['NPI Win Value', 'NPI Tie Value', 'NPI Loss Value', 'QWB', 'Game NPI']
+                    for col in numeric_columns:
+                        if col in display_results.columns:
+                            display_results[col] = pd.to_numeric(display_results[col], errors='coerce').round(2)
+                            display_results[col] = display_results[col].fillna('N/A')
+                    
+                    # Set Game NPI to 0 for games not included in NPI
+                    if 'Game NPI' in display_results.columns and 'Included in NPI' in display_results.columns:
+                        # Use the original data before emoji conversion
+                        display_results['Game NPI'] = display_results.apply(
+                            lambda row: 0 if row['Included in NPI'] == 'No' else row['Game NPI'], 
+                            axis=1
+                        )
+                    
+                    # Rename Game NPI to Net NPI
+                    if 'Game NPI' in display_results.columns:
+                        display_results = display_results.rename(columns={'Game NPI': 'Net NPI'})
+                    
+                    # Re-sort after setting Net NPI values for excluded games
+                    # Sort by Net NPI descending (highest first), then by NPI Rank ascending (lowest rank first)
+                    # This ensures excluded games (Net NPI = 0) appear at the bottom
+                    display_results = display_results.sort_values(['Net NPI', 'NPI Rank'], ascending=[False, True]).reset_index(drop=True)
+                    
+                    # Convert Included in NPI to checkmarks/X marks
+                    if 'Included in NPI' in display_results.columns:
+                        display_results['Included in NPI'] = display_results['Included in NPI'].map({
+                            'Yes': '✅',
+                            'No': '❌',
+                            'Unknown': '❓'
+                        })
+                    
+                    # Select display columns
+                    display_columns = ['NPI Rank', 'Opponent', 'Home/Away', 'Result', 
+                                     'NPI Win Value', 'NPI Tie Value', 'NPI Loss Value', 'QWB', 'Net NPI', 'Included in NPI']
+                    display_results = display_results[display_columns]
+                    
+                    st.dataframe(display_results, use_container_width=True, hide_index=True)
+                    
+                    # Add summary statistics
+                    included_games = team_game_results[team_game_results['Included in NPI'] == 'Yes']
+                    excluded_games = team_game_results[team_game_results['Included in NPI'] == 'No']
+                    
+                    col1, col2, col3 = st.columns(3)
+                    with col1:
+                        st.metric("Total Games", len(team_game_results))
+                    with col2:
+                        st.metric("Included in NPI", len(included_games))
+                    with col3:
+                        st.metric("Excluded from NPI", len(excluded_games))
+                else:
+                    st.info(f"No game results found for {selected_team_for_analysis}")
         else:
             st.markdown("""
             <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
@@ -1881,8 +2275,6 @@ def main():
                         sim_npi_df = pd.read_csv(sim_npi_file)
                         
                         if not sim_npi_df.empty:
-                            
-                            
                             # Sort by NPI rating (highest first)
                             df_sorted = sim_npi_df.sort_values('npi_rating', ascending=False).reset_index(drop=True)
                             
@@ -1910,54 +2302,8 @@ def main():
                             
                             # Display simulation NPI data
                             st.dataframe(df_display, use_container_width=True, hide_index=True)
-                            
-                            # Add important note about NPI rating dependencies
-                            st.error("**Important Note:** NPI ratings are largely dependent on other teams and their results. Projected results may not accurately reflect final rankings.")
-                            
-                            # Show comparison with original data if available (moved below the table)
-                            if npi_df is not None and not npi_df.empty:
-                                
-                                # Find the selected team in both datasets
-                                if selected_sim_team in npi_df['team'].values and selected_sim_team in sim_npi_df['team'].values:
-                                    original_team = npi_df[npi_df['team'] == selected_sim_team].iloc[0]
-                                    simulated_team = sim_npi_df[sim_npi_df['team'] == selected_sim_team].iloc[0]
-                                    
-                                    # Get original and new rankings
-                                    original_rank = npi_df[npi_df['team'] == selected_sim_team].index[0] + 1
-                                    new_rank = sim_npi_df[sim_npi_df['team'] == selected_sim_team].index[0] + 1
-                                    rank_change = original_rank - new_rank
-                                    
-                                    col1, col2, col3 = st.columns(3)
-                                    with col1:
-                                        st.metric("Original NPI", f"{original_team['npi_rating']:.2f}")
-                                    with col2:
-                                        change = simulated_team['npi_rating'] - original_team['npi_rating']
-                                        # More robust check for zero or near-zero changes
-                                        if abs(change) < 0.01:  # Increased threshold slightly
-                                            delta_display = None
-                                        else:
-                                            delta_display = f"{change:+.2f}"
-                                        st.metric("Projected NPI", f"{simulated_team['npi_rating']:.2f}", delta=delta_display)
-                                    with col3:
-                                        # More robust check for zero or near-zero changes
-                                        if abs(rank_change) < 0.5:
-                                            delta_display = None
-                                        else:
-                                            delta_display = f"{rank_change:+d}"
-                                        st.metric("New Rank", f"#{new_rank}", delta=delta_display)
-                                
-                        else:
-                            st.warning("📊 Simulation NPI file exists but is empty")
-                            
                     except Exception as e:
-                        st.error(f"❌ Error loading simulation NPI data: {e}")
-                        
-                else:
-                    st.markdown(f"""
-                    <div style="background-color: #830019; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
-                        <strong>📊 **No projected NPI ratings available yet**</strong><br>
-                    </div>
-                    """, unsafe_allow_html=True)
+                        st.error(f"Error loading simulation NPI data: {e}")
                 
 
     
