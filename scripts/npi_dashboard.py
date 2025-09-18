@@ -767,6 +767,31 @@ def get_opponent_npi(opponent_name, npi_data):
         return None
 
 
+def calculate_team_npi_values(team_npi_rating):
+    """
+    Calculate NPI win, tie, and loss values using the team's current NPI rating.
+    
+    Args:
+        team_npi_rating: Current NPI rating of the team
+        
+    Returns:
+        Dictionary with 'win_value', 'tie_value', 'loss_value'
+    """
+    if team_npi_rating is None:
+        return {'win_value': None, 'tie_value': None, 'loss_value': None}
+    
+    # Calculate NPI values using the team's current NPI rating as the "opponent"
+    win_value = calculate_npi_for_game_result(team_npi_rating, won=True, tied=False)
+    tie_value = calculate_npi_for_game_result(team_npi_rating, won=False, tied=True)
+    loss_value = calculate_npi_for_game_result(team_npi_rating, won=False, tied=False)
+    
+    return {
+        'win_value': win_value,
+        'tie_value': tie_value,
+        'loss_value': loss_value
+    }
+
+
 def calculate_npi_for_game_result(opponent_npi, won=True, tied=False):
     """
     Calculate NPI score for a specific game result against an opponent.
@@ -923,6 +948,7 @@ def get_team_schedule(team_name, games_df, user_id=None, year=None):
         npi_win_score = None
         npi_loss_score = None
         npi_tie_score = None
+        qwb_score = None
         
         # Get opponent's NPI rating
         opponent_npi = get_opponent_npi(opponent, npi_data)
@@ -932,7 +958,11 @@ def get_team_schedule(team_name, games_df, user_id=None, year=None):
             npi_win_score = calculate_npi_for_game_result(opponent_npi, won=True, tied=False)
             npi_loss_score = calculate_npi_for_game_result(opponent_npi, won=False, tied=False)
             npi_tie_score = calculate_npi_for_game_result(opponent_npi, won=False, tied=True)
-            print(f"DEBUG: Calculated NPI scores for {team_name} vs {opponent}: Win={npi_win_score:.2f}, Loss={npi_loss_score:.2f}, Tie={npi_tie_score:.2f}")
+            
+            # Calculate QWB = Win Value - (Loss Value + 20)
+            qwb_score = npi_win_score - (npi_loss_score + 20)
+            
+            print(f"DEBUG: Calculated NPI scores for {team_name} vs {opponent}: Win={npi_win_score:.2f}, Loss={npi_loss_score:.2f}, Tie={npi_tie_score:.2f}, QWB={qwb_score:.2f}")
         else:
             print(f"DEBUG: No NPI data available for {opponent}")
         
@@ -949,7 +979,8 @@ def get_team_schedule(team_name, games_df, user_id=None, year=None):
             'Predicted_Result': predicted_result,
             'NPI Win Value': npi_win_score,
             'NPI Tie Value': npi_tie_score,
-            'NPI Loss Value': npi_loss_score
+            'NPI Loss Value': npi_loss_score,
+            'QWB': qwb_score
         })
     
     # Convert to DataFrame and sort by date
@@ -1062,18 +1093,52 @@ def main():
         if npi_df is not None and not npi_df.empty:
             st.markdown("*Note: These NPI ratings have a margin of error of ±0.3*")
             
+            
             # Sort by NPI rating (highest first)
             df_sorted = npi_df.sort_values('npi_rating', ascending=False).reset_index(drop=True)
             
             # Add ranking
             df_sorted.insert(0, 'Rank', range(1, len(df_sorted) + 1))
             
+            # Calculate NPI values for each team using their current NPI rating
+            print("DEBUG: Calculating NPI values for rankings table...")
+            win_values = []
+            tie_values = []
+            loss_values = []
+            
+            for _, team_row in df_sorted.iterrows():
+                team_npi_rating = team_row['npi_rating']
+                npi_values = calculate_team_npi_values(team_npi_rating)
+                win_values.append(npi_values['win_value'])
+                tie_values.append(npi_values['tie_value'])
+                loss_values.append(npi_values['loss_value'])
+            
+            # Add NPI value columns
+            df_sorted['NPI Win Value'] = win_values
+            df_sorted['NPI Tie Value'] = tie_values
+            df_sorted['NPI Loss Value'] = loss_values
+            
+            # Calculate QWB (Quality Win Bonus) = Win Value - (Loss Value + 20)
+            qwb_values = []
+            for i in range(len(win_values)):
+                if win_values[i] is not None and loss_values[i] is not None:
+                    qwb = win_values[i] - (loss_values[i] + 20)
+                    qwb_values.append(qwb)
+                else:
+                    qwb_values.append(None)
+            
+            df_sorted['QWB'] = qwb_values
+            
             # Select only the columns we want to display
-            columns_to_show = ['Rank', 'team', 'npi_rating', 'wins', 'losses', 'ties']
+            columns_to_show = ['Rank', 'team', 'npi_rating', 'wins', 'losses', 'ties', 'NPI Win Value', 'NPI Tie Value', 'NPI Loss Value', 'QWB']
             df_display = df_sorted[columns_to_show].copy()
             
-            # Round NPI rating to 2 decimal places
+            # Round NPI rating and values to 2 decimal places
             df_display['npi_rating'] = df_display['npi_rating'].round(2)
+            df_display['NPI Win Value'] = df_display['NPI Win Value'].round(2)
+            df_display['NPI Tie Value'] = df_display['NPI Tie Value'].round(2)
+            df_display['NPI Loss Value'] = df_display['NPI Loss Value'].round(2)
+            df_display['QWB'] = df_display['QWB'].round(2)
             
             # Rename columns for cleaner display
             df_display = df_display.rename(columns={
@@ -1194,13 +1259,15 @@ def main():
                     print(f"DEBUG SCHEDULE DISPLAY: NPI Loss Value values: {schedule_df['NPI Loss Value'].tolist()}")
                 if 'NPI Tie Value' in schedule_df.columns:
                     print(f"DEBUG SCHEDULE DISPLAY: NPI Tie Value values: {schedule_df['NPI Tie Value'].tolist()}")
+                if 'QWB' in schedule_df.columns:
+                    print(f"DEBUG SCHEDULE DISPLAY: QWB values: {schedule_df['QWB'].tolist()}")
                 
                 # Format date for display
                 schedule_display = schedule_df.copy()
                 schedule_display['Date'] = schedule_display['Date'].dt.strftime('%m/%d/%Y')
                 
                 # Clean up display columns for better readability
-                display_columns = ['Date', 'Opponent', 'Home/Away', 'Team Score', 'Opponent Score', 'Result', 'Overtime', 'Status', 'NPI Win Value', 'NPI Tie Value', 'NPI Loss Value']
+                display_columns = ['Date', 'Opponent', 'Home/Away', 'Team Score', 'Opponent Score', 'Result', 'Overtime', 'Status', 'NPI Win Value', 'NPI Tie Value', 'NPI Loss Value', 'QWB']
                 schedule_display = schedule_display[display_columns]
                 
                 # Format NPI values to 2 decimal places and handle missing data
@@ -1225,6 +1292,13 @@ def main():
                     schedule_display['NPI Loss Value'] = schedule_display['NPI Loss Value'].round(2)
                     # Replace NaN values with "N/A" for display
                     schedule_display['NPI Loss Value'] = schedule_display['NPI Loss Value'].fillna('N/A')
+                if 'QWB' in schedule_display.columns:
+                    # Convert to numeric, replacing non-numeric values with NaN
+                    schedule_display['QWB'] = pd.to_numeric(schedule_display['QWB'], errors='coerce')
+                    # Round numeric values to 2 decimal places
+                    schedule_display['QWB'] = schedule_display['QWB'].round(2)
+                    # Replace NaN values with "N/A" for display
+                    schedule_display['QWB'] = schedule_display['QWB'].fillna('N/A')
                 
                 # Check if all NPI values are N/A and show a note
                 if ('NPI Win Value' in schedule_display.columns and 
