@@ -1274,7 +1274,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-17,Mt St Mary NY,1,Rutgers-Newark,5,
 2025-09-17,St Scholastica,0,St Benedict,0,Sch
 2025-09-17,Catholic,1,St Mary's MD,2,
-2025-09-17,VA Wesleyan,0,Salisbury,0,Sch
+2025-09-17,VA Wesleyan,2,Salisbury,1,
 2025-09-17,Franklin,0,Spalding,4,
 2025-09-17,Ohio Chr,0,Bluffton,6,
 2025-09-17,SUNY New Paltz,1,Farmingdale,0,
@@ -1293,9 +1293,9 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-17,Buffalo St,1,Houghton,4,
 2025-09-17,SUNY Maritime,6,Yeshiva,0,
 2025-09-17,Roger Williams,2,Wheaton MA,3,
-2025-09-17,W Connecticut,0,Russell Sage,0,Sch
+2025-09-17,W Connecticut,1,Russell Sage,0,
 2025-09-17,MA Boston,3,Curry,2,
-2025-09-17,Bridgewater VA,0,S Virginia,0,Sch
+2025-09-17,Bridgewater VA,3,S Virginia,1,
 2025-09-17,Keystone,1,St Elizabeth,4,
 2025-09-17,FDU Madison,5,Centenary NJ,0,
 2025-09-17,Wellesley,0,Plymouth St,2,
@@ -1321,17 +1321,17 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-17,N Central MN,0,WI Superior,6,
 2025-09-17,City Col NY,0,Mt St Vincent,4,
 2025-09-17,St Joseph's LI,0,Merchant Marine,1,
-2025-09-18,Ohio Northern,0,Albion,0,Sch
-2025-09-18,Greenville,0,Covenant,0,Sch
-2025-09-18,Keene St,0,Worcester St,0,Sch
-2025-09-18,McMurry,0,Howard Payne,0,Sch
-2025-09-18,Schreiner,0,Tarleton St,0,Sch
-2025-09-18,Morrisville St,0,SUNY Delhi,0,Sch
-2025-09-18,Simpson IA,0,WI LaCrosse,0,Sch
-2025-09-18,UC Santa Cruz,0,Loras,0,Sch
-2025-09-18,Widener,0,Immaculata,0,Sch
-2025-09-18,Stevens,0,Montclair St,0,Sch
-2025-09-18,Hardin-Simmons,0,Concordia TX,0,Sch
+2025-09-18,Ohio Northern,0,Albion,2,
+2025-09-18,Greenville,1,Covenant,2,
+2025-09-18,Keene St,0,Worcester St,0,
+2025-09-18,McMurry,2,Howard Payne,1,
+2025-09-18,Schreiner,0,Tarleton St,9,
+2025-09-18,Morrisville St,2,SUNY Delhi,3,
+2025-09-18,Simpson IA,0,WI LaCrosse,5,
+2025-09-18,UC Santa Cruz,0,Loras,1,
+2025-09-18,Widener,3,Immaculata,0,
+2025-09-18,Stevens,1,Montclair St,1,
+2025-09-18,Hardin-Simmons,3,Concordia TX,0,
 2025-09-18,E Texas Bap,0,TX Lutheran,0,Sch
 2025-09-18,PSU-Hazleton,0,Valley Forge,0,Sch
 2025-09-19,N Central IL,0,Centre,0,Sch

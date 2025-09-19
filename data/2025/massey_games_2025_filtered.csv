@@ -1097,7 +1097,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-17,Mount Saint Mary College (New York),1,"Rutgers, The State Univ. of New Jersey, Newark",5,
 2025-09-17,The College of St. Scholastica,0,College of Saint Benedict,0,Sch
 2025-09-17,Catholic University,1,St. Mary's College of Maryland,2,
-2025-09-17,Virginia Wesleyan University,0,Salisbury University,0,Sch
+2025-09-17,Virginia Wesleyan University,2,Salisbury University,1,
 2025-09-17,Franklin College,0,Spalding University,4,
 2025-09-17,State University of New York at New Paltz,1,Farmingdale State College,0,
 2025-09-17,Vassar College,4,State University of New York at Oneonta,1,
@@ -1114,9 +1114,9 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-17,"Buffalo State, State University of New York",1,Houghton University,4,
 2025-09-17,State University of New York Maritime College,6,Yeshiva University,0,
 2025-09-17,Roger Williams University,2,Wheaton College (Massachusetts),3,
-2025-09-17,Western Connecticut State University,0,Russell Sage College,0,Sch
+2025-09-17,Western Connecticut State University,1,Russell Sage College,0,
 2025-09-17,University of Massachusetts Boston,3,Curry College,2,
-2025-09-17,Bridgewater College (Virginia),0,Southern Virginia University,0,Sch
+2025-09-17,Bridgewater College (Virginia),3,Southern Virginia University,1,
 2025-09-17,Keystone College,1,Saint Elizabeth University,4,
 2025-09-17,"Fairleigh Dickinson University, Florham",5,Centenary University (New Jersey),0,
 2025-09-17,Wellesley College,0,Plymouth State University,2,
@@ -1139,16 +1139,16 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-17,North Central University,0,University of Wisconsin-Superior,6,
 2025-09-17,The City College of New York,0,University of Mount Saint Vincent,4,
 2025-09-17,"St. Joseph's University, New York L.I.",0,U.S. Merchant Marine Academy,1,
-2025-09-18,Ohio Northern University,0,Albion College,0,Sch
-2025-09-18,Greenville University,0,Covenant College,0,Sch
-2025-09-18,Keene State College,0,Worcester State University,0,Sch
-2025-09-18,McMurry University,0,Howard Payne University,0,Sch
-2025-09-18,State University of New York at Morrisville,0,State University of New York at Delhi,0,Sch
-2025-09-18,Simpson College,0,University of Wisconsin-La Crosse,0,Sch
-2025-09-18,"University of California, Santa Cruz",0,Loras College,0,Sch
-2025-09-18,Widener University,0,Immaculata University,0,Sch
-2025-09-18,Stevens Institute of Technology,0,Montclair State University,0,Sch
-2025-09-18,Hardin-Simmons University,0,Concordia University Texas,0,Sch
+2025-09-18,Ohio Northern University,0,Albion College,2,
+2025-09-18,Greenville University,1,Covenant College,2,
+2025-09-18,Keene State College,0,Worcester State University,0,
+2025-09-18,McMurry University,2,Howard Payne University,1,
+2025-09-18,State University of New York at Morrisville,2,State University of New York at Delhi,3,
+2025-09-18,Simpson College,0,University of Wisconsin-La Crosse,5,
+2025-09-18,"University of California, Santa Cruz",0,Loras College,1,
+2025-09-18,Widener University,3,Immaculata University,0,
+2025-09-18,Stevens Institute of Technology,1,Montclair State University,1,
+2025-09-18,Hardin-Simmons University,3,Concordia University Texas,0,
 2025-09-18,East Texas Baptist University,0,Texas Lutheran University,0,Sch
 2025-09-19,North Central College,0,Centre College,0,Sch
 2025-09-19,Hanover College,0,Ohio Wesleyan University,0,Sch
