@@ -1150,15 +1150,15 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-18,Stevens Institute of Technology,1,Montclair State University,1,
 2025-09-18,Hardin-Simmons University,3,Concordia University Texas,0,
 2025-09-18,East Texas Baptist University,0,Texas Lutheran University,0,Sch
-2025-09-19,North Central College,0,Centre College,0,Sch
-2025-09-19,Hanover College,0,Ohio Wesleyan University,0,Sch
-2025-09-19,Maranatha Baptist University,0,Blackburn College,0,Sch
-2025-09-19,State University of New York at Canton,0,VTSU-Johnson,0,Sch
-2025-09-19,Meredith College,0,Brevard College,0,Sch
-2025-09-19,Wheaton College (Illinois),0,Saint Mary's College (Indiana),0,Sch
+2025-09-19,North Central College,2,Centre College,3,
+2025-09-19,Hanover College,1,Ohio Wesleyan University,1,
+2025-09-19,Maranatha Baptist University,0,Blackburn College,1,
+2025-09-19,State University of New York at Canton,0,VTSU-Johnson,3,
+2025-09-19,Meredith College,0,Brevard College,2,
+2025-09-19,Wheaton College (Illinois),0,Saint Mary's College (Indiana),0,
 2025-09-19,Sweet Briar College,0,Trinity Washington University,0,Sch
-2025-09-19,Millsaps College,0,Centenary College (Louisiana),0,Sch
-2025-09-19,Mississippi University for Women,0,University of St. Thomas (Texas),0,Sch
+2025-09-19,Millsaps College,0,Centenary College (Louisiana),1,
+2025-09-19,Mississippi University for Women,0,University of St. Thomas (Texas),4,
 2025-09-19,U.S. Merchant Marine Academy,0,"St. Joseph's University, New York L.I.",0,Sch
 2025-09-20,Claremont McKenna-Harvey Mudd-Scripps Colleges,0,California Lutheran University,0,Sch
 2025-09-20,Calvin University,0,Case Western Reserve University,0,Sch
@@ -1357,6 +1357,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-22,Muhlenberg College,0,Franklin & Marshall College,0,Sch
 2025-09-22,Pratt Institute,0,York College (New York),0,Sch
 2025-09-22,Brooklyn College,0,Western Connecticut State University,0,Sch
+2025-09-22,The City College of New York,0,"Rutgers, The State Univ. of New Jersey, Newark",0,Sch
 2025-09-23,University of Wisconsin-Platteville,0,Carroll University (Wisconsin),0,Sch
 2025-09-23,New England College,0,Vermont State University Castleton,0,Sch
 2025-09-23,Albright College,0,Arcadia University,0,Sch

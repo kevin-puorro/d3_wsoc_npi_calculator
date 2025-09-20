@@ -1334,20 +1334,20 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-18,Hardin-Simmons,3,Concordia TX,0,
 2025-09-18,E Texas Bap,0,TX Lutheran,0,Sch
 2025-09-18,PSU-Hazleton,0,Valley Forge,0,Sch
-2025-09-19,N Central IL,0,Centre,0,Sch
-2025-09-19,Hanover,0,Ohio Wesleyan,0,Sch
-2025-09-19,Maranatha Bap,0,Blackburn,0,Sch
-2025-09-19,SUNY Canton,0,NVU-Johnson,0,Sch
-2025-09-19,Paul Smith's,0,SUNY Potsdam,0,Sch
-2025-09-19,Meredith,0,Brevard,0,Sch
-2025-09-19,Wheaton IL,0,St Mary's IN,0,Sch
-2025-09-19,Buena Vista,0,Spurgeon,0,Sch
+2025-09-19,N Central IL,2,Centre,3,
+2025-09-19,Hanover,1,Ohio Wesleyan,1,
+2025-09-19,Maranatha Bap,0,Blackburn,1,
+2025-09-19,SUNY Canton,0,NVU-Johnson,3,
+2025-09-19,Paul Smith's,0,SUNY Potsdam,5,
+2025-09-19,Meredith,0,Brevard,2,
+2025-09-19,Wheaton IL,0,St Mary's IN,0,
+2025-09-19,Buena Vista,2,Spurgeon,0,
 2025-09-19,Sweet Briar,0,Trinity DC,0,Sch
-2025-09-19,Fisher,0,ME Maritime,0,Sch
-2025-09-19,Millsaps,0,Centenary,0,Sch
-2025-09-19,MS Women,0,St Thomas TX,0,Sch
+2025-09-19,Fisher,0,ME Maritime,1,
+2025-09-19,Millsaps,0,Centenary,1,
+2025-09-19,MS Women,0,St Thomas TX,4,
 2025-09-19,Merchant Marine,0,St Joseph's LI,0,Sch
-2025-09-19,Our Lady Lake,0,SW Univ TX,0,Sch
+2025-09-19,Our Lady Lake,1,SW Univ TX,3,
 2025-09-20,Claremont M.S.,0,Cal Lutheran,0,Sch
 2025-09-20,Calvin,0,Case Western,0,Sch
 2025-09-20,Knox,0,Carthage,0,Sch
@@ -1565,6 +1565,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-22,PSU-New Kens,0,Bethany WV,0,Sch
 2025-09-22,Brooklyn Col,0,W Connecticut,0,Sch
 2025-09-22,PSU-Schuylkill,0,Keystone,0,Sch
+2025-09-22,City Col NY,0,Rutgers-Newark,0,Sch
 2025-09-23,WI Platteville,0,Carroll WI,0,Sch
 2025-09-23,N England Col,0,Castleton,0,Sch
 2025-09-23,Albright,0,Arcadia,0,Sch
