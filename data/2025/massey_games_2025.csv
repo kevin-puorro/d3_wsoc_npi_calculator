@@ -1519,43 +1519,43 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-20,Rowan,5,Drew,0,
 2025-09-20,C Maine Tech,0,ME Ft Kent,0,Sch
 2025-09-20,Justice,0,Whittier,0,
-2025-09-21,Kenyon,0,Capital,0,Sch
-2025-09-21,Centre,0,Roanoke,0,Sch
-2025-09-21,Mt Union,0,Albion,0,Sch
-2025-09-21,Chicago,0,Kalamazoo,0,Sch
-2025-09-21,Milwaukee Eng,0,Concordia IL,0,Sch
-2025-09-21,Concordia Mhd,0,WI LaCrosse,0,Sch
-2025-09-21,Tufts,0,CT College,0,Sch
-2025-09-21,Hamilton,0,Babson,0,Sch
-2025-09-21,N Central IL,0,Hanover,0,Sch
-2025-09-21,Huntingdon,0,Berea,0,Sch
-2025-09-21,Illinois Col,0,Millikin,0,Sch
-2025-09-21,John Carroll,0,Mt St Joseph,0,Sch
-2025-09-21,Lewis & Clark,0,Pac Lutheran,0,Sch
+2025-09-21,Kenyon,0,Capital,1,
+2025-09-21,Centre,2,Roanoke,0,
+2025-09-21,Mt Union,1,Albion,2,
+2025-09-21,Chicago,3,Kalamazoo,0,
+2025-09-21,Milwaukee Eng,2,Concordia IL,0,
+2025-09-21,Concordia Mhd,0,WI LaCrosse,5,
+2025-09-21,Tufts,4,CT College,0,
+2025-09-21,Hamilton,2,Babson,2,
+2025-09-21,N Central IL,3,Hanover,1,
+2025-09-21,Huntingdon,0,Berea,1,
+2025-09-21,Illinois Col,1,Millikin,1,
+2025-09-21,John Carroll,3,Mt St Joseph,0,
+2025-09-21,Lewis & Clark,0,Pac Lutheran,2,
 2025-09-21,M Hardin-Baylor,0,Rhodes,0,Sch
-2025-09-21,Piedmont,0,Maryville TN,0,Sch
-2025-09-21,Austin Col,0,Millsaps,0,Sch
-2025-09-21,WI Stout,0,St Benedict,0,Sch
-2025-09-21,St Scholastica,0,WI River Falls,0,Sch
-2025-09-21,Concordia TX,0,Trinity TX,0,Sch
-2025-09-21,Wartburg,0,WI Stevens Pt,0,Sch
-2025-09-21,Willamette,0,Whitman,0,Sch
-2025-09-21,Pacific OR,0,Whitworth,0,Sch
-2025-09-21,Williams,0,Clark MA,0,Sch
-2025-09-21,S Maine,0,New Hampshire,0,Sch
-2025-09-21,St Thomas TX,0,TX Southern,0,Sch
+2025-09-21,Piedmont,1,Maryville TN,2,
+2025-09-21,Austin Col,4,Millsaps,1,
+2025-09-21,WI Stout,2,St Benedict,5,
+2025-09-21,St Scholastica,1,WI River Falls,2,
+2025-09-21,Concordia TX,0,Trinity TX,4,
+2025-09-21,Wartburg,1,WI Stevens Pt,2,
+2025-09-21,Willamette,0,Whitman,1,
+2025-09-21,Pacific OR,0,Whitworth,0,
+2025-09-21,Williams,0,Clark MA,0,
+2025-09-21,S Maine,1,New Hampshire,4,
+2025-09-21,St Thomas TX,0,TX Southern,3,
 2025-09-21,Medgar Evers,0,Washington Advt,0,Sch
-2025-09-21,Lesley,0,ME Presque Isle,0,Sch
+2025-09-21,Lesley,5,ME Presque Isle,0,
 2025-09-21,LaGrange,0,Berry,0,Sch
-2025-09-21,Carnegie Mellon,0,Baldwin-Wallace,0,Sch
-2025-09-21,SW Univ TX,0,Dallas Univ,0,Sch
-2025-09-21,Lynchburg,0,Emory,0,Sch
-2025-09-21,ME Maritime,0,Bay Path,0,Sch
-2025-09-21,NE Wesleyan,0,Gust Adolphus,0,Sch
-2025-09-21,St Mary's MN,0,Beloit,0,Sch
-2025-09-21,George Fox,0,Puget Sound,0,Sch
-2025-09-21,Sarah Lawrence,0,NYU,0,Sch
-2025-09-21,NVU-Johnson,0,NVU-Lyndon,0,Sch
+2025-09-21,Carnegie Mellon,3,Baldwin-Wallace,1,
+2025-09-21,SW Univ TX,3,Dallas Univ,0,
+2025-09-21,Lynchburg,1,Emory,6,
+2025-09-21,ME Maritime,10,Bay Path,0,
+2025-09-21,NE Wesleyan,1,Gust Adolphus,1,
+2025-09-21,St Mary's MN,5,Beloit,0,
+2025-09-21,George Fox,0,Puget Sound,3,
+2025-09-21,Sarah Lawrence,0,NYU,2,
+2025-09-21,NVU-Johnson,14,NVU-Lyndon,0,
 2025-09-22,Dominican IL,0,IL Wesleyan,0,Sch
 2025-09-22,Guilford,0,J&W NC,0,Sch
 2025-09-22,Mt Union,0,Adrian,0,Sch
@@ -1615,6 +1615,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-23,Northwestern MN,0,WI Superior,0,Sch
 2025-09-23,Andrews,0,Eureka,0,Sch
 2025-09-23,Hannibal-Lagr,0,Blackburn,0,Sch
+2025-09-23,Piedmont,0,Warren Wilson,0,Sch
 2025-09-24,Cal Lutheran,0,Chapman,0,Sch
 2025-09-24,Carthage,0,WI Stevens Pt,0,Sch
 2025-09-24,PSU-Behrend,0,Case Western,0,Sch
@@ -1731,6 +1732,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-24,Pomona-Pitzer,0,Claremont M.S.,0,Sch
 2025-09-24,Salem MA,0,Gordon,0,Sch
 2025-09-24,Alice Lloyd,0,Berea,0,Sch
+2025-09-24,St Scholastica,0,St Benedict,0,Sch
 2025-09-25,Bob Jones,0,Emory & Henry,0,Sch
 2025-09-25,Adrian,0,Kenyon,0,Sch
 2025-09-25,Loras,0,Marian WI,0,Sch

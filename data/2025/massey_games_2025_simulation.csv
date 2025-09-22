@@ -1319,38 +1319,38 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-20,Southern Virginia University,6,North Carolina Wesleyan University,3,
 2025-09-20,Stevens Institute of Technology,1,Stockton University,1,
 2025-09-20,Rowan University,5,Drew University,0,
-2025-09-21,Kenyon College,0,Capital University,0,Sch
-2025-09-21,Centre College,0,Roanoke College,0,Sch
-2025-09-21,University of Mount Union,0,Albion College,0,Sch
-2025-09-21,University of Chicago,0,Kalamazoo College,0,Sch
-2025-09-21,Milwaukee School of Engineering,0,Concordia University Chicago,0,Sch
-2025-09-21,"Concordia College, Moorhead",0,University of Wisconsin-La Crosse,0,Sch
-2025-09-21,Tufts University,0,Connecticut College,0,Sch
-2025-09-21,Hamilton College,0,Babson College,0,Sch
-2025-09-21,North Central College,0,Hanover College,0,Sch
-2025-09-21,Huntingdon College,0,Berea College,0,Sch
-2025-09-21,Illinois College,0,Millikin University,0,Sch
-2025-09-21,John Carroll University,0,Mount St. Joseph University,0,Sch
-2025-09-21,Lewis & Clark College,0,Pacific Lutheran University,0,Sch
+2025-09-21,Kenyon College,0,Capital University,1,
+2025-09-21,Centre College,2,Roanoke College,0,
+2025-09-21,University of Mount Union,1,Albion College,2,
+2025-09-21,University of Chicago,3,Kalamazoo College,0,
+2025-09-21,Milwaukee School of Engineering,2,Concordia University Chicago,0,
+2025-09-21,"Concordia College, Moorhead",0,University of Wisconsin-La Crosse,5,
+2025-09-21,Tufts University,4,Connecticut College,0,
+2025-09-21,Hamilton College,2,Babson College,2,
+2025-09-21,North Central College,3,Hanover College,1,
+2025-09-21,Huntingdon College,0,Berea College,1,
+2025-09-21,Illinois College,1,Millikin University,1,
+2025-09-21,John Carroll University,3,Mount St. Joseph University,0,
+2025-09-21,Lewis & Clark College,0,Pacific Lutheran University,2,
 2025-09-21,University of Mary Hardin-Baylor,0,Rhodes College,0,Sch
-2025-09-21,Piedmont University,0,Maryville College (Tennessee),0,Sch
-2025-09-21,Austin College,0,Millsaps College,0,Sch
-2025-09-21,University of Wisconsin-Stout,0,College of Saint Benedict,0,Sch
-2025-09-21,The College of St. Scholastica,0,University of Wisconsin-River Falls,0,Sch
-2025-09-21,Concordia University Texas,0,Trinity University (Texas),0,Sch
-2025-09-21,Wartburg College,0,University of Wisconsin-Stevens Point,0,Sch
-2025-09-21,Willamette University,0,Whitman College,0,Sch
-2025-09-21,Pacific University (Oregon),0,Whitworth University,0,Sch
-2025-09-21,Williams College,0,Clark University (Massachusetts),0,Sch
-2025-09-21,Lesley University,0,University of Maine at Presque Isle,0,Sch
+2025-09-21,Piedmont University,1,Maryville College (Tennessee),2,
+2025-09-21,Austin College,4,Millsaps College,1,
+2025-09-21,University of Wisconsin-Stout,2,College of Saint Benedict,5,
+2025-09-21,The College of St. Scholastica,1,University of Wisconsin-River Falls,2,
+2025-09-21,Concordia University Texas,0,Trinity University (Texas),4,
+2025-09-21,Wartburg College,1,University of Wisconsin-Stevens Point,2,
+2025-09-21,Willamette University,0,Whitman College,1,
+2025-09-21,Pacific University (Oregon),0,Whitworth University,0,
+2025-09-21,Williams College,0,Clark University (Massachusetts),0,
+2025-09-21,Lesley University,5,University of Maine at Presque Isle,0,
 2025-09-21,LaGrange College,0,Berry College,0,Sch
-2025-09-21,Carnegie Mellon University,0,Baldwin Wallace University,0,Sch
-2025-09-21,Southwestern University (Texas),0,University of Dallas,0,Sch
-2025-09-21,University of Lynchburg,0,Emory University,0,Sch
-2025-09-21,Nebraska Wesleyan University,0,Gustavus Adolphus College,0,Sch
-2025-09-21,Saint Mary's University of Minnesota,0,Beloit College,0,Sch
-2025-09-21,George Fox University,0,University of Puget Sound,0,Sch
-2025-09-21,Sarah Lawrence College,0,New York University,0,Sch
+2025-09-21,Carnegie Mellon University,3,Baldwin Wallace University,1,
+2025-09-21,Southwestern University (Texas),3,University of Dallas,0,
+2025-09-21,University of Lynchburg,1,Emory University,6,
+2025-09-21,Nebraska Wesleyan University,1,Gustavus Adolphus College,1,
+2025-09-21,Saint Mary's University of Minnesota,5,Beloit College,0,
+2025-09-21,George Fox University,0,University of Puget Sound,3,
+2025-09-21,Sarah Lawrence College,0,New York University,2,
 2025-09-22,Dominican University (Illinois),0,Illinois Wesleyan University,0,Sch
 2025-09-22,University of Mount Union,0,Adrian College,0,Sch
 2025-09-22,Benedictine University (Illinois),0,University of Wisconsin-Whitewater,0,Sch
@@ -1398,6 +1398,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-23,Plymouth State University,0,Elms College,0,Sch
 2025-09-23,Drew University,0,"Fairleigh Dickinson University, Florham",0,Sch
 2025-09-23,University of Northwestern-St. Paul,0,University of Wisconsin-Superior,0,Sch
+2025-09-23,Piedmont University,0,Warren Wilson College,0,Sch
 2025-09-24,California Lutheran University,0,Chapman University,0,Sch
 2025-09-24,Carthage College,0,University of Wisconsin-Stevens Point,0,Sch
 2025-09-24,"Pennsylvania State Univ. Erie, the Behrend College",0,Case Western Reserve University,0,Sch
@@ -1507,6 +1508,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-24,Monmouth College (Illinois),0,Simpson College,0,Sch
 2025-09-24,Pomona-Pitzer Colleges,0,Claremont McKenna-Harvey Mudd-Scripps Colleges,0,Sch
 2025-09-24,Salem State University,0,Gordon College,0,Sch
+2025-09-24,The College of St. Scholastica,0,College of Saint Benedict,0,Sch
 2025-09-25,Adrian College,0,Kenyon College,0,Sch
 2025-09-25,Loras College,0,Marian University (Wisconsin),0,Sch
 2025-09-25,Howard Payne University,0,University of Mary Hardin-Baylor,0,Sch
