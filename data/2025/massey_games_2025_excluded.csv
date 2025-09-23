@@ -5,6 +5,7 @@ date,game,missing_teams
 2025-08-22,Ark Pine Bluff 2 @ Lyon 0,away: Ark Pine Bluff
 2025-08-23,Pacific OR 3 @ Corban 0,home: Corban
 2025-08-23,Bellarmine 11 @ Asbury 0,away: Bellarmine
+2025-08-23,Arizona Chr 2 @ Caltech 0,away: Arizona Chr
 2025-08-24,Northwest WA 0 @ Pacific OR 1,away: Northwest WA
 2025-08-24,Mt St Joseph 0 @ N Kentucky 6,home: N Kentucky
 2025-08-25,Spartanburg Meth 0 @ Bob Jones 0,"home: Bob Jones, away: Spartanburg Meth"
@@ -56,6 +57,7 @@ date,game,missing_teams
 2025-09-02,Blackburn 1 @ UHSP 8,home: UHSP
 2025-09-02,N Central MN 1 @ Faith Bap 0,home: Faith Bap
 2025-09-02,Alice Lloyd 0 @ Brevard 20,away: Alice Lloyd
+2025-09-02,Trinity Jax 4 @ Wesleyan GA 1,away: Trinity Jax
 2025-09-03,Bob Jones 0 @ Greensboro 0,away: Bob Jones
 2025-09-03,Alma 3 @ IN S Bend 1,home: IN S Bend
 2025-09-03,Evangel 4 @ Univ Ozarks 0,away: Evangel
@@ -63,7 +65,7 @@ date,game,missing_teams
 2025-09-03,PSU-Schuylkill 1 @ Valley Forge 3,away: PSU-Schuylkill
 2025-09-03,ME Ft Kent 0 @ S Maine 5,away: ME Ft Kent
 2025-09-03,LaGrange 1 @ Point 7,home: Point
-2025-09-03,ME Farmington 11 @ ME Augusta 0,home: ME Augusta
+2025-09-03,ME Augusta 0 @ ME Farmington 11,away: ME Augusta
 2025-09-03,Columbia SC 4 @ Peace 0,away: Columbia SC
 2025-09-03,Providence GF 1 @ Caltech 1,away: Providence GF
 2025-09-03,Eureka 4 @ Andrews 0,home: Andrews
@@ -73,9 +75,8 @@ date,game,missing_teams
 2025-09-05,Harris-Stowe 0 @ Greenville 2,away: Harris-Stowe
 2025-09-05,PSU-Mont Alto 7 @ Trinity DC 0,away: PSU-Mont Alto
 2025-09-05,Warner Pacific 2 @ Linfield 5,away: Warner Pacific
-2025-09-05,Kentucky Chr 0 @ Berea 2,away: Kentucky Chr
+2025-09-05,Berea 2 @ Kentucky Chr 0,home: Kentucky Chr
 2025-09-05,Wiley 2 @ Centenary 1,away: Wiley
-2025-09-05,Austin Col 4 @ Texas Col 1,home: Texas Col
 2025-09-05,Life Pacific 0 @ Claremont M.S. 2,away: Life Pacific
 2025-09-05,Crown MN 4 @ Faith Bap 2,home: Faith Bap
 2025-09-05,N Central MN 1 @ Grace Chr 4,home: Grace Chr
@@ -101,11 +102,10 @@ date,game,missing_teams
 2025-09-09,Bob Jones 2 @ Pfeiffer 0,away: Bob Jones
 2025-09-09,La Verne 0 @ Soka 2,home: Soka
 2025-09-09,Madonna 1 @ Adrian 0,away: Madonna
-2025-09-09,Principia 1 @ UHSP 2,home: UHSP
+2025-09-09,UHSP 2 @ Principia 1,away: UHSP
 2025-09-09,Caltech 0 @ Westcliff 2,home: Westcliff
 2025-09-09,Wiley 0 @ Le Tourneau 3,away: Wiley
 2025-09-09,Blue Mtn 0 @ Belhaven MS 6,away: Blue Mtn
-2025-09-09,PSU-New Kens 1 @ La Roche 3,away: PSU-New Kens
 2025-09-09,Eureka 1 @ Faith Bap 4,home: Faith Bap
 2025-09-09,Texas Col 2 @ Centenary 2,away: Texas Col
 2025-09-09,PSU-Scranton 4 @ Keystone 4,away: PSU-Scranton
@@ -116,7 +116,8 @@ date,game,missing_teams
 2025-09-10,PSU-Mont Alto 0 @ Wilson 5,away: PSU-Mont Alto
 2025-09-10,Mt Marty 4 @ Buena Vista 0,away: Mt Marty
 2025-09-10,Dakota Wesleyan 1 @ NE Wesleyan 1,away: Dakota Wesleyan
-2025-09-10,Huston-Tillot 0 @ Concordia TX 0,away: Huston-Tillot
+2025-09-10,Concordia TX 0 @ Huston-Tillot 0,home: Huston-Tillot
+2025-09-10,PSU-New Kens 1 @ La Roche 3,away: PSU-New Kens
 2025-09-10,ME Augusta 1 @ ME Presque Isle 1,away: ME Augusta
 2025-09-10,Christendom 12 @ Trinity DC 0,away: Christendom
 2025-09-10,Anderson IN 1 @ Indiana-East 2,home: Indiana-East
@@ -127,7 +128,7 @@ date,game,missing_teams
 2025-09-12,Westcliff 3 @ Occidental 1,away: Westcliff
 2025-09-12,Shaw NC 6 @ Pfeiffer 0,away: Shaw NC
 2025-09-12,Great Lakes Chr 0 @ Ripon 0,away: Great Lakes Chr
-2025-09-12,Central Penn 0 @ Trinity DC 0,away: Central Penn
+2025-09-12,Central Penn 4 @ Trinity DC 0,away: Central Penn
 2025-09-13,Cal Lutheran 0 @ Westmont 1,home: Westmont
 2025-09-13,Bob Jones 0 @ Citadel 3,"home: Citadel, away: Bob Jones"
 2025-09-13,Indiana-East 3 @ Earlham 0,away: Indiana-East
@@ -138,16 +139,14 @@ date,game,missing_teams
 2025-09-13,The Master's 2 @ Redlands 0,away: The Master's
 2025-09-13,PSU-Mont Alto 0 @ Cairn 4,away: PSU-Mont Alto
 2025-09-13,Concordia TX 1 @ Houston-Victoria 1,home: Houston-Victoria
-2025-09-13,Waldorf 0 @ N Central MN 0,away: Waldorf
 2025-09-13,SUNY Poly 2 @ SUNY-ESF 1,home: SUNY-ESF
 2025-09-13,Spurgeon 0 @ Blackburn 4,away: Spurgeon
 2025-09-13,Great Lakes Chr 0 @ Elmhurst 4,away: Great Lakes Chr
 2025-09-13,Carroll MT 1 @ Whitworth 1,away: Carroll MT
 2025-09-14,Madonna 2 @ Alma 3,away: Madonna
 2025-09-14,ME Presque Isle 1 @ Fisher 3,home: Fisher
-2025-09-14,Whitman 1 @ Carroll MT 1,home: Carroll MT
+2025-09-14,Carroll MT 1 @ Whitman 1,away: Carroll MT
 2025-09-16,Carolina Univ 0 @ Brevard 9,away: Carolina Univ
-2025-09-16,NVU-Johnson 0 @ Vermont Tech 0,home: Vermont Tech
 2025-09-16,Tougaloo 0 @ Belhaven MS 9,away: Tougaloo
 2025-09-16,NVU-Lyndon 0 @ ME Farmington 10,away: NVU-Lyndon
 2025-09-16,Olivet MI 0 @ Lourdes 6,home: Lourdes
@@ -161,7 +160,6 @@ date,game,missing_teams
 2025-09-17,PSU-New Kens 3 @ Thiel 0,away: PSU-New Kens
 2025-09-17,Toccoa Falls 0 @ Warren Wilson 2,away: Toccoa Falls
 2025-09-18,Schreiner 0 @ Tarleton St 9,home: Tarleton St
-2025-09-18,PSU-Hazleton 0 @ Valley Forge 0,away: PSU-Hazleton
 2025-09-19,Paul Smith's 0 @ SUNY Potsdam 5,away: Paul Smith's
 2025-09-19,Buena Vista 2 @ Spurgeon 0,home: Spurgeon
 2025-09-19,Fisher 0 @ ME Maritime 1,away: Fisher
@@ -169,18 +167,16 @@ date,game,missing_teams
 2025-09-20,Manchester 1 @ Great Lakes Chr 1,home: Great Lakes Chr
 2025-09-20,Carolina Univ 5 @ Pfeiffer 1,away: Carolina Univ
 2025-09-20,Dallas Univ 0 @ Nelson TX 0,home: Nelson TX
-2025-09-20,Thomas ME 0 @ ME Augusta 0,home: ME Augusta
+2025-09-20,Thomas ME 2 @ ME Augusta 1,home: ME Augusta
 2025-09-20,Monmouth IL 0 @ UHSP 0,home: UHSP
 2025-09-20,Patrick Henry 0 @ Hollins 7,away: Patrick Henry
-2025-09-20,C Maine Tech 0 @ ME Ft Kent 0,"home: ME Ft Kent, away: C Maine Tech"
-2025-09-20,Justice 0 @ Whittier 0,away: Justice
+2025-09-20,C Maine Tech 1 @ ME Ft Kent 2,"home: ME Ft Kent, away: C Maine Tech"
 2025-09-21,S Maine 1 @ New Hampshire 4,home: New Hampshire
 2025-09-21,St Thomas TX 0 @ TX Southern 3,home: TX Southern
 2025-09-21,Medgar Evers 0 @ Washington Advt 0,home: Washington Advt
-2025-09-21,ME Maritime 10 @ Bay Path 0,home: Bay Path
 2025-09-21,NVU-Johnson 14 @ NVU-Lyndon 0,home: NVU-Lyndon
 2025-09-22,PSU-New Kens 0 @ Bethany WV 0,away: PSU-New Kens
-2025-09-22,PSU-Schuylkill 0 @ Keystone 0,away: PSU-Schuylkill
+2025-09-22,PSU-Schuylkill 10 @ Keystone 1,away: PSU-Schuylkill
 2025-09-23,Toccoa Falls 0 @ Bob Jones 0,"home: Bob Jones, away: Toccoa Falls"
 2025-09-23,Harris-Stowe 0 @ Westminster MO 0,away: Harris-Stowe
 2025-09-23,Lyon 0 @ Central Bap 0,home: Central Bap
@@ -189,6 +185,7 @@ date,game,missing_teams
 2025-09-23,Morrisville St 0 @ SUNY-ESF 0,home: SUNY-ESF
 2025-09-23,PSU-Beaver 0 @ Pitt-Bradford 0,away: PSU-Beaver
 2025-09-23,Andrews 0 @ Eureka 0,away: Andrews
+2025-09-23,Spurgeon 0 @ Principia 0,away: Spurgeon
 2025-09-23,Hannibal-Lagr 0 @ Blackburn 0,away: Hannibal-Lagr
 2025-09-24,Columbia SC 0 @ Regent 0,away: Columbia SC
 2025-09-24,Manchester 0 @ Grace Chr 0,home: Grace Chr
@@ -198,7 +195,6 @@ date,game,missing_teams
 2025-09-24,Alice Lloyd 0 @ Berea 0,away: Alice Lloyd
 2025-09-25,Bob Jones 0 @ Emory & Henry 0,"home: Emory & Henry, away: Bob Jones"
 2025-09-25,NVU-Lyndon 0 @ Vermont Tech 0,"home: Vermont Tech, away: NVU-Lyndon"
-2025-09-25,Anderson IN 0 @ Bethel IN 0,home: Bethel IN
 2025-09-26,Maranatha Bap 0 @ Andrews 0,home: Andrews
 2025-09-26,Talladega 0 @ Oglethorpe 0,away: Talladega
 2025-09-27,Ohio Chr 0 @ Alma 0,away: Ohio Chr
@@ -244,9 +240,9 @@ date,game,missing_teams
 2025-10-11,Fisher 0 @ Plymouth St 0,away: Fisher
 2025-10-11,MA Maritime 0 @ Bay Path 0,home: Bay Path
 2025-10-11,ME Maritime 0 @ NVU-Lyndon 0,home: NVU-Lyndon
+2025-10-11,Trinity Jax 0 @ Bob Jones 0,"home: Bob Jones, away: Trinity Jax"
 2025-10-12,Thomas ME 0 @ NVU-Lyndon 0,home: NVU-Lyndon
 2025-10-12,Carlow 0 @ PSU-Scranton 0,home: PSU-Scranton
-2025-10-14,Arlington Bap 0 @ E Texas Bap 0,away: Arlington Bap
 2025-10-14,Dakota St 0 @ Buena Vista 0,away: Dakota St
 2025-10-14,Dominican CA 0 @ UC Santa Cruz 0,away: Dominican CA
 2025-10-14,MA Col Lib Arts 0 @ Fisher 0,home: Fisher
@@ -273,8 +269,10 @@ date,game,missing_teams
 2025-10-25,Patrick Henry 0 @ Trinity DC 0,away: Patrick Henry
 2025-10-25,Lesley 0 @ NVU-Lyndon 0,home: NVU-Lyndon
 2025-10-25,ME Ft Kent 0 @ Fisher 0,"home: Fisher, away: ME Ft Kent"
+2025-10-25,Bob Jones 0 @ Trinity Jax 0,"home: Trinity Jax, away: Bob Jones"
 2025-10-26,Fisher 0 @ Washington Advt 0,"home: Washington Advt, away: Fisher"
-2025-10-27,Trinity Bap 0 @ J&W NC 0,away: Trinity Bap
+2025-10-27,Trinity Jax 0 @ J&W NC 0,away: Trinity Jax
+2025-10-28,Piedmont 0 @ Toccoa Falls 0,home: Toccoa Falls
 2025-10-29,Albany GA 0 @ LaGrange 0,away: Albany GA
 2025-10-29,Bob Jones 0 @ Emmanuel GA 0,"home: Emmanuel GA, away: Bob Jones"
 2025-10-29,Framingham St 0 @ Fisher 0,home: Fisher
@@ -282,5 +280,5 @@ date,game,missing_teams
 2025-10-29,UC Santa Cruz 0 @ Fresno Pacific 0,home: Fresno Pacific
 2025-10-29,Trinity DC 0 @ Christendom 0,home: Christendom
 2025-10-29,NVU-Lyndon 0 @ SUNY Canton 0,away: NVU-Lyndon
-2025-10-29,Trinity Bap 0 @ Agnes Scott 0,away: Trinity Bap
+2025-10-29,Trinity Jax 0 @ Agnes Scott 0,away: Trinity Jax
 2025-11-01,Bob Jones 0 @ Toccoa Falls 0,"home: Toccoa Falls, away: Bob Jones"

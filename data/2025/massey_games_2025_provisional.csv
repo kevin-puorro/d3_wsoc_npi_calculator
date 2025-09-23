@@ -4,17 +4,17 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-08-30,Carlow University,3,Thiel College,1,p
 2025-09-03,Regent University,1,Sweet Briar College,3,p
 2025-09-05,Johnson & Wales University Charlotte,0,Eastern Mennonite University,3,p
-2025-09-06,Mary Baldwin University,4,Regent University,0,p
+2025-09-06,Regent University,0,Mary Baldwin University,4,p
 2025-09-06,Gwynedd Mercy University,2,Penn State Brandywine,1,p
 2025-09-07,Johnson & Wales University Charlotte,2,Hollins University,0,p
 2025-09-09,Penn State Brandywine,4,University of Valley Forge,0,p
 2025-09-10,Johnson & Wales University Charlotte,0,Greensboro College,1,p
 2025-09-10,Carlow University,0,Chatham University,5,p
-2025-09-10,Regent University,2,Wesleyan College (Georgia),0,p
 2025-09-11,Regent University,1,Agnes Scott College,2,p
+2025-09-11,Wesleyan College (Georgia),0,Regent University,2,p
 2025-09-12,Carlow University,0,Hiram College,2,p
 2025-09-13,Regent University,0,Randolph College,2,p
-2025-09-13,Medgar Evers College,0,Penn State Brandywine,0,"Sch, p"
+2025-09-13,Pratt Institute,1,Penn State Brandywine,2,p
 2025-09-14,Johnson & Wales University Charlotte,1,North Carolina Wesleyan University,0,p
 2025-09-16,Carlow University,0,Waynesburg University,6,p
 2025-09-17,William Peace University,1,Regent University,1,p
@@ -24,7 +24,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-20,Greensboro College,1,Regent University,0,p
 2025-09-20,John Jay College of Criminal Justice,0,Penn State Brandywine,0,p
 2025-09-20,Berry College,5,Johnson & Wales University Charlotte,0,p
-2025-09-22,Guilford College,0,Johnson & Wales University Charlotte,0,"Sch, p"
+2025-09-22,Guilford College,2,Johnson & Wales University Charlotte,1,p
 2025-09-24,Trinity Washington University,0,Penn State Brandywine,0,"Sch, p"
 2025-09-27,Alfred State College,0,Carlow University,0,"Sch, p"
 2025-09-27,Johnson & Wales University Charlotte,0,Regent University,0,"Sch, p"
@@ -41,7 +41,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-10-07,Penn State Brandywine,0,Keystone College,0,"Sch, p"
 2025-10-08,Regent University,0,Hollins University,0,"Sch, p"
 2025-10-08,Carlow University,0,"University of Pittsburgh, Greensburg",0,"Sch, p"
-2025-10-11,Salisbury University,0,Regent University,0,"Sch, p"
+2025-10-10,Salisbury University,0,Regent University,0,"Sch, p"
 2025-10-13,North Carolina Wesleyan University,0,Regent University,0,"Sch, p"
 2025-10-14,Mount Aloysius College,0,Carlow University,0,"Sch, p"
 2025-10-15,Wilson College,0,Penn State Brandywine,0,"Sch, p"
