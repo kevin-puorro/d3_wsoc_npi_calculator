@@ -1559,7 +1559,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-23,Albright,0,Arcadia,4,
 2025-09-23,St Catherine,2,WI Eau Claire,0,
 2025-09-23,Houghton,3,Alfred St,0,
-2025-09-23,Ithaca,0,Cortland St,0,Sch
+2025-09-23,Ithaca,0,Cortland St,0,
 2025-09-23,Toccoa Falls,1,Bob Jones,7,
 2025-09-23,Crown MN,1,Bethany Luth,3,
 2025-09-23,Denison,2,Ohio Northern,1,
@@ -1607,122 +1607,122 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-23,Hannibal-Lagr,1,Blackburn,0,
 2025-09-23,Medgar Evers,0,St Elizabeth,0,Sch
 2025-09-23,Piedmont,3,Warren Wilson,0,
-2025-09-24,Cal Lutheran,0,Chapman,0,Sch
-2025-09-24,Carthage,0,WI Stevens Pt,0,Sch
-2025-09-24,PSU-Behrend,0,Case Western,0,Sch
-2025-09-24,Asbury,0,Centre,0,Sch
-2025-09-24,Chicago,0,N Central IL,0,Sch
-2025-09-24,Catholic,0,Chris Newport,0,Sch
-2025-09-24,Clarkson,0,Skidmore,0,Sch
-2025-09-24,Coe,0,Cornell IA,0,Sch
-2025-09-24,Colby-Sawyer,0,MA Maritime,0,Sch
-2025-09-24,Nazareth,0,Alfred,0,Sch
-2025-09-24,Stevens,0,College of NJ,0,Sch
-2025-09-24,IL Tech,0,Concordia IL,0,Sch
-2025-09-24,Chatham,0,Allegheny,0,Sch
-2025-09-24,Kean,0,Alvernia,0,Sch
-2025-09-24,Rutgers-Camden,0,Delaware Val,0,Sch
-2025-09-24,Rose-Hulman,0,DePauw,0,Sch
-2025-09-24,DeSales,0,Elizabethtown,0,Sch
-2025-09-24,Gettysburg,0,Dickinson,0,Sch
-2025-09-24,Dominican IL,0,Rockford,0,Sch
-2025-09-24,Earlham,0,St Mary's IN,0,Sch
-2025-09-24,Randolph-Macon,0,E Mennonite,0,Sch
-2025-09-24,Edgewood,0,Milwaukee Eng,0,Sch
-2025-09-24,Curry,0,Framingham St,0,Sch
-2025-09-24,Franciscan OH,0,St Vincent,0,Sch
-2025-09-24,Frank & Marsh,0,Washington MD,0,Sch
-2025-09-24,NC Wesleyan,0,Guilford,0,Sch
-2025-09-24,Columbia SC,0,Regent,0,Sch
-2025-09-24,Hamline,0,WI Eau Claire,0,Sch
-2025-09-24,Heidelberg,0,Oberlin,0,Sch
-2025-09-24,Thiel,0,Hiram,0,Sch
-2025-09-24,Hobart & Smith,0,Rochester Tech,0,Sch
-2025-09-24,Belhaven MS,0,Huntingdon,0,Sch
-2025-09-24,Husson,0,Bowdoin,0,Sch
-2025-09-24,Illinois Col,0,Webster,0,Sch
-2025-09-24,John Carroll,0,Pitt-Greensburg,0,Sch
-2025-09-24,NYU,0,John Jay,0,Sch
-2025-09-24,Johns Hopkins,0,McDaniel,0,Sch
-2025-09-24,Salve Regina,0,J&W RI,0,Sch
-2025-09-24,Immaculata,0,King's PA,0,Sch
-2025-09-24,IL Wesleyan,0,Knox,0,Sch
-2025-09-24,La Verne,0,Redlands,0,Sch
-2025-09-24,Neumann,0,Lebanon Val,0,Sch
-2025-09-24,WI River Falls,0,Augsburg,0,Sch
-2025-09-24,Lycoming,0,PSU-Abington,0,Sch
-2025-09-24,Manchester,0,Grace Chr,0,Sch
-2025-09-24,Aurora,0,Concordia WI,0,Sch
-2025-09-24,Lakeland,0,Marian WI,0,Sch
-2025-09-24,Marietta,0,Wooster,0,Sch
-2025-09-24,Christendom,0,Mary Baldwin,0,Sch
-2025-09-24,Mary Washington,0,Marymount VA,0,Sch
-2025-09-24,Berry,0,Maryville TN,0,Sch
-2025-09-24,Roanoke,0,Averett,0,Sch
-2025-09-24,Millikin,0,Greenville,0,Sch
-2025-09-24,Tougaloo,0,Millsaps,0,Sch
-2025-09-24,Scranton,0,Misericordia,0,Sch
-2025-09-24,Montclair St,0,Moravian,0,Sch
-2025-09-24,Mt Holyoke,0,Westfield St,0,Sch
-2025-09-24,WI Oshkosh,0,North Park,0,Sch
-2025-09-24,Lasell,0,Norwich,0,Sch
-2025-09-24,Whittier,0,Occidental,0,Sch
-2025-09-24,Puget Sound,0,Pac Lutheran,0,Sch
-2025-09-24,PSU-Berks,0,Gwynedd-Mercy,0,Sch
-2025-09-24,St Lawrence,0,Plattsburgh St,0,Sch
-2025-09-24,Manhattanville,0,Purchase,0,Sch
-2025-09-24,Ramapo,0,Penn Col Tech,0,Sch
-2025-09-24,Randolph Col,0,Lynchburg,0,Sch
-2025-09-24,Geneseo St,0,Rochester NY,0,Sch
-2025-09-24,St Olaf,0,WI Stout,0,Sch
-2025-09-24,York PA,0,Salisbury,0,Sch
-2025-09-24,Sweet Briar,0,Shenandoah,0,Sch
-2025-09-24,S Maine,0,ME Maritime,0,Sch
-2025-09-24,St John Fisher,0,Utica,0,Sch
+2025-09-24,Cal Lutheran,3,Chapman,1,
+2025-09-24,Carthage,2,WI Stevens Pt,2,
+2025-09-24,PSU-Behrend,0,Case Western,2,
+2025-09-24,Asbury,0,Centre,5,
+2025-09-24,Chicago,2,N Central IL,1,
+2025-09-24,Catholic,0,Chris Newport,1,
+2025-09-24,Clarkson,1,Skidmore,3,
+2025-09-24,Coe,4,Cornell IA,0,
+2025-09-24,Colby-Sawyer,1,MA Maritime,0,
+2025-09-24,Nazareth,1,Alfred,0,
+2025-09-24,Stevens,1,College of NJ,1,
+2025-09-24,IL Tech,1,Concordia IL,0,
+2025-09-24,Chatham,0,Allegheny,2,
+2025-09-24,Kean,0,Alvernia,1,
+2025-09-24,Rutgers-Camden,1,Delaware Val,2,
+2025-09-24,Rose-Hulman,0,DePauw,1,
+2025-09-24,DeSales,1,Elizabethtown,3,
+2025-09-24,Gettysburg,1,Dickinson,3,
+2025-09-24,Dominican IL,7,Rockford,0,
+2025-09-24,Earlham,0,St Mary's IN,3,
+2025-09-24,Randolph-Macon,4,E Mennonite,0,
+2025-09-24,Edgewood,1,Milwaukee Eng,3,
+2025-09-24,Curry,3,Framingham St,3,
+2025-09-24,Franciscan OH,3,St Vincent,3,
+2025-09-24,Frank & Marsh,2,Washington MD,1,
+2025-09-24,NC Wesleyan,0,Guilford,3,
+2025-09-24,Columbia SC,2,Regent,0,
+2025-09-24,Hamline,2,WI Eau Claire,2,
+2025-09-24,Heidelberg,2,Oberlin,0,
+2025-09-24,Thiel,0,Hiram,4,
+2025-09-24,Hobart & Smith,2,Rochester Tech,3,
+2025-09-24,Belhaven MS,4,Huntingdon,0,
+2025-09-24,Husson,0,Bowdoin,1,
+2025-09-24,Illinois Col,0,Webster,3,
+2025-09-24,John Carroll,3,Pitt-Greensburg,1,
+2025-09-24,NYU,11,John Jay,0,
+2025-09-24,Johns Hopkins,4,McDaniel,0,
+2025-09-24,Salve Regina,1,J&W RI,0,
+2025-09-24,Immaculata,2,King's PA,3,
+2025-09-24,IL Wesleyan,4,Knox,1,
+2025-09-24,La Verne,0,Redlands,0,
+2025-09-24,Neumann,0,Lebanon Val,6,
+2025-09-24,WI River Falls,0,Augsburg,1,
+2025-09-24,Lycoming,5,PSU-Abington,2,
+2025-09-24,Manchester,3,Grace Chr,1,
+2025-09-24,Aurora,0,Concordia WI,1,
+2025-09-24,Lakeland,0,Marian WI,6,
+2025-09-24,Marietta,0,Wooster,1,
+2025-09-24,Christendom,0,Mary Baldwin,6,
+2025-09-24,Mary Washington,3,Marymount VA,0,
+2025-09-24,Berry,0,Maryville TN,1,
+2025-09-24,Roanoke,6,Averett,0,
+2025-09-24,Millikin,0,Greenville,3,
+2025-09-24,Tougaloo,0,Millsaps,13,
+2025-09-24,Scranton,2,Misericordia,3,
+2025-09-24,Montclair St,4,Moravian,0,
+2025-09-24,Mt Holyoke,0,Westfield St,0,
+2025-09-24,WI Oshkosh,3,North Park,0,
+2025-09-24,Lasell,2,Norwich,1,
+2025-09-24,Whittier,0,Occidental,2,
+2025-09-24,Puget Sound,1,Pac Lutheran,1,
+2025-09-24,PSU-Berks,1,Gwynedd-Mercy,1,
+2025-09-24,St Lawrence,2,Plattsburgh St,1,
+2025-09-24,Manhattanville,3,Purchase,0,
+2025-09-24,Ramapo,1,Penn Col Tech,1,
+2025-09-24,Randolph Col,0,Lynchburg,5,
+2025-09-24,Geneseo St,0,Rochester NY,1,
+2025-09-24,St Olaf,5,WI Stout,0,
+2025-09-24,York PA,1,Salisbury,1,
+2025-09-24,Sweet Briar,0,Shenandoah,8,
+2025-09-24,S Maine,4,ME Maritime,1,
+2025-09-24,St John Fisher,0,Utica,0,
 2025-09-24,SUNY Canton,0,SUNY Cobleskill,0,Sch
-2025-09-24,Olivet MI,0,Bluffton,0,Sch
-2025-09-24,Farmingdale,0,St Joseph's NY,0,Sch
-2025-09-24,Stevenson,0,Susquehanna,0,Sch
-2025-09-24,Bryn Mawr,0,Swarthmore,0,Sch
-2025-09-24,E Connecticut,0,Union NY,0,Sch
-2025-09-24,Ursinus,0,Haverford,0,Sch
-2025-09-24,Lesley,0,Brandeis,0,Sch
-2025-09-24,Vassar,0,Bard,0,Sch
-2025-09-24,Washington & Lee,0,VA Wesleyan,0,Sch
-2025-09-24,Fitchburg St,0,Wentworth Tech,0,Sch
-2025-09-24,Roger Williams,0,Bridgewater MA,0,Sch
-2025-09-24,Waynesburg,0,Westminster PA,0,Sch
-2025-09-24,WI Whitewater,0,Wheaton IL,0,Sch
-2025-09-24,Whitworth,0,Whitman,0,Sch
-2025-09-24,Widener,0,Wilkes,0,Sch
-2025-09-24,St Norbert,0,WI Lutheran,0,Sch
-2025-09-24,WI LaCrosse,0,Carleton MN,0,Sch
-2025-09-24,Suffolk,0,Worcester St,0,Sch
-2025-09-24,PSU-Altoona,0,Notre Dame MD,0,Sch
-2025-09-24,York NY,0,Keystone,0,Sch
-2025-09-24,PSU-Harrisburg,0,Eastern Univ,0,Sch
-2025-09-24,Grove City,0,Bethany WV,0,Sch
-2025-09-24,Hollins,0,Bridgewater VA,0,Sch
-2025-09-24,Bay Path,0,MA Col Lib Arts,0,Sch
-2025-09-24,MA Boston,0,Worcester Tech,0,Sch
-2025-09-24,Trinity DC,0,PSU-Brandywine,0,Sch
-2025-09-24,St Joseph's ME,0,Rivier,0,Sch
-2025-09-24,SUNY Maritime,0,St Joseph's LI,0,Sch
-2025-09-24,Wellesley,0,Hartford,0,Sch
-2025-09-24,SUNY Poly,0,Hartwick,0,Sch
-2025-09-24,Regis MA,0,Anna Maria,0,Sch
-2025-09-24,Agnes Scott,0,Wesleyan GA,0,Sch
-2025-09-24,Franklin,0,Wilmington OH,0,Sch
-2025-09-24,Emmanuel MA,0,Albertus Magnus,0,Sch
-2025-09-24,Mt St Mary NY,0,Sarah Lawrence,0,Sch
-2025-09-24,Mt St Vincent,0,Merchant Marine,0,Sch
-2025-09-24,Wheaton MA,0,Endicott,0,Sch
-2025-09-24,Russell Sage,0,Elmira,0,Sch
-2025-09-24,Cairn,0,Marywood,0,Sch
-2025-09-24,Monmouth IL,0,Simpson IA,0,Sch
-2025-09-24,Pomona-Pitzer,0,Claremont M.S.,0,Sch
-2025-09-24,Alice Lloyd,0,Berea,0,Sch
-2025-09-24,St Scholastica,0,St Benedict,0,Sch
+2025-09-24,Olivet MI,0,Bluffton,3,
+2025-09-24,Farmingdale,8,St Joseph's NY,0,
+2025-09-24,Stevenson,0,Susquehanna,1,
+2025-09-24,Bryn Mawr,0,Swarthmore,2,
+2025-09-24,E Connecticut,0,Union NY,3,
+2025-09-24,Ursinus,2,Haverford,3,
+2025-09-24,Lesley,1,Brandeis,1,
+2025-09-24,Vassar,6,Bard,0,
+2025-09-24,Washington & Lee,4,VA Wesleyan,0,
+2025-09-24,Fitchburg St,0,Wentworth Tech,4,
+2025-09-24,Roger Williams,1,Bridgewater MA,0,
+2025-09-24,Waynesburg,0,Westminster PA,0,
+2025-09-24,WI Whitewater,0,Wheaton IL,0,
+2025-09-24,Whitworth,0,Whitman,1,
+2025-09-24,Widener,1,Wilkes,1,
+2025-09-24,St Norbert,0,WI Lutheran,1,
+2025-09-24,WI LaCrosse,2,Carleton MN,3,
+2025-09-24,Suffolk,2,Worcester St,1,
+2025-09-24,PSU-Altoona,1,Notre Dame MD,0,
+2025-09-24,York NY,7,Keystone,5,
+2025-09-24,PSU-Harrisburg,1,Eastern Univ,1,
+2025-09-24,Grove City,8,Bethany WV,1,
+2025-09-24,Hollins,0,Bridgewater VA,12,
+2025-09-24,Bay Path,0,MA Col Lib Arts,5,
+2025-09-24,MA Boston,0,Worcester Tech,3,
+2025-09-24,Trinity DC,0,PSU-Brandywine,10,
+2025-09-24,St Joseph's ME,1,Rivier,2,
+2025-09-24,SUNY Maritime,0,St Joseph's LI,9,
+2025-09-24,Wellesley,1,Hartford,5,
+2025-09-24,SUNY Poly,0,Hartwick,3,
+2025-09-24,Regis MA,3,Anna Maria,0,
+2025-09-24,Agnes Scott,2,Wesleyan GA,0,
+2025-09-24,Franklin,1,Wilmington OH,3,
+2025-09-24,Emmanuel MA,2,Albertus Magnus,2,
+2025-09-24,Mt St Mary NY,3,Sarah Lawrence,1,
+2025-09-24,Mt St Vincent,2,Merchant Marine,2,
+2025-09-24,Wheaton MA,1,Endicott,2,
+2025-09-24,Russell Sage,4,Elmira,0,
+2025-09-24,Cairn,0,Marywood,3,
+2025-09-24,Monmouth IL,1,Simpson IA,5,
+2025-09-24,Pomona-Pitzer,1,Claremont M.S.,0,
+2025-09-24,Alice Lloyd,0,Berea,7,
+2025-09-24,St Scholastica,0,St Benedict,4,
 2025-09-25,Bob Jones,0,Emory & Henry,0,Sch
 2025-09-25,Adrian,0,Kenyon,0,Sch
 2025-09-25,Loras,0,Marian WI,0,Sch
