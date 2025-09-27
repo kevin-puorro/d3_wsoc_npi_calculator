@@ -1730,20 +1730,20 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-25,Brooklyn Col,0,Old Westbury,0,Sch
 2025-09-25,NVU-Lyndon,0,Vermont Tech,0,Sch
 2025-09-25,Goucher,0,Lancaster Bib,4,
-2025-09-26,Salem MA,0,Framingham St,0,Sch
-2025-09-26,Hendrix,0,Dallas Univ,0,Sch
-2025-09-26,Maranatha Bap,0,Andrews,0,Sch
-2025-09-26,Centenary,0,McMurry,0,Sch
-2025-09-26,Talladega,0,Oglethorpe,0,Sch
-2025-09-26,St Thomas TX,0,Schreiner,0,Sch
-2025-09-26,Worcester St,0,MA Col Lib Arts,0,Sch
+2025-09-26,Salem MA,0,Framingham St,2,
+2025-09-26,Hendrix,1,Dallas Univ,2,
+2025-09-26,Maranatha Bap,6,Andrews,1,
+2025-09-26,Centenary,1,McMurry,6,
+2025-09-26,Talladega,0,Oglethorpe,6,
+2025-09-26,St Thomas TX,2,Schreiner,1,
+2025-09-26,Worcester St,9,MA Col Lib Arts,1,
 2025-09-26,Frank & Marsh,0,Washington MD,0,Sch
-2025-09-26,W New England,0,Nichols,0,Sch
-2025-09-26,TX Lutheran,0,Austin Col,0,Sch
-2025-09-26,Concordia TX,0,Le Tourneau,0,Sch
-2025-09-26,Neumann,0,FDU Madison,0,Sch
-2025-09-26,Elms,0,Rivier,0,Sch
-2025-09-26,S Virginia,0,Meredith,0,Sch
+2025-09-26,W New England,2,Nichols,0,
+2025-09-26,TX Lutheran,3,Austin Col,1,
+2025-09-26,Concordia TX,1,Le Tourneau,0,
+2025-09-26,Neumann,2,FDU Madison,3,
+2025-09-26,Elms,0,Rivier,2,
+2025-09-26,S Virginia,2,Meredith,0,
 2025-09-27,La Verne,0,Cal Lutheran,0,Sch
 2025-09-27,Ohio Northern,0,Calvin,0,Sch
 2025-09-27,Capital,0,Denison,0,Sch
@@ -1924,6 +1924,7 @@ date,away_team,away_score,home_team,home_score,game_note
 2025-09-27,Allen,0,Agnes Scott,0,Sch
 2025-09-27,NVU-Lyndon,0,Husson,0,Sch
 2025-09-27,Wheaton MA,0,Clark MA,0,Sch
+2025-09-27,Wittenberg,0,Trine,0,Sch
 2025-09-27,York NY,0,St Elizabeth,0,Sch
 2025-09-28,Colby-Sawyer,0,Castleton,0,Sch
 2025-09-28,Colby,0,Amherst,0,Sch
